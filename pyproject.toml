@@ -1,0 +1,26 @@
+[project]
+name = "handwriting-cross-script-research"
+version = "0.1.0"
+description = "Reproducible research on self-supervised, open-set, cross-script writer verification using offline handwriting datasets."
+readme = "README.md"
+authors = [
+    { name = "Arijit Biswas Anirban" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+]
+
+[project.scripts]
+handwriting-cross-script-research = "handwriting_cross_script_research:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.2",
+]
