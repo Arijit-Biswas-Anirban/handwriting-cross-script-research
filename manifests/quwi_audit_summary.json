@@ -1,0 +1,59 @@
+{
+  "dataset": "QUWI",
+  "image_directory": "/home/arijit/Documents/Handwriting/QUWI/extracted/images",
+  "total_images": 1900,
+  "unique_writers": 475,
+  "writer_id_range": [
+    1,
+    475
+  ],
+  "files_per_page_id": {
+    "1": 475,
+    "2": 475,
+    "3": 475,
+    "4": 475
+  },
+  "invalid_filenames": 0,
+  "missing_writer_page_pairs": 0,
+  "unexpected_writer_page_pairs": 0,
+  "unreadable_images": 0,
+  "image_formats": {
+    "JPEG": 1900
+  },
+  "image_modes": {
+    "RGB": 1900
+  },
+  "unique_dimensions": 124,
+  "width_range": [
+    2083,
+    4967
+  ],
+  "height_range": [
+    944,
+    6731
+  ],
+  "orientation_counts": {
+    "portrait": 1889,
+    "landscape": 11
+  },
+  "aspect_ratio_range": [
+    0.7243,
+    2.223022
+  ],
+  "duplicate_groups": 0,
+  "additional_duplicate_files": 0,
+  "dataset_size_bytes": 2405268342,
+  "landscape_files": [
+    "0428_2.jpg",
+    "0149_4.jpg",
+    "0307_4.jpg",
+    "0428_4.jpg",
+    "0149_2.jpg",
+    "0428_3.jpg",
+    "0221_2.jpg",
+    "0377_3.jpg",
+    "0164_2.jpg",
+    "0307_3.jpg",
+    "0221_4.jpg"
+  ]
+}
