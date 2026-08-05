@@ -1,0 +1,23 @@
+{
+  "dataset": "QUWI",
+  "total_images": 1900,
+  "total_writers": 475,
+  "language_counts": {
+    "Arabic": 950,
+    "English": 950
+  },
+  "text_condition_counts": {
+    "0": 950,
+    "1": 950
+  },
+  "landscape_images": 11,
+  "median_aspect_ratio": 0.733017,
+  "median_file_size_kb": 1171.00048828125,
+  "dark_color_metric_correlation": 0.87338093998548,
+  "file_size_color_foreground_correlation": 0.5899342970283066,
+  "within_writer_results": {
+    "arabic_same_greater_than_variable": 470,
+    "english_same_greater_than_variable": 472,
+    "english_same_greater_than_arabic_same": 433
+  }
+}

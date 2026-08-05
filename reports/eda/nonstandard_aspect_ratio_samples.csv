@@ -1,0 +1,12 @@
+filename,writer,page_id,language,same_text,width,height,aspect_ratio,experiment_split
+0428_2.jpg,428,2,Arabic,1,2313,2201,1.050886,official_test
+0149_4.jpg,149,4,English,1,2438,2188,1.11426,validation
+0307_4.jpg,307,4,English,1,2477,2144,1.155317,official_test
+0428_4.jpg,428,4,English,1,2471,2129,1.160639,official_test
+0149_2.jpg,149,2,Arabic,1,2387,1905,1.253018,validation
+0428_3.jpg,428,3,English,0,2471,1961,1.260071,official_test
+0221_2.jpg,221,2,Arabic,1,2380,1161,2.049957,development_train
+0377_3.jpg,377,3,English,0,2483,1161,2.138674,official_test
+0164_2.jpg,164,2,Arabic,1,2324,1057,2.198675,development_train
+0307_3.jpg,307,3,English,0,2083,944,2.206568,official_test
+0221_4.jpg,221,4,English,1,2472,1112,2.223022,development_train
