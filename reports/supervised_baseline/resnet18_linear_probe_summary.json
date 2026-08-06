@@ -1,0 +1,149 @@
+{
+  "experiment": "supervised_cross_script_writer_classification_linear_probe",
+  "dataset": "QUWI",
+  "model": "ImageNet-pretrained ResNet-18",
+  "training_strategy": "frozen_backbone_linear_probe",
+  "training_script": "Arabic",
+  "training_pages": [
+    1,
+    2
+  ],
+  "validation_script": "English",
+  "validation_page": 3,
+  "validation_text_condition": "variable",
+  "test_script": "English",
+  "test_page": 4,
+  "test_text_condition": "same",
+  "writers": 226,
+  "training_images": 452,
+  "validation_images": 226,
+  "test_images": 226,
+  "target_size": [
+    384,
+    384
+  ],
+  "batch_size": 8,
+  "epochs": 15,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "best_epoch": 14,
+  "random_top1_accuracy_percent": 0.4424778761061947,
+  "random_top5_accuracy_percent": 2.2123893805309733,
+  "final_metrics": {
+    "arabic_train": {
+      "loss": 3.5953758037195795,
+      "top1_accuracy": 0.668141592920354,
+      "top5_accuracy": 0.8893805309734514,
+      "samples": 452.0
+    },
+    "english_variable_validation": {
+      "loss": 5.117608049274546,
+      "top1_accuracy": 0.04424778761061947,
+      "top5_accuracy": 0.11946902654867257,
+      "samples": 226.0
+    },
+    "english_same_test": {
+      "loss": 5.142540079302492,
+      "top1_accuracy": 0.035398230088495575,
+      "top5_accuracy": 0.1415929203539823,
+      "samples": 226.0
+    }
+  },
+  "rank_metrics": {
+    "english_variable_validation": {
+      "samples": 226.0,
+      "top1_accuracy_percent": 4.424778761061947,
+      "top5_accuracy_percent": 11.946902654867257,
+      "top10_accuracy_percent": 20.79646017699115,
+      "mean_reciprocal_rank": 0.10068112147035108,
+      "median_true_rank": 47.0,
+      "mean_true_rank": 67.32300884955752,
+      "mean_top1_confidence": 0.02348745359618843
+    },
+    "english_same_test": {
+      "samples": 226.0,
+      "top1_accuracy_percent": 3.5398230088495577,
+      "top5_accuracy_percent": 14.15929203539823,
+      "top10_accuracy_percent": 18.141592920353983,
+      "mean_reciprocal_rank": 0.09268285901736653,
+      "median_true_rank": 53.5,
+      "mean_true_rank": 68.58849557522124,
+      "mean_top1_confidence": 0.028508185808736403
+    }
+  },
+  "checkpoint_path": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/supervised_baseline/resnet18_linear_probe_best.pt",
+  "prediction_distribution": {
+    "english_variable_validation": {
+      "samples": 226.0,
+      "unique_predicted_writers": 57.0,
+      "prediction_coverage_percent": 25.221238938053098,
+      "maximum_prediction_frequency": 33.0,
+      "maximum_prediction_share_percent": 14.601769911504425,
+      "prediction_entropy": 3.465475538692828,
+      "normalized_prediction_entropy": 0.639323524183143,
+      "mean_confidence_percent": 2.3487453596188432
+    },
+    "english_same_test": {
+      "samples": 226.0,
+      "unique_predicted_writers": 44.0,
+      "prediction_coverage_percent": 19.469026548672566,
+      "maximum_prediction_frequency": 35.0,
+      "maximum_prediction_share_percent": 15.486725663716813,
+      "prediction_entropy": 3.0995336385065286,
+      "normalized_prediction_entropy": 0.5718132322589274,
+      "mean_confidence_percent": 2.85081858087364
+    }
+  },
+  "report_files": [
+    "resnet18_linear_probe_history.csv",
+    "resnet18_linear_probe_final_metrics.csv",
+    "resnet18_linear_probe_rank_summary.csv",
+    "resnet18_linear_probe_cmc.csv",
+    "english_variable_validation_predictions.csv",
+    "english_same_test_predictions.csv",
+    "resnet18_linear_probe_prediction_distribution.csv",
+    "resnet18_linear_probe_top_predicted_writers.csv",
+    "resnet18_linear_probe_loss_curves.png",
+    "resnet18_linear_probe_accuracy_curves.png",
+    "resnet18_linear_probe_cmc.png",
+    "resnet18_linear_probe_prediction_bias_comparison.csv"
+  ],
+  "cross_condition_prediction_bias": {
+    "validation_top10_predicted_writers": [
+      29,
+      35,
+      61,
+      125,
+      135,
+      139,
+      246,
+      247,
+      268,
+      279
+    ],
+    "test_top10_predicted_writers": [
+      9,
+      26,
+      29,
+      35,
+      61,
+      139,
+      166,
+      229,
+      247,
+      279
+    ],
+    "top10_overlap": [
+      29,
+      35,
+      61,
+      139,
+      247,
+      279
+    ],
+    "top10_overlap_count": 6,
+    "top10_jaccard_similarity": 0.42857142857142855,
+    "prediction_count_pearson_correlation": 0.46782990602273455,
+    "prediction_count_spearman_correlation": 0.5254380612246558
+  }
+}
