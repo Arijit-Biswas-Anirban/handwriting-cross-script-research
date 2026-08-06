@@ -1,0 +1,35 @@
+{
+  "dataset": "QUWI",
+  "target_size": [
+    384,
+    384
+  ],
+  "output_mode": "RGB",
+  "resize_method": "aspect_ratio_preserving_contain",
+  "interpolation": "LANCZOS",
+  "padding_position": "center",
+  "padding_value": [
+    255,
+    255,
+    255
+  ],
+  "autocontrast": false,
+  "tensor_dtype": "float32",
+  "tensor_range": [
+    0.0,
+    1.0
+  ],
+  "normalization_statistics_source": "development_train",
+  "normalization_images": 904,
+  "rgb_mean": [
+    0.9913364468083093,
+    0.9920949073461344,
+    0.9950246367195624
+  ],
+  "rgb_standard_deviation": [
+    0.04537056708509763,
+    0.042790577968863285,
+    0.02989396036982387
+  ],
+  "normalization_status": "candidate_for_model_experiments"
+}
