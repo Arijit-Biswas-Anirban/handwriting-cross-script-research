@@ -1,0 +1,98 @@
+{
+  "dataset": "QUWI",
+  "target_size": [
+    384,
+    384
+  ],
+  "batch_size": 8,
+  "num_workers": 0,
+  "shuffle_training": true,
+  "shuffle_validation": false,
+  "shuffle_test": false,
+  "pin_memory": true,
+  "random_seed": 42,
+  "device_tested": "cuda",
+  "batch_tensor_memory_mb": 13.5,
+  "peak_gpu_memory_mb": 14.0,
+  "language_labels": {
+    "Arabic": 0,
+    "English": 1
+  },
+  "splits": {
+    "development_train": {
+      "samples": 904,
+      "writers": 226,
+      "tensor_shapes": [
+        [
+          3,
+          384,
+          384
+        ]
+      ],
+      "language_counts": {
+        "Arabic": 452,
+        "English": 452
+      },
+      "text_condition_counts": {
+        "variable": 452,
+        "same": 452
+      },
+      "page_counts": {
+        "1": 226,
+        "2": 226,
+        "3": 226,
+        "4": 226
+      }
+    },
+    "validation": {
+      "samples": 224,
+      "writers": 56,
+      "tensor_shapes": [
+        [
+          3,
+          384,
+          384
+        ]
+      ],
+      "language_counts": {
+        "Arabic": 112,
+        "English": 112
+      },
+      "text_condition_counts": {
+        "variable": 112,
+        "same": 112
+      },
+      "page_counts": {
+        "1": 56,
+        "2": 56,
+        "3": 56,
+        "4": 56
+      }
+    },
+    "official_test": {
+      "samples": 772,
+      "writers": 193,
+      "tensor_shapes": [
+        [
+          3,
+          384,
+          384
+        ]
+      ],
+      "language_counts": {
+        "Arabic": 386,
+        "English": 386
+      },
+      "text_condition_counts": {
+        "variable": 386,
+        "same": 386
+      },
+      "page_counts": {
+        "1": 193,
+        "2": 193,
+        "3": 193,
+        "4": 193
+      }
+    }
+  }
+}
