@@ -1,0 +1,7 @@
+condition_id,page_a,page_b,script_relation,text_relation,language_a,language_b,text_condition_a,text_condition_b
+arabic_variable_same,1,2,within_arabic,variable_same,Arabic,Arabic,variable,same
+english_variable_same,3,4,within_english,variable_same,English,English,variable,same
+cross_variable_variable,1,3,cross_script,variable_variable,Arabic,English,variable,variable
+cross_variable_same,1,4,cross_script,variable_same,Arabic,English,variable,same
+cross_same_variable,2,3,cross_script,same_variable,Arabic,English,same,variable
+cross_same_same,2,4,cross_script,same_same,Arabic,English,same,same

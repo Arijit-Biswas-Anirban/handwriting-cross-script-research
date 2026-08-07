@@ -1,0 +1,3 @@
+experiment_split,images,writers,minimum_images_per_writer,maximum_images_per_writer,minimum_unique_pages,maximum_unique_pages,duplicate_writer_page_entries
+validation,224,56,4,4,4,4,0
+official_test,772,193,4,4,4,4,0

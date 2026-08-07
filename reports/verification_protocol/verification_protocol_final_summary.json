@@ -1,0 +1,128 @@
+{
+  "dataset": "QUWI",
+  "protocol": "writer_disjoint_exhaustive_verification",
+  "development_train": {
+    "writers": 226,
+    "images": 904,
+    "used_for_pair_evaluation": false
+  },
+  "validation": {
+    "writers": 56,
+    "images": 224,
+    "pairs": 18816,
+    "genuine_pairs": 336,
+    "impostor_pairs": 18480,
+    "pairs_per_condition": 3136
+  },
+  "official_test": {
+    "writers": 193,
+    "images": 772,
+    "pairs": 223494,
+    "genuine_pairs": 1158,
+    "impostor_pairs": 222336,
+    "pairs_per_condition": 37249
+  },
+  "conditions": {
+    "total": 6,
+    "within_script": 2,
+    "cross_script": 4,
+    "definitions": [
+      {
+        "condition_id": "arabic_variable_same",
+        "page_a": 1,
+        "page_b": 2,
+        "script_relation": "within_arabic",
+        "text_relation": "variable_same",
+        "language_a": "Arabic",
+        "language_b": "Arabic",
+        "text_condition_a": "variable",
+        "text_condition_b": "same"
+      },
+      {
+        "condition_id": "english_variable_same",
+        "page_a": 3,
+        "page_b": 4,
+        "script_relation": "within_english",
+        "text_relation": "variable_same",
+        "language_a": "English",
+        "language_b": "English",
+        "text_condition_a": "variable",
+        "text_condition_b": "same"
+      },
+      {
+        "condition_id": "cross_variable_variable",
+        "page_a": 1,
+        "page_b": 3,
+        "script_relation": "cross_script",
+        "text_relation": "variable_variable",
+        "language_a": "Arabic",
+        "language_b": "English",
+        "text_condition_a": "variable",
+        "text_condition_b": "variable"
+      },
+      {
+        "condition_id": "cross_variable_same",
+        "page_a": 1,
+        "page_b": 4,
+        "script_relation": "cross_script",
+        "text_relation": "variable_same",
+        "language_a": "Arabic",
+        "language_b": "English",
+        "text_condition_a": "variable",
+        "text_condition_b": "same"
+      },
+      {
+        "condition_id": "cross_same_variable",
+        "page_a": 2,
+        "page_b": 3,
+        "script_relation": "cross_script",
+        "text_relation": "same_variable",
+        "language_a": "Arabic",
+        "language_b": "English",
+        "text_condition_a": "same",
+        "text_condition_b": "variable"
+      },
+      {
+        "condition_id": "cross_same_same",
+        "page_a": 2,
+        "page_b": 4,
+        "script_relation": "cross_script",
+        "text_relation": "same_same",
+        "language_a": "Arabic",
+        "language_b": "English",
+        "text_condition_a": "same",
+        "text_condition_b": "same"
+      }
+    ]
+  },
+  "writer_leakage": {
+    "development_validation_overlap": 0,
+    "development_test_overlap": 0,
+    "validation_test_overlap": 0
+  },
+  "integrity": {
+    "validation_label_integrity": true,
+    "official_test_label_integrity": true,
+    "validation_pair_type_integrity": true,
+    "official_test_pair_type_integrity": true,
+    "validation_duplicate_pairs": 0,
+    "official_test_duplicate_pairs": 0,
+    "validation_same_file_pairs": 0,
+    "official_test_same_file_pairs": 0
+  },
+  "pair_balance": {
+    "validation_genuine_pairs_per_writer": 1,
+    "validation_impostor_pairs_per_writer_per_side": 55,
+    "official_test_genuine_pairs_per_writer": 1,
+    "official_test_impostor_pairs_per_writer_per_side": 192
+  },
+  "generated_files": {
+    "validation_pairs": "/home/arijit/Documents/handwriting-cross-script-research/splits/verification/quwi_validation_verification_pairs.csv",
+    "official_test_pairs": "/home/arijit/Documents/handwriting-cross-script-research/splits/verification/quwi_official_test_verification_pairs.csv",
+    "condition_definitions": "/home/arijit/Documents/handwriting-cross-script-research/splits/verification/quwi_verification_conditions.csv",
+    "condition_summary": "/home/arijit/Documents/handwriting-cross-script-research/reports/verification_protocol/pair_condition_summary.csv",
+    "pair_balance_audit": "/home/arijit/Documents/handwriting-cross-script-research/reports/verification_protocol/pair_balance_audit.csv",
+    "writer_leakage_audit": "/home/arijit/Documents/handwriting-cross-script-research/reports/verification_protocol/writer_leakage_audit.json",
+    "writer_page_audit": "/home/arijit/Documents/handwriting-cross-script-research/reports/verification_protocol/writer_page_audit.csv"
+  }
+}

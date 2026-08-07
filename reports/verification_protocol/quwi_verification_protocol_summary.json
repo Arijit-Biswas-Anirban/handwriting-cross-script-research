@@ -1,0 +1,29 @@
+{
+  "dataset": "QUWI",
+  "protocol": "writer_disjoint_exhaustive_verification",
+  "development_train_writers": 226,
+  "validation_writers": 56,
+  "official_test_writers": 193,
+  "verification_conditions": 6,
+  "within_script_conditions": 2,
+  "cross_script_conditions": 4,
+  "validation": {
+    "pairs": 18816,
+    "genuine_pairs": 336,
+    "impostor_pairs": 18480
+  },
+  "official_test": {
+    "pairs": 223494,
+    "genuine_pairs": 1158,
+    "impostor_pairs": 222336
+  },
+  "writer_overlap": {
+    "development_validation": 0,
+    "development_test": 0,
+    "validation_test": 0
+  },
+  "pair_label_integrity": {
+    "validation": true,
+    "official_test": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "development_train_writers": 226,
+  "validation_writers": 56,
+  "official_test_writers": 193,
+  "development_validation_overlap": 0,
+  "development_test_overlap": 0,
+  "validation_test_overlap": 0,
+  "validation_used_filenames": 224,
+  "official_test_used_filenames": 772,
+  "validation_unexpected_filenames": 0,
+  "official_test_unexpected_filenames": 0,
+  "validation_same_file_pairs": 0,
+  "official_test_same_file_pairs": 0
+}

@@ -1,0 +1,13 @@
+experiment_split,condition_id,script_relation,text_relation,page_a,page_b,writers_a,writers_b,pairs,genuine_pairs,impostor_pairs
+validation,arabic_variable_same,within_arabic,variable_same,1,2,56,56,3136,56,3080
+validation,english_variable_same,within_english,variable_same,3,4,56,56,3136,56,3080
+validation,cross_variable_variable,cross_script,variable_variable,1,3,56,56,3136,56,3080
+validation,cross_variable_same,cross_script,variable_same,1,4,56,56,3136,56,3080
+validation,cross_same_variable,cross_script,same_variable,2,3,56,56,3136,56,3080
+validation,cross_same_same,cross_script,same_same,2,4,56,56,3136,56,3080
+official_test,arabic_variable_same,within_arabic,variable_same,1,2,193,193,37249,193,37056
+official_test,english_variable_same,within_english,variable_same,3,4,193,193,37249,193,37056
+official_test,cross_variable_variable,cross_script,variable_variable,1,3,193,193,37249,193,37056
+official_test,cross_variable_same,cross_script,variable_same,1,4,193,193,37249,193,37056
+official_test,cross_same_variable,cross_script,same_variable,2,3,193,193,37249,193,37056
+official_test,cross_same_same,cross_script,same_same,2,4,193,193,37249,193,37056
