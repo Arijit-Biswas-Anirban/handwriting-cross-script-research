@@ -1,0 +1,13 @@
+experiment_split,condition_id,script_family,text_relation,roc_auc,eer_percent,genuine_mean,impostor_mean,score_gap
+official_test,arabic_variable_same,within_script,variable_same,0.8062123591684789,25.38050518134715,0.94157845,0.908248,0.03333044
+official_test,english_variable_same,within_script,variable_same,0.7865048949859951,27.461139896373055,0.9399675,0.9095305,0.030436993
+official_test,cross_same_same,cross_script,same_same,0.7343401137166993,31.606217616580313,0.9318302,0.90425557,0.027574658
+official_test,cross_variable_variable,cross_script,variable_variable,0.67255993169839,35.75129533678757,0.937229,0.91821396,0.019015014
+official_test,cross_same_variable,cross_script,same_variable,0.6527636787788487,38.86010362694301,0.91889757,0.90077096,0.018126607
+official_test,cross_variable_same,cross_script,variable_same,0.6304361778168541,39.37823834196891,0.9108245,0.8967669,0.014057577
+validation,arabic_variable_same,within_script,variable_same,0.7544758812615956,30.35714285714286,0.94082874,0.9126549,0.028173864
+validation,english_variable_same,within_script,variable_same,0.7155960111317253,33.92857142857143,0.9334022,0.9092738,0.024128377
+validation,cross_same_same,cross_script,same_same,0.6995013914656772,33.7012987012987,0.93192846,0.9094286,0.02249986
+validation,cross_variable_variable,cross_script,variable_variable,0.6801136363636363,39.28571428571429,0.9418688,0.9226869,0.019181907
+validation,cross_same_variable,cross_script,same_variable,0.6272031539888683,40.48701298701299,0.9162776,0.8995003,0.016777277
+validation,cross_variable_same,cross_script,variable_same,0.6119318181818182,44.64285714285714,0.91541,0.9026692,0.012740791

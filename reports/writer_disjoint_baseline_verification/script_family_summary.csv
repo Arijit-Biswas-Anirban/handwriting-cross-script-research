@@ -1,0 +1,9 @@
+experiment_split,model,script_family,conditions,macro_roc_auc,macro_eer_percent,macro_score_gap
+official_test,imagenet,cross_script,4,0.6167665400133784,41.70309801381693,0.011857733
+official_test,imagenet,within_script,2,0.6983282409147449,35.57993307426597,0.019566596
+official_test,layer4_finetuned,cross_script,4,0.6725249755026981,36.39896373056995,0.019693464
+official_test,layer4_finetuned,within_script,2,0.7963586270772369,26.4208225388601,0.031883717
+validation,imagenet,cross_script,4,0.6111020118274583,41.94805194805195,0.0115899
+validation,imagenet,within_script,2,0.6429267161410019,40.68181818181818,0.015702516
+validation,layer4_finetuned,cross_script,4,0.6546875,39.52922077922078,0.017799959
+validation,layer4_finetuned,within_script,2,0.7350359461966605,32.142857142857146,0.02615112

@@ -1,0 +1,46 @@
+{
+  "protocol": "QUWI writer-disjoint exhaustive verification",
+  "embedding_dimension": 512,
+  "similarity": "cosine",
+  "validation_pairs": 18816,
+  "official_test_pairs": 223494,
+  "imagenet": {
+    "validation": {
+      "roc_auc": 0.6123793740981242,
+      "eer_percent": 43.154761904761905,
+      "eer_threshold": 0.9397453546524048,
+      "genuine_mean": 0.9402474761009216,
+      "impostor_mean": 0.927286684513092,
+      "score_gap": 0.01296079158782959
+    },
+    "official_test": {
+      "roc_auc": 0.6352781100169977,
+      "eer_percent": 40.17343120322395,
+      "eer_threshold": 0.9396219154198965,
+      "genuine_mean": 0.9397611618041992,
+      "impostor_mean": 0.9253338575363159,
+      "score_gap": 0.0144273042678833
+    }
+  },
+  "layer4_finetuned": {
+    "validation": {
+      "roc_auc": 0.6748499020820451,
+      "eer_percent": 36.672077922077925,
+      "eer_threshold": 0.9251571893692017,
+      "genuine_mean": 0.9299527406692505,
+      "impostor_mean": 0.9093688726425171,
+      "score_gap": 0.0205838680267334
+    },
+    "official_test": {
+      "roc_auc": 0.7068260046969941,
+      "eer_percent": 35.153516425496875,
+      "eer_threshold": 0.9240154074263697,
+      "genuine_mean": 0.9300544261932373,
+      "impostor_mean": 0.9062976241111755,
+      "score_gap": 0.023756802082061768
+    }
+  },
+  "fine_tuning_condition_auc_improvements": 12,
+  "fine_tuning_condition_eer_improvements": 11,
+  "finetuned_validation_test_auc_correlation": 0.9516367324563013
+}
