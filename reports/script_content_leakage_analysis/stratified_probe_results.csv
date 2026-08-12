@@ -1,0 +1,17 @@
+representation,target,train_accuracy,validation_accuracy,validation_balanced_accuracy,validation_f1,validation_roc_auc,validation_confusion_matrix,stratum_column,stratum_value,development_samples,validation_samples
+imagenet_initialization,text_condition,1.0,0.9732142857142857,0.9732142857142857,0.9734513274336283,0.9993622448979592,"[[54, 2], [1, 55]]",language,Arabic,452,112
+imagenet_initialization,text_condition,1.0,0.9910714285714286,0.9910714285714286,0.990990990990991,1.0,"[[56, 0], [1, 55]]",language,English,452,112
+imagenet_initialization,script,1.0,0.9821428571428571,0.9821428571428571,0.9821428571428571,0.998405612244898,"[[55, 1], [1, 55]]",same_text,0,452,112
+imagenet_initialization,script,1.0,0.9910714285714286,0.9910714285714286,0.990990990990991,0.9996811224489796,"[[56, 0], [1, 55]]",same_text,1,452,112
+self_supervised_moco,text_condition,1.0,0.9910714285714286,0.9910714285714286,0.9911504424778761,0.9996811224489796,"[[55, 1], [0, 56]]",language,Arabic,452,112
+self_supervised_moco,text_condition,1.0,0.9910714285714286,0.9910714285714286,0.990990990990991,1.0,"[[56, 0], [1, 55]]",language,English,452,112
+self_supervised_moco,script,1.0,0.9910714285714286,0.9910714285714286,0.9911504424778761,1.0,"[[55, 1], [0, 56]]",same_text,0,452,112
+self_supervised_moco,script,1.0,1.0,1.0,1.0,1.0,"[[56, 0], [0, 56]]",same_text,1,452,112
+imagenet_initialized_dynamic_metric,text_condition,1.0,0.9910714285714286,0.9910714285714286,0.9911504424778761,0.9993622448979591,"[[55, 1], [0, 56]]",language,Arabic,452,112
+imagenet_initialized_dynamic_metric,text_condition,1.0,1.0,1.0,1.0,1.0,"[[56, 0], [0, 56]]",language,English,452,112
+imagenet_initialized_dynamic_metric,script,1.0,0.9375,0.9375,0.9401709401709402,0.9942602040816327,"[[50, 6], [1, 55]]",same_text,0,452,112
+imagenet_initialized_dynamic_metric,script,1.0,0.9821428571428571,0.9821428571428571,0.9821428571428571,0.9996811224489796,"[[55, 1], [1, 55]]",same_text,1,452,112
+ssl_initialized_dynamic_metric,text_condition,1.0,0.9910714285714286,0.9910714285714286,0.9911504424778761,0.9952168367346939,"[[55, 1], [0, 56]]",language,Arabic,452,112
+ssl_initialized_dynamic_metric,text_condition,1.0,0.9821428571428571,0.9821428571428572,0.9824561403508771,1.0,"[[54, 2], [0, 56]]",language,English,452,112
+ssl_initialized_dynamic_metric,script,1.0,0.9910714285714286,0.9910714285714286,0.990990990990991,0.9996811224489796,"[[56, 0], [1, 55]]",same_text,0,452,112
+ssl_initialized_dynamic_metric,script,1.0,0.9910714285714286,0.9910714285714286,0.990990990990991,0.9821428571428571,"[[56, 0], [1, 55]]",same_text,1,452,112

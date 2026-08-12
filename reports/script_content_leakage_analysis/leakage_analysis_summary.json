@@ -1,0 +1,32 @@
+{
+  "probe_protocol": {
+    "probe": "linear_logistic_regression",
+    "embedding_dimension": 512,
+    "development_writers": 226,
+    "validation_writers": 56,
+    "writer_disjoint": true,
+    "representations_compared": 4,
+    "analysis_device": "cpu"
+  },
+  "hybrid_representation": {
+    "script_global_auc": 0.9999202806122449,
+    "script_minimum_stratified_auc": 0.9821428571428571,
+    "text_condition_global_auc": 0.998405612244898,
+    "text_condition_minimum_stratified_auc": 0.9952168367346939,
+    "page_condition_accuracy": 0.9821428571428571,
+    "page_condition_macro_auc": 0.998405612244898
+  },
+  "controls": {
+    "permutation_repeats": 20,
+    "mean_permuted_auc": 0.5030004384566327,
+    "maximum_permuted_mean_auc": 0.5316764987244899,
+    "minimum_real_probe_auc": 0.998405612244898
+  },
+  "interpretation": {
+    "script_invariance_supported": false,
+    "weak_text_condition_accessibility_supported": false,
+    "semantic_content_leakage_claim_supported": false,
+    "writer_disjoint_nuisance_accessibility_supported": true,
+    "next_stage": "controlled_script_invariant_metric_learning"
+  }
+}

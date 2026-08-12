@@ -1,0 +1,5 @@
+representation,target,validation_accuracy,validation_balanced_accuracy,validation_macro_f1,validation_macro_roc_auc,validation_confusion_matrix
+imagenet_initialization,page_condition,0.96875,0.96875,0.969056330469374,0.9987244897959184,"[[54, 2, 0, 0], [2, 54, 0, 0], [2, 0, 54, 0], [1, 0, 0, 55]]"
+self_supervised_moco,page_condition,0.9866071428571429,0.9866071428571429,0.986645244868929,0.9997608418367347,"[[55, 1, 0, 0], [0, 55, 1, 0], [0, 0, 56, 0], [0, 0, 1, 55]]"
+imagenet_initialized_dynamic_metric,page_condition,0.9642857142857143,0.9642857142857143,0.964185968517204,0.9987244897959184,"[[51, 3, 2, 0], [1, 55, 0, 0], [1, 0, 55, 0], [0, 1, 0, 55]]"
+ssl_initialized_dynamic_metric,page_condition,0.9821428571428571,0.9821428571428571,0.9821428571428571,0.998405612244898,"[[55, 1, 0, 0], [1, 55, 0, 0], [0, 0, 55, 1], [0, 0, 1, 55]]"
