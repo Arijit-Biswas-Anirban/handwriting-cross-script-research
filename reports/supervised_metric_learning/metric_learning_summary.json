@@ -1,0 +1,44 @@
+{
+  "training_protocol": {
+    "development_writers": 226,
+    "training_pairs": 452,
+    "genuine_pairs": 226,
+    "impostor_pairs": 226,
+    "training_pages": [
+      1,
+      2
+    ],
+    "loss": "CosineEmbeddingLoss",
+    "margin": 0.5,
+    "best_epoch": 8
+  },
+  "validation": {
+    "roc_auc": 0.7386482812822097,
+    "eer_percent": 32.69480519480519,
+    "auc_improvement_over_classification": 0.06379837920016462,
+    "eer_change_points": -3.9772727272727337
+  },
+  "official_test": {
+    "roc_auc": 0.7582569952163767,
+    "eer_percent": 31.519861830742656,
+    "auc_improvement_over_classification": 0.0514309905193826,
+    "eer_change_points": -3.633654594754219
+  },
+  "condition_auc_improvements": 12,
+  "condition_eer_improvements": 11,
+  "total_condition_comparisons": 12,
+  "training_diagnostics": {
+    "epoch0_validation_auc": 0.6123793740981242,
+    "best_validation_auc": 0.7386482812822097,
+    "auc_gain_from_epoch0": 0.12626890718408557,
+    "total_epochs": 10,
+    "best_epoch": 8,
+    "total_skipped_optimizer_steps": 0,
+    "training_curve": "/home/arijit/Documents/handwriting-cross-script-research/reports/supervised_metric_learning/validation_auc_training_curve.png",
+    "checkpoint": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/supervised_metric_learning/resnet18_metric_learning_best.pt"
+  },
+  "cross_script_analysis": {
+    "validation_metric_auc_gap": 0.1362172425788497,
+    "official_test_metric_auc_gap": 0.13971468822988542
+  }
+}

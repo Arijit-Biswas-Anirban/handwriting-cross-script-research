@@ -1,0 +1,9 @@
+experiment_split,training_objective,script_family,conditions,macro_roc_auc,macro_eer_percent
+official_test,classification,cross_script,4,0.6725249755026981,36.39896373056995
+official_test,classification,within_script,2,0.7963586270772369,26.4208225388601
+official_test,metric_learning,cross_script,4,0.7213851902903434,34.184072754749565
+official_test,metric_learning,within_script,2,0.8610998785202288,21.24352331606218
+validation,classification,cross_script,4,0.6546875,39.52922077922078
+validation,classification,within_script,2,0.7350359461966605,32.142857142857146
+validation,metric_learning,cross_script,4,0.6998738984230055,36.1525974025974
+validation,metric_learning,within_script,2,0.8360911410018552,23.66883116883117
