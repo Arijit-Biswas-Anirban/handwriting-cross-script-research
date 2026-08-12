@@ -1,0 +1,9 @@
+experiment_split,representation,roc_auc,eer_percent
+validation,imagenet_initialization,0.612379,43.1548
+validation,self_supervised_moco,0.673769,38.9881
+validation,imagenet_initialized_dynamic_metric,0.741935,32.7327
+validation,ssl_initialized_dynamic_metric,0.7441469059214594,32.997835497835496
+official_test,imagenet_initialization,0.6353,40.1734
+official_test,self_supervised_moco,0.692327,36.3558
+official_test,imagenet_initialized_dynamic_metric,0.764084,31.1744
+official_test,ssl_initialized_dynamic_metric,0.7669374303672583,30.88118883131836

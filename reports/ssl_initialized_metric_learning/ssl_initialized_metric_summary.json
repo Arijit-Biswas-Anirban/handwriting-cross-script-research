@@ -1,0 +1,58 @@
+{
+  "initialization": {
+    "source": "self_supervised_moco",
+    "source_epoch": 20,
+    "epoch0_validation_auc": 0.6737688588693054
+  },
+  "training": {
+    "epochs": 10,
+    "best_epoch": 8,
+    "negative_writers_per_anchor": 10,
+    "epoch_offsets": [
+      222,
+      168,
+      20,
+      143,
+      97,
+      96,
+      156,
+      22,
+      46,
+      190
+    ],
+    "skipped_optimizer_steps": 0
+  },
+  "validation": {
+    "roc_auc": 0.7441469059214594,
+    "eer_percent": 32.997835497835496,
+    "auc_gain_vs_dynamic": 0.0022119311739845493,
+    "eer_change_points_vs_dynamic": 0.2651515151515156,
+    "dynamic_script_gap": 0.12558847402597406,
+    "hybrid_script_gap": 0.12467242578849724
+  },
+  "official_test_descriptive": {
+    "roc_auc": 0.7669374303672583,
+    "eer_percent": 30.88118883131836,
+    "auc_gain_vs_dynamic": 0.002852969331515909,
+    "eer_change_points_vs_dynamic": -0.2932498560736967,
+    "dynamic_script_gap": 0.12739285646370813,
+    "hybrid_script_gap": 0.13837301700493077
+  },
+  "condition_comparison": {
+    "auc_improved": 12,
+    "eer_improved": 10,
+    "total": 12
+  },
+  "fixed_far": {
+    "validation_tar_improved_targets": 3,
+    "official_test_tar_improved_targets": 4,
+    "official_test_far_higher_targets": 4
+  },
+  "interpretation": {
+    "ssl_initialization_improves_all_condition_auc": true,
+    "script_invariance_established": false,
+    "official_test_used_for_selection": false,
+    "single_seed_result": true,
+    "next_stage": "script_and_content_leakage_analysis"
+  }
+}
