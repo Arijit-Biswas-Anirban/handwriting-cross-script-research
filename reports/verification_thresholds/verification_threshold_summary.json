@@ -1,0 +1,28 @@
+{
+  "threshold_selection_split": "validation",
+  "models": [
+    "imagenet",
+    "layer4_finetuned"
+  ],
+  "far_targets": [
+    0.1,
+    0.05,
+    0.01,
+    0.001
+  ],
+  "layer4_finetuned": {
+    "validation_eer_threshold": 0.9251565,
+    "validation_eer_far": 0.3667207792207792,
+    "validation_eer_frr": 0.36607142857142855,
+    "official_test_far_at_validation_eer_threshold": 0.3372778137593552,
+    "official_test_frr_at_validation_eer_threshold": 0.36183074265975823,
+    "validation_tar_at_far_10_percent": 0.3244047619047619,
+    "validation_tar_at_far_1_percent": 0.07738095238095238,
+    "validation_tar_at_far_0_1_percent": 0.008928571428571428,
+    "condition_threshold_min": 0.9102923,
+    "condition_threshold_max": 0.9355918,
+    "condition_threshold_spread": 0.02529949999999992
+  },
+  "maximum_absolute_fixed_far_transfer_shift": 0.017681323785598405,
+  "maximum_absolute_fixed_tar_transfer_shift": 0.04834381939304219
+}
