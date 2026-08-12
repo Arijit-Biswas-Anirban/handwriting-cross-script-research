@@ -1,0 +1,47 @@
+{
+  "training_protocol": {
+    "writers": 226,
+    "epochs": 10,
+    "pairs_per_epoch": 452,
+    "genuine_pairs_per_epoch": 226,
+    "impostor_pairs_per_epoch": 226,
+    "distinct_negative_writers_per_anchor": 10,
+    "epoch_offsets": [
+      222,
+      168,
+      20,
+      143,
+      97,
+      96,
+      156,
+      22,
+      46,
+      190
+    ],
+    "best_epoch": 8
+  },
+  "validation": {
+    "roc_auc": 0.7419349747474748,
+    "eer_percent": 32.73268398268398,
+    "auc_change_vs_static": 0.0032866934652651114,
+    "eer_change_points_vs_static": 0.037878787878788955
+  },
+  "official_test": {
+    "roc_auc": 0.7640844610357423,
+    "eer_percent": 31.17443868739206,
+    "auc_change_vs_static": 0.0058274658193656625,
+    "eer_change_points_vs_static": -0.34542314335059743
+  },
+  "cross_script_gap": {
+    "validation_static": 0.1362172425788497,
+    "validation_dynamic": 0.12558847402597406,
+    "official_test_static": 0.13971468822988542,
+    "official_test_dynamic": 0.12739285646370813
+  },
+  "condition_comparisons": {
+    "auc_improved": 5,
+    "eer_improved": 10,
+    "total": 12
+  },
+  "skipped_optimizer_steps": 0
+}

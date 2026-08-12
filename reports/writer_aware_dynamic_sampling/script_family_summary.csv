@@ -1,0 +1,9 @@
+experiment_split,sampling_strategy,script_family,conditions,macro_roc_auc,macro_eer_percent
+official_test,dynamic,cross_script,4,0.729692547674658,33.105974740932645
+official_test,dynamic,within_script,2,0.8570854041383661,21.55926165803109
+official_test,static,cross_script,4,0.7213851902903434,34.184072754749565
+official_test,static,within_script,2,0.8610998785202288,21.24352331606218
+validation,dynamic,cross_script,4,0.7057339981447124,34.50487012987013
+validation,dynamic,within_script,2,0.8313224721706864,23.814935064935064
+validation,static,cross_script,4,0.6998738984230055,36.1525974025974
+validation,static,within_script,2,0.8360911410018552,23.66883116883117
