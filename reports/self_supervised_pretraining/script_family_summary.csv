@@ -1,0 +1,5 @@
+experiment_split,script_family,conditions,macro_roc_auc,macro_eer_percent
+official_test,cross_script,4,0.6711917986332966,38.202990069084635
+official_test,within_script,2,0.7723341076829804,30.310880829015545
+validation,cross_script,4,0.6690891697588126,38.060064935064936
+validation,within_script,2,0.7281076066790353,33.45779220779221

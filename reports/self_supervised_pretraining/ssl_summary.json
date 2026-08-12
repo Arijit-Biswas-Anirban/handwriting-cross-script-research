@@ -1,0 +1,32 @@
+{
+  "training": {
+    "method": "moco_style_contrastive_learning",
+    "writer_labels_used": false,
+    "development_images": 904,
+    "development_writers": 226,
+    "epochs": 20,
+    "best_epoch": 20,
+    "batch_size": 8,
+    "projection_dim": 128,
+    "queue_size": 2048,
+    "temperature": 0.2,
+    "momentum": 0.999,
+    "skipped_optimizer_steps": 0
+  },
+  "validation": {
+    "roc_auc": 0.6737688588693054,
+    "eer_percent": 38.988095238095234,
+    "script_gap": 0.05901843692022268
+  },
+  "official_test_descriptive": {
+    "roc_auc": 0.6923271263092572,
+    "eer_percent": 36.35578583765112,
+    "script_gap": 0.1011423090496838
+  },
+  "interpretation": {
+    "improves_over_imagenet": true,
+    "outperforms_supervised_metric_learning": false,
+    "smaller_script_gap_than_dynamic_metric": true,
+    "next_stage": "initialize supervised metric learning from the self-supervised encoder"
+  }
+}

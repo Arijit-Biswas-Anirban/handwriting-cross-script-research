@@ -1,0 +1,5 @@
+experiment_split,representation,within_script_auc,cross_script_auc,within_minus_cross_auc_gap
+validation,self_supervised_moco,0.7281076066790353,0.6690891697588126,0.05901843692022268
+official_test,self_supervised_moco,0.7723341076829804,0.6711917986332966,0.1011423090496838
+validation,supervised_metric_dynamic,0.8313224721706864,0.7057339981447124,0.125588474025974
+official_test,supervised_metric_dynamic,0.8570854041383661,0.729692547674658,0.1273928564637081
