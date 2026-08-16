@@ -1,0 +1,42 @@
+{
+  "experiment": "Multi-Seed Robustness of Script-Adversarial Writer Verification",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "models": [
+    "lambda0_control",
+    "batch_alt_lambda0p5"
+  ],
+  "writer_auc": {
+    "control_mean": 0.7404050603827391,
+    "control_std": 0.0032506157734929933,
+    "batch_alt_mean": 0.7773429715952037,
+    "batch_alt_std": 0.00781214033923,
+    "mean_paired_gain": 0.03693791121246481,
+    "paired_gain_std": 0.004875225537588518,
+    "positive_gain_seeds": 3
+  },
+  "eer": {
+    "mean_change_percentage_points": -4.145021645021646,
+    "improved_seeds": 3
+  },
+  "cross_script_auc": {
+    "mean_gain": 0.021444515306122458,
+    "gain_std": 0.008214127161978902,
+    "positive_gain_seeds": 3
+  },
+  "within_script_auc": {
+    "mean_gain": -0.0017016465677179848
+  },
+  "script_probe_auc": {
+    "seed42": 0.9987244897959184,
+    "seed123": 0.9992028061224489,
+    "seed2026": 0.9996811224489797,
+    "mean": 0.999202806122449
+  },
+  "main_interpretation": "Across all three evaluated training seeds, batch-level alternating adversarial training improved validation writer ROC-AUC, reduced EER, and improved cross-script macro ROC-AUC relative to the matched lambda-0 control. However, script remained almost perfectly linearly accessible from the learned embeddings.",
+  "unsupported_claim": "These results do not establish script-invariant representations.",
+  "statistical_limitation": "Three seeds provide an initial robustness check but are insufficient for a strong formal statistical-significance claim."
+}
