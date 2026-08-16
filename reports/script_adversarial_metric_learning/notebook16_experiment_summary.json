@@ -1,0 +1,42 @@
+{
+  "experiment": "Script-Adversarial Writer Metric Learning",
+  "dataset": "QUWI",
+  "seed": 42,
+  "selection_rule": "Validation writer-verification ROC-AUC primary; canonical interpolated EER only as an exact-AUC tie-breaker.",
+  "official_test_used_for_selection": false,
+  "control": {
+    "description": "Lambda-0 control reproducing the Notebook 14 SSL-initialized dynamic metric-learning writer encoder.",
+    "writer_auc": 0.7441469864460937,
+    "writer_eer": 0.329978354978355,
+    "cross_macro_auc": 0.7277278525046382,
+    "within_macro_auc": 0.8524002782931355,
+    "script_probe_auc": 0.9999
+  },
+  "best_observed_validation_utility": {
+    "model": "batch_alt_lambda0p5",
+    "epoch": 8,
+    "grl_coefficient": 0.5,
+    "adversary_steps_per_batch": 3,
+    "writer_auc": 0.785573689703154,
+    "writer_eer": 0.28625541125541126,
+    "within_macro_auc": 0.8485824443413729,
+    "cross_macro_auc": 0.7555934021335807,
+    "within_cross_gap": 0.09298904220779214,
+    "script_probe_auc": 0.9987244897959184
+  },
+  "change_vs_control": {
+    "writer_auc": 0.04142670325706033,
+    "writer_eer_percentage_points": -4.3722943722943715,
+    "cross_macro_auc": 0.0278655496289425,
+    "script_probe_auc": -0.0011755102040815757
+  },
+  "key_findings": [
+    "Adversarial variants improved validation writer-verification utility.",
+    "The batch-level alternating variant produced the highest observed validation writer AUC.",
+    "Cross-script macro AUC improved for the best batch-level alternating variant.",
+    "Independent writer-disjoint linear probes continued to recover script with near-perfect ROC-AUC.",
+    "Low attached-adversary AUC was not evidence of script invariance because fresh independent probes recovered script almost perfectly."
+  ],
+  "scientific_interpretation": "Under the evaluated single-seed QUWI validation protocol, script-adversarial training improved writer verification but did not demonstrate meaningful reduction of linearly accessible script information. The verification improvement therefore cannot currently be attributed to learned script invariance.",
+  "claim_not_supported": "The learned representation is script-invariant."
+}
