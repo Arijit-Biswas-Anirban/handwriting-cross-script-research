@@ -1,0 +1,39 @@
+{
+  "experiment": "Script-Reliance Intervention for Cross-Script Writer Verification",
+  "selected_script_subspace_dimension": 128,
+  "selection_protocol": "Development-only writer-disjoint subspace-train and monitor split",
+  "batch_alt_seed123": {
+    "original_writer_auc": 0.7764246418264277,
+    "intervened_writer_auc": 0.7765837585034013,
+    "residual_script_auc": 0.8254145408163265,
+    "mean_script_reliance": 0.009797601673933388
+  },
+  "batch_alt_seed2026": {
+    "original_writer_auc": 0.7700305832560297,
+    "intervened_writer_auc": 0.7706360479797979,
+    "residual_script_auc": 0.7010522959183674,
+    "mean_script_reliance": 0.010207820265921593
+  },
+  "cross_script_reliance": {
+    "mean_relative_control_to_batch_reduction": 0.7264590822660123,
+    "control_mean_intervention_auc_change": 0.011843945674860912,
+    "batch_alt_mean_intervention_auc_change": -0.0011076465387292456
+  },
+  "random_subspace_control": {
+    "seed123_control_script_to_random_reliance_ratio": 3.449839842680569,
+    "seed123_batch_script_to_random_reliance_ratio": 0.7056519767361815,
+    "seed2026_control_script_to_random_reliance_ratio": 2.3991231244487112,
+    "seed2026_batch_script_to_random_reliance_ratio": 0.8928690068978075
+  },
+  "strong_uncertainty_test": {
+    "seed123_score_only_auc": 0.9655580185686052,
+    "seed123_script_auc_gain": -5.279332015701854e-05,
+    "seed2026_score_only_auc": 0.965749095990026,
+    "seed2026_script_auc_gain": -3.661295969227818e-05
+  },
+  "conclusion": {
+    "supported": "Script decodability and decision-level script reliance are distinct properties. Batch-level adversarial training strongly reduced cross-script decision sensitivity to the learned script-sensitive subspace without eliminating script decodability.",
+    "not_supported": "The proposed absolute Script Reliance score did not provide complementary verification-error uncertainty after conditioning on a sufficiently strong score-based baseline.",
+    "interpretation_rule": "Script Reliance should currently be treated as a representation and decision diagnostic, not as a validated uncertainty measure."
+  }
+}
