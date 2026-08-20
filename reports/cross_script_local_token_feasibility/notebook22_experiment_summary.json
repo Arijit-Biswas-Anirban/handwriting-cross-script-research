@@ -1,0 +1,46 @@
+{
+  "research_question": "Do local DINOv3 patch representations contain writer-specific information that transfers across Arabic and English handwriting?",
+  "backbone": "DINOv3 ViT-S/16",
+  "development_writers": 226,
+  "exploration_writers": 181,
+  "monitor_writers": 45,
+  "validation_used": false,
+  "official_test_used": false,
+  "preprocessing": {
+    "long_side": 768,
+    "preserve_aspect_ratio": true,
+    "patch_size": 16,
+    "foreground_density_threshold": 0.05
+  },
+  "exploration": {
+    "cls_pooled_auc": 0.660699,
+    "cls_cross_macro_auc": 0.665605,
+    "mutual_local_pooled_auc": 0.629969,
+    "mutual_local_cross_macro_auc": 0.657875,
+    "fusion_pooled_auc": 0.656513,
+    "fusion_cross_macro_auc": 0.674072
+  },
+  "monitor": {
+    "cls_pooled_auc": 0.676857,
+    "cls_cross_macro_auc": 0.684341,
+    "mutual_local_pooled_auc": 0.635297,
+    "mutual_local_cross_macro_auc": 0.661608,
+    "fusion_pooled_auc": 0.665342,
+    "fusion_cross_macro_auc": 0.684352
+  },
+  "monitor_fusion_minus_cls_pooled_auc": -0.011515000000000053,
+  "monitor_fusion_minus_cls_cross_macro_auc": 1.0999999999983245e-05,
+  "supported_findings": [
+    "Foreground DINOv3 patch tokens contain measurable cross-script writer information.",
+    "Same-writer local correspondence is above chance under the tested training-free matchers.",
+    "Mutual nearest-neighbor matching provides only modest standalone discrimination."
+  ],
+  "unsupported_findings": [
+    "Local correspondence outperforms the global DINOv3 CLS baseline.",
+    "Local correspondence provides consistent complementary value beyond the global CLS score.",
+    "The exploration fusion gain generalizes consistently to writer-disjoint monitor writers."
+  ],
+  "decision": "Do not proceed directly to a learnable StyleRouter or pair-conditioned partial-matching architecture from the current evidence.",
+  "interpretation": "Training-free local correspondence shows transferable writer signal but does not provide robust additional verification value beyond the global DINOv3 representation. The feasibility result is mixed-to-negative for the proposed central method direction.",
+  "novelty_claim": false
+}

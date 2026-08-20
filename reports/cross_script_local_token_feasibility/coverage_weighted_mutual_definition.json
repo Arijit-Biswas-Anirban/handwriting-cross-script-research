@@ -1,0 +1,19 @@
+{
+  "method": "coverage_weighted_mutual_correspondence",
+  "token_source": "foreground DINOv3 ViT-S/16 patch tokens",
+  "matching_rule": "mutual nearest-neighbor token pairs",
+  "quality_component": "mean cosine similarity across mutual matches",
+  "coverage_component": "number of mutual matches divided by the smaller foreground-token count",
+  "final_score": "quality multiplied by coverage",
+  "equivalent_form": "sum of mutual-match cosine similarities divided by the smaller foreground-token count",
+  "hyperparameters": null,
+  "uses_writer_labels_inside_score": false,
+  "uses_spatial_coordinates": false,
+  "uses_same_text_label": false,
+  "uses_learned_parameters": false,
+  "exploration_only": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "novelty_claim": false
+}

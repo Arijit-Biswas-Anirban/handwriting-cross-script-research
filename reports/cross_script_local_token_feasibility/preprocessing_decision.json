@@ -1,0 +1,18 @@
+{
+  "model": "DINOv3 ViT-S/16",
+  "long_side": 768,
+  "patch_size": 16,
+  "preserve_aspect_ratio": true,
+  "square_distortion": false,
+  "automatic_rotation": false,
+  "exclude_resolution_outliers": false,
+  "padding_to_square": false,
+  "selection_used_writer_verification_results": false,
+  "rationale": [
+    "The feasibility question depends on local handwriting micro-structure.",
+    "Higher spatial preservation is preferred before local correspondence is evaluated.",
+    "Long-side 768 was already confirmed computationally feasible on the laptop GPU.",
+    "The choice was frozen before computing any local-matching verification result.",
+    "Visual inspection showed the unusual short pages are usable cropped handwriting samples rather than obvious rotation or corruption."
+  ]
+}

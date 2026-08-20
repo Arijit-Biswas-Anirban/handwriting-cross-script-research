@@ -1,0 +1,17 @@
+{
+  "method": "symmetric_nearest_token",
+  "token_source": "foreground DINOv3 ViT-S/16 patch tokens",
+  "token_normalization": "L2 normalized",
+  "pair_similarity": "cosine",
+  "direction_arabic_to_english": "mean of each Arabic token's maximum English-token cosine similarity",
+  "direction_english_to_arabic": "mean of each English token's maximum Arabic-token cosine similarity",
+  "final_score": "mean of the two directional scores",
+  "uses_writer_labels_inside_matching": false,
+  "uses_spatial_coordinates": false,
+  "uses_same_text_label": false,
+  "uses_learned_parameters": false,
+  "exploration_only": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

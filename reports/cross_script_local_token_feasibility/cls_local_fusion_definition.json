@@ -1,0 +1,21 @@
+{
+  "definition": {
+    "method": "equal_weight_cls_mutual_fusion",
+    "global_score": "DINOv3 CLS cosine",
+    "local_score": "mutual nearest-token mean cosine",
+    "normalization": "z-score using exploration-pair score distributions",
+    "fusion": "0.5 * normalized CLS + 0.5 * normalized local score",
+    "fusion_weight_tuned": false,
+    "labels_used_for_normalization": false,
+    "monitor_used": false,
+    "validation_used": false,
+    "official_test_used": false,
+    "further_weight_search_allowed": false
+  },
+  "normalization": {
+    "cls_mean": 0.5500793412499905,
+    "cls_std": 0.06561027661817295,
+    "local_mean": 0.812427089381673,
+    "local_std": 0.03774893119432115
+  }
+}

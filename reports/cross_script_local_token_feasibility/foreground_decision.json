@@ -1,0 +1,17 @@
+{
+  "background_percentile": 95,
+  "darkness_margin": 20,
+  "foreground_density_threshold": 0.05,
+  "development_background_min": 255.0,
+  "development_background_max": 255.0,
+  "mean_retention_ratio": 0.20256699905888897,
+  "minimum_retained_patches": 134,
+  "maximum_retained_patches": 851,
+  "selection_used_writer_verification_results": false,
+  "rationale": [
+    "The rule was selected using development-only image statistics and visual inspection.",
+    "A density threshold of 0.05 removes most blank regions while preserving faint handwriting better than the more aggressive 0.10 threshold.",
+    "The 0.02 and 0.05 rules were visually similar, while 0.05 provides stronger rejection of weak background evidence.",
+    "Foreground filtering is treated only as preprocessing and not as a methodological contribution."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "monitor_fraction": 0.2,
+  "total_writers": 226,
+  "exploration_writers": 181,
+  "monitor_writers": 45,
+  "selection_used_validation": false,
+  "selection_used_official_test": false,
+  "purpose": "Use exploration writers for local-matching method development and keep monitor writers writer-disjoint for frozen development-only confirmation."
+}

@@ -1,0 +1,18 @@
+{
+  "method": "mutual_nearest_token",
+  "token_source": "foreground DINOv3 ViT-S/16 patch tokens",
+  "pair_similarity": "cosine",
+  "matching_rule": "retain a token pair only when each token is the other's nearest neighbor",
+  "unmatched_tokens": "ignored",
+  "score": "mean cosine similarity across mutual nearest-neighbor token pairs",
+  "hyperparameters": null,
+  "uses_writer_labels_inside_matching": false,
+  "uses_spatial_coordinates": false,
+  "uses_same_text_label": false,
+  "uses_learned_parameters": false,
+  "exploration_only": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "novelty_claim": false
+}

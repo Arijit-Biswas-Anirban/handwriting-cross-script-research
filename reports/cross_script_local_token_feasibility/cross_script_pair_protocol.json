@@ -1,0 +1,40 @@
+{
+  "seed": 42,
+  "conditions": {
+    "cross_variable_variable": [
+      1,
+      3
+    ],
+    "cross_variable_same": [
+      1,
+      4
+    ],
+    "cross_same_variable": [
+      2,
+      3
+    ],
+    "cross_same_same": [
+      2,
+      4
+    ]
+  },
+  "exploration_writers": 181,
+  "monitor_writers": 45,
+  "exploration_negatives_per_anchor_per_condition": 10,
+  "exploration_negative_offsets": [
+    16,
+    17,
+    37,
+    76,
+    77,
+    114,
+    125,
+    134,
+    152,
+    177
+  ],
+  "monitor_pairing": "exhaustive writer-by-writer",
+  "validation_used": false,
+  "official_test_used": false,
+  "scores_used_to_define_protocol": false
+}

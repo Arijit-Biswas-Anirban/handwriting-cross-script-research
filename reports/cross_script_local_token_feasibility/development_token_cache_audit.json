@@ -1,0 +1,14 @@
+{
+  "expected_pages": 904,
+  "cached_pages": 904,
+  "missing_cache_files": 0,
+  "unexpected_cache_files": 0,
+  "expected_foreground_tokens": 306941,
+  "cached_foreground_tokens": 306941,
+  "minimum_foreground_tokens": 134,
+  "maximum_foreground_tokens": 851,
+  "mean_token_norm": 1.0,
+  "mean_cls_norm": 0.9999999809449753,
+  "cache_size_mib": 454.6625442504883,
+  "audit_issues": 0
+}

@@ -1,0 +1,14 @@
+{
+  "cls_cosine": {
+    "description": "Cosine similarity between L2-normalized DINOv3 CLS tokens.",
+    "uses_local_correspondence": false
+  },
+  "foreground_mean_cosine": {
+    "description": "Mean the L2-normalized foreground patch tokens, L2-normalize the resulting page vector, then compute cosine similarity.",
+    "uses_local_correspondence": false
+  },
+  "role_used_for_method_development": "exploration",
+  "monitor_scored_at_this_stage": false,
+  "validation_used": false,
+  "official_test_used": false
+}
