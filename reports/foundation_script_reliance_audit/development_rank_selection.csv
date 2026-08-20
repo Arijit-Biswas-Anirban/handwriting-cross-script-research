@@ -1,0 +1,5 @@
+model,selected_rank,monitor_script_auc,effective_monitor_auc,selection_reason
+dinov2_s,3,0.5120987654320988,0.5120987654320988,first_rank_inside_null_auc_band
+dinov2_b,3,0.41617283950617284,0.5838271604938272,first_rank_inside_null_auc_band
+dinov2_l,3,0.43135802469135803,0.568641975308642,first_rank_inside_null_auc_band
+dinov2_g,1,0.46555555555555556,0.5344444444444445,first_rank_inside_null_auc_band

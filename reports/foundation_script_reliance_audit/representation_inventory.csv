@@ -1,0 +1,13 @@
+model,stage,dimension,development_mean_norm,validation_mean_norm,pca_variance_retained
+dinov2_s,frozen,384,1.0,1.0,
+dinov2_s,direct_lda,225,1.0,1.0,
+dinov2_s,pca225_lda,225,1.0,1.0,0.9952232837677002
+dinov2_b,frozen,768,1.0,1.0,
+dinov2_b,direct_lda,225,1.0,1.0,
+dinov2_b,pca225_lda,225,1.0,1.0,0.9872084856033325
+dinov2_l,frozen,1024,1.0,1.0,
+dinov2_l,direct_lda,225,1.0,1.0,
+dinov2_l,pca225_lda,225,1.0,1.0,0.9833267331123352
+dinov2_g,frozen,1536,1.0,1.0,
+dinov2_g,direct_lda,225,1.0,1.0,
+dinov2_g,pca225_lda,224,1.0,1.0,0.9862911701202393

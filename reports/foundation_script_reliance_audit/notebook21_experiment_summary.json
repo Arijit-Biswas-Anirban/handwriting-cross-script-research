@@ -1,0 +1,89 @@
+{
+  "experiment": "Foundation Script-Reliance Audit for Cross-Script Writer Verification",
+  "models": [
+    "dinov2_s",
+    "dinov2_b",
+    "dinov2_l",
+    "dinov2_g"
+  ],
+  "representation_of_primary_interest": "PCA225 followed by writer LDA",
+  "official_test_used": false,
+  "fixed_rank_diagnostic": {
+    "rank": 56,
+    "purpose": "Predefined common-rank diagnostic with dimension-matched random controls",
+    "interpretation": "Large rank-56 effects are not interpreted as pure script reliance because dose-response showed that script accessibility collapsed at much smaller ranks."
+  },
+  "confirmatory_rank_selection": {
+    "protocol": "Development-only writer-disjoint subspace-train and monitor split",
+    "criterion": "First rank whose effective monitor script AUC entered the 95 percent null-AUC band",
+    "monitor_writers": 45,
+    "subspace_train_writers": 181,
+    "monitor_script_counts": [
+      90,
+      90
+    ],
+    "null_auc_upper_band": 0.5845789377316772
+  },
+  "confirmatory_results": {
+    "dinov2_s": {
+      "development_selected_rank": 3,
+      "validation_residual_script_auc": 0.4996811224489796,
+      "original_writer_auc": 0.8991257440476191,
+      "intervened_writer_auc": 0.9003008400329829,
+      "writer_auc_change": 0.0011750959853638054,
+      "cross_macro_auc_change": 0.00030583256029703687,
+      "cross_pooled_auc_change": 0.00024767364332090036,
+      "targeted_cross_reliance": 0.0036860084469690253,
+      "random_cross_reliance_mean": 0.005623438134116949,
+      "targeted_to_random_reliance_ratio": 0.6554723923441617,
+      "random_residual_script_auc_mean": 0.9998206313775511
+    },
+    "dinov2_b": {
+      "development_selected_rank": 3,
+      "validation_residual_script_auc": 0.5732621173469388,
+      "original_writer_auc": 0.9149894995877138,
+      "intervened_writer_auc": 0.9164234822716966,
+      "writer_auc_change": 0.0014339826839827596,
+      "cross_macro_auc_change": 0.0004797657699444624,
+      "cross_pooled_auc_change": 0.00044244260204073793,
+      "targeted_cross_reliance": 0.00330702916152096,
+      "random_cross_reliance_mean": 0.00573329359796095,
+      "targeted_to_random_reliance_ratio": 0.576811409535543,
+      "random_residual_script_auc_mean": 1.0
+    },
+    "dinov2_l": {
+      "development_selected_rank": 3,
+      "validation_residual_script_auc": 0.5800382653061225,
+      "original_writer_auc": 0.8947487470366936,
+      "intervened_writer_auc": 0.8960583191609977,
+      "writer_auc_change": 0.0013095721243040481,
+      "cross_macro_auc_change": 0.00032322588126143525,
+      "cross_pooled_auc_change": 0.00034551107374747314,
+      "targeted_cross_reliance": 0.0035553598885018738,
+      "random_cross_reliance_mean": 0.0056818296214620045,
+      "targeted_to_random_reliance_ratio": 0.6257420805214212,
+      "random_residual_script_auc_mean": 1.0
+    },
+    "dinov2_g": {
+      "development_selected_rank": 1,
+      "validation_residual_script_auc": 0.7417091836734694,
+      "original_writer_auc": 0.9181004883013811,
+      "intervened_writer_auc": 0.9188915623067409,
+      "writer_auc_change": 0.0007910740053597154,
+      "cross_macro_auc_change": -0.00011305658627092097,
+      "cross_pooled_auc_change": -0.00026089981447130484,
+      "targeted_cross_reliance": 0.002754302366003185,
+      "random_cross_reliance_mean": 0.0027618273898639607,
+      "targeted_to_random_reliance_ratio": 0.9972753460667408,
+      "random_residual_script_auc_mean": 0.9999003507653061
+    }
+  },
+  "conclusion": {
+    "supported": "Script accessibility and pairwise verification-decision reliance are distinct. For DINOv2-S, B, and L PCA225-LDA representations, development-selected minimal script-associated interventions substantially reduced validation script accessibility while leaving writer-verification performance essentially unchanged.",
+    "not_supported": "The strong writer-verification performance of PCA225-LDA foundation representations is not supported as materially dependent on the minimal linearly script-associated subspace.",
+    "dinov2_g_caveat": "The development-selected rank for DINOv2-G did not reduce validation script accessibility to near chance, so complete script-removal reliance is inconclusive for that model.",
+    "rank56_caveat": "Aggressive 56-dimensional removal produced larger verification changes, but script decodability had already collapsed at much smaller ranks. Those later effects therefore cannot be attributed purely to script.",
+    "interpretation_rule": "Treat script-subspace intervention as a representation and decision-sensitivity diagnostic, not as a causal effect estimate."
+  },
+  "next_direction": "Do not prioritize decision-stable script adaptation from these results. Evaluate foundation-verifier reliability and uncertainty against strong score-only baselines before considering a new uncertainty method."
+}
