@@ -1,0 +1,33 @@
+{
+  "device": "cpu",
+  "epoch": 1,
+  "batch": 1,
+  "batch_size": 8,
+  "writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "base_loss": 0.45000821352005005,
+  "arabic_metric_loss": 0.21952931582927704,
+  "cross_metric_loss": 0.2304789125919342,
+  "gradient_norm_before_clip": 0.18966343998908997,
+  "gradient_clipping_activated": false,
+  "parameter_update_norm": 0.23541354370403628,
+  "maximum_absolute_update": 0.0010000094771385193,
+  "changed_parameter_tensors": 2,
+  "parameter_tensors": 2,
+  "matches_previous_one_step_base_loss": true,
+  "full_epoch_executed": false,
+  "full_training_executed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "trainer_ready": true
+}

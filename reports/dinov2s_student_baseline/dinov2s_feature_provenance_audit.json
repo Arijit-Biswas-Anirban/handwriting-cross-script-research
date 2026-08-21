@@ -1,0 +1,40 @@
+{
+  "source_notebook": "notebooks/20_dinov2_efficiency_frontier.ipynb",
+  "matched_code_cells": 9,
+  "explicit_l2_pattern_matches": [
+    {
+      "cell_index": 5,
+      "patterns": [
+        "torch.nn.functional.normalize"
+      ]
+    },
+    {
+      "cell_index": 6,
+      "patterns": [
+        "/ np.linalg.norm"
+      ]
+    },
+    {
+      "cell_index": 10,
+      "patterns": [
+        "/ np.linalg.norm"
+      ]
+    },
+    {
+      "cell_index": 12,
+      "patterns": [
+        "/ np.linalg.norm"
+      ]
+    }
+  ],
+  "archive_norm_min": 0.9999998807907104,
+  "archive_norm_mean": 1.0,
+  "archive_norm_max": 1.0000001192092896,
+  "all_archive_features_unit_norm": true,
+  "source_normalization_status": "explicit_normalization_found",
+  "training_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

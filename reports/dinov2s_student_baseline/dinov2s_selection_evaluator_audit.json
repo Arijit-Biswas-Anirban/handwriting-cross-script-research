@@ -1,0 +1,37 @@
+{
+  "reference_artifact": "reports/dinov2s_clean_representation_audit/dinov2s_fit_selection_adapted_embeddings.npz",
+  "reference_selection_embedding_shape": [
+    144,
+    144
+  ],
+  "reference_selection_filenames": 144,
+  "reference_selection_writers": 36,
+  "reference_page_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "selection_pairs": 5184,
+  "selection_conditions": 4,
+  "expected_cross_macro_auc": 0.8430555555555557,
+  "reproduced_cross_macro_auc": 0.8430555555555557,
+  "cross_macro_auc_difference": 0.0,
+  "expected_pooled_auc": 0.8429232804232805,
+  "reproduced_pooled_auc": 0.8429232804232805,
+  "pooled_auc_difference": 0.0,
+  "expected_pooled_eer": 0.22916666666666663,
+  "reproduced_pooled_eer": 0.22916666666666663,
+  "pooled_eer_difference": 0.0,
+  "condition_pair_counts_valid": true,
+  "condition_genuine_counts_valid": true,
+  "condition_impostor_counts_valid": true,
+  "missing_left_filenames": 0,
+  "missing_right_filenames": 0,
+  "evaluator_frozen": true,
+  "projection_student_evaluated": false,
+  "projection_training_performed": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

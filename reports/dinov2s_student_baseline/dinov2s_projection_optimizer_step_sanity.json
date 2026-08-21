@@ -1,0 +1,33 @@
+{
+  "batch_writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "pre_step_base_loss": 0.45000821352005005,
+  "post_step_base_loss_same_batch": 0.41752171516418457,
+  "same_batch_loss_change": -0.03248649835586548,
+  "gradient_norm_before_clip": 0.18966343998908997,
+  "gradient_clip_threshold": 5.0,
+  "gradient_clipping_activated": false,
+  "parameter_tensors": 2,
+  "changed_parameter_tensors": 2,
+  "total_parameter_update_norm": 0.23541354370403628,
+  "maximum_absolute_update": 0.0010000094771385193,
+  "post_step_output_norm_min": 0.9999999403953552,
+  "post_step_output_norm_max": 1.0,
+  "optimizer_step_performed": true,
+  "training_experiment_started": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

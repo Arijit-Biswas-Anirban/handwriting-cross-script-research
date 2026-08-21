@@ -1,0 +1,54 @@
+{
+  "split_path_exists": true,
+  "role_path_exists": true,
+  "fit_schedule_path_exists": true,
+  "dinov2s_path_exists": true,
+  "split_rows": 1900,
+  "role_rows": 724,
+  "role_column": "internal_role",
+  "role_counts": {
+    "fit": 580,
+    "selection": 144
+  },
+  "dinov2s_artifact": "reports/dinov2_efficiency_frontier/dinov2_vits14_reg_embeddings.npz",
+  "dinov2s_archive_keys": [
+    "development_embeddings",
+    "development_filenames",
+    "development_writers",
+    "validation_embeddings",
+    "validation_filenames"
+  ],
+  "development_embedding_shape": [
+    904,
+    384
+  ],
+  "development_filename_shape": [
+    904
+  ],
+  "development_writer_shape": [
+    904
+  ],
+  "raw_feature_dimension": 384,
+  "schedule_rows": 1450,
+  "schedule_epochs": 10,
+  "schedule_batches": 180,
+  "schedule_writers": 145,
+  "schedule_columns": [
+    "epoch",
+    "batch",
+    "slot",
+    "writer",
+    "batch_size"
+  ],
+  "all_epochs_have_145_writer_rows": true,
+  "all_epochs_have_18_batches": true,
+  "all_epochs_have_145_unique_writers": true,
+  "raw_embeddings_reused": true,
+  "backbone_forward_performed": false,
+  "projection_created": false,
+  "training_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

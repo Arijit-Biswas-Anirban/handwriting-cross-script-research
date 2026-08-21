@@ -1,0 +1,51 @@
+{
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "fit_raw_shape": [
+    580,
+    384
+  ],
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "selection_raw_shape": [
+    144,
+    384
+  ],
+  "fit_missing_filenames": 0,
+  "selection_missing_filenames": 0,
+  "fit_writer_mismatches": 0,
+  "selection_writer_mismatches": 0,
+  "fit_selection_writer_overlap": 0,
+  "schedule_missing_fit_writers": 0,
+  "schedule_extra_writers": 0,
+  "fit_writer_lookup_entries": 145,
+  "selection_filename_lookup_entries": 144,
+  "first_batch_writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "first_batch_raw_shape": [
+    8,
+    4,
+    384
+  ],
+  "fit_raw_norm_min": 0.9999998807907104,
+  "fit_raw_norm_mean": 1.0,
+  "fit_raw_norm_max": 1.0000001192092896,
+  "selection_raw_norm_min": 0.9999998807907104,
+  "selection_raw_norm_mean": 1.0,
+  "selection_raw_norm_max": 1.0000001192092896,
+  "raw_feature_l2_normalization_performed": false,
+  "projection_created": false,
+  "training_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

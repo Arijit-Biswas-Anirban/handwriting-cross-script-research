@@ -1,0 +1,50 @@
+{
+  "representation": "DINOv2-S/14-Reg",
+  "raw_dimension": 384,
+  "raw_l2_normalization_before_pca": false,
+  "pca_components": 225,
+  "pca_solver": "full",
+  "pca_fit_pages": 580,
+  "pca_fit_writers": 145,
+  "pca_selection_used_for_fit": false,
+  "pca_retained_variance": 0.9965361952781677,
+  "fit_pca_shape": [
+    580,
+    225
+  ],
+  "selection_pca_shape": [
+    144,
+    225
+  ],
+  "lda_solver": "svd",
+  "lda_fit_pages": 580,
+  "lda_fit_writers": 145,
+  "lda_selection_used_for_fit": false,
+  "lda_output_dimension": 144,
+  "fit_lda_shape": [
+    580,
+    144
+  ],
+  "selection_lda_shape": [
+    144,
+    144
+  ],
+  "post_lda_l2_normalization": true,
+  "fit_adapted_shape": [
+    580,
+    144
+  ],
+  "selection_adapted_shape": [
+    144,
+    144
+  ],
+  "fit_norm_min": 0.9999998807907104,
+  "fit_norm_max": 1.0000001192092896,
+  "selection_norm_min": 0.9999998807907104,
+  "selection_norm_max": 1.0000001192092896,
+  "selection_labels_used_for_transformation_fit": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

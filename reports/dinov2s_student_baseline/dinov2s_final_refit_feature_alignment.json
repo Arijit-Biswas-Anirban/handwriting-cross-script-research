@@ -1,0 +1,39 @@
+{
+  "method": "DINOv2-S frozen-feature projection student",
+  "source_feature_dimension": 384,
+  "fit_source_writers": 145,
+  "fit_source_pages": 580,
+  "selection_source_writers": 36,
+  "selection_source_pages": 144,
+  "refit_writers": 181,
+  "refit_pages": 724,
+  "refit_feature_shape": [
+    724,
+    384
+  ],
+  "refit_feature_norm_min": 0.9999998807907104,
+  "refit_feature_norm_mean": 1.0,
+  "refit_feature_norm_max": 1.0000001192092896,
+  "fit_selection_writer_overlap": 0,
+  "refit_monitor_writer_overlap": 0,
+  "refit_monitor_filename_overlap": 0,
+  "source_writers_exactly_cover_refit": true,
+  "source_filenames_exactly_cover_refit": true,
+  "schedule_writers_match_refit_writers": true,
+  "all_refit_writers_have_four_features": true,
+  "source_features_unit_normalized": true,
+  "first_batch_size": 9,
+  "first_batch_feature_shape": [
+    9,
+    4,
+    384
+  ],
+  "aligned_feature_artifact": "reports/dinov2s_student_baseline/dinov2s_final_refit_aligned_features.npz",
+  "filename_arrays_saved_as_string_dtype": true,
+  "monitor_feature_rows_used": false,
+  "monitor_scores_computed": false,
+  "monitor_evaluated": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "final_refit_training_started": false
+}

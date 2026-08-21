@@ -1,0 +1,41 @@
+{
+  "batch_writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "batch_size": 8,
+  "input_shape": [
+    8,
+    4,
+    384
+  ],
+  "embedding_shape": [
+    8,
+    4,
+    144
+  ],
+  "base_loss": 0.45000821352005005,
+  "arabic_metric_loss": 0.21952931582927704,
+  "cross_metric_loss": 0.2304789125919342,
+  "output_norm_min": 0.9999998807907104,
+  "output_norm_max": 1.0,
+  "trainable_parameter_tensors": 2,
+  "trainable_parameters": 55440,
+  "all_gradients_present": true,
+  "all_gradients_finite": true,
+  "total_gradient_norm": 0.18966344137204308,
+  "maximum_parameter_change_after_backward": 0.0,
+  "optimizer_created": false,
+  "optimizer_step_performed": false,
+  "parameter_update_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

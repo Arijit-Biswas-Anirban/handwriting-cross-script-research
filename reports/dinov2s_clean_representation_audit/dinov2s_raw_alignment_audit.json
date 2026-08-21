@@ -1,0 +1,43 @@
+{
+  "artifact_path": "reports/dinov2_efficiency_frontier/dinov2_vits14_reg_embeddings.npz",
+  "development_embedding_shape": [
+    904,
+    384
+  ],
+  "raw_embedding_dimension": 384,
+  "development_filenames": 904,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "fit_embedding_shape": [
+    580,
+    384
+  ],
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "selection_embedding_shape": [
+    144,
+    384
+  ],
+  "fit_missing_filenames": 0,
+  "selection_missing_filenames": 0,
+  "writer_mismatch_count": 0,
+  "fit_selection_writer_overlap": 0,
+  "fit_four_pages_per_writer": true,
+  "selection_four_pages_per_writer": true,
+  "fit_language_counts": {
+    "Arabic": 290,
+    "English": 290
+  },
+  "selection_language_counts": {
+    "Arabic": 72,
+    "English": 72
+  },
+  "raw_embeddings_reused_without_reextraction": true,
+  "raw_l2_normalization_performed": false,
+  "pca_performed": false,
+  "lda_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

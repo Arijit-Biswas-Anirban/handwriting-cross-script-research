@@ -1,0 +1,43 @@
+{
+  "method": "DINOv2-S frozen-feature projection student",
+  "development_pages": 904,
+  "development_writers": 226,
+  "refit_pages": 724,
+  "refit_writers": 181,
+  "monitor_pages": 180,
+  "monitor_writers": 45,
+  "refit_monitor_writer_overlap": 0,
+  "unexpected_refit_writers": 0,
+  "refit_four_pages_per_writer": true,
+  "monitor_four_pages_per_writer": true,
+  "refit_language_counts": {
+    "Arabic": 362,
+    "English": 362
+  },
+  "monitor_language_counts": {
+    "Arabic": 90,
+    "English": 90
+  },
+  "training_seed": 42,
+  "schedule_seed": 42,
+  "epochs": 10,
+  "batches_per_epoch": 22,
+  "schedule_rows": 1810,
+  "all_epochs_have_181_writer_rows": true,
+  "all_epochs_have_expected_batches": true,
+  "all_epochs_have_181_unique_writers": true,
+  "batch_sizes": {
+    "8": 170,
+    "9": 50
+  },
+  "architecture_frozen": true,
+  "hyperparameters_frozen": true,
+  "epoch_budget_frozen": true,
+  "selection_merged_into_refit": true,
+  "monitor_metadata_identified_only": true,
+  "monitor_embeddings_accessed": false,
+  "monitor_scores_computed": false,
+  "monitor_evaluated": false,
+  "validation_used": false,
+  "official_test_used": false
+}

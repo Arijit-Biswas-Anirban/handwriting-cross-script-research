@@ -1,0 +1,3 @@
+parameter,shape,update_norm,maximum_absolute_update,changed
+projection.weight,"(144, 384)",0.2351075086578769,0.0010000094771385193,True
+projection.bias,"(144,)",0.01199983049788222,0.000999999581836164,True
