@@ -1,0 +1,25 @@
+{
+  "device": "cuda",
+  "ssl_checkpoint": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/self_supervised_pretraining/resnet18_moco_ssl_best.pt",
+  "ssl_checkpoint_exists": true,
+  "ssl_checkpoint_epoch": 20,
+  "ssl_backbone_tensors": 120,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "total_parameters": 11176512,
+  "trainable_parameters": 8393728,
+  "early_backbone_trainable_parameters": 0,
+  "layer4_trainable_parameters": 8393728,
+  "embedding_shape": [
+    2,
+    512
+  ],
+  "embedding_norms": [
+    1.0,
+    0.9999999403953552
+  ],
+  "backbone_training_flag_after_model_train": false,
+  "layer4_training_flag_after_model_train": false,
+  "layer4_requires_grad": true,
+  "student_embedding_dimension": 512
+}

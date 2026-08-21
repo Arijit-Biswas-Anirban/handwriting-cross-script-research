@@ -1,0 +1,11 @@
+{
+  "selection_writers": 36,
+  "cross_conditions": 4,
+  "total_pairs": 5184,
+  "genuine_pairs": 144,
+  "impostor_pairs": 5040,
+  "duplicate_filename_pairs": 0,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

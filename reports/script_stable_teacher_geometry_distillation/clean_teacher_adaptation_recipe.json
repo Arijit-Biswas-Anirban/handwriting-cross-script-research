@@ -1,0 +1,17 @@
+{
+  "teacher": "dinov2_vitg14_reg",
+  "raw_embedding_dimension": 1536,
+  "pca_dimension": 225,
+  "pca_solver": "full",
+  "raw_l2_before_pca": false,
+  "writer_lda_solver": "svd",
+  "writer_lda_fit_writers": 145,
+  "writer_lda_output_dimension": 144,
+  "post_lda_l2_normalization": true,
+  "similarity": "cosine",
+  "fit_data": "145 fit writers / 580 pages only",
+  "selection_used_for_fitting": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,15 @@
+{
+  "sanity_batch_size": 8,
+  "teacher_dimension": 144,
+  "student_dimension": 512,
+  "perfect_unweighted_loss": 2.4263753710092986e-31,
+  "perfect_stgd_loss": 2.4280986240965654e-31,
+  "random_unweighted_loss": 0.012099096304524699,
+  "random_stgd_loss": 0.012089608737451305,
+  "random_stgd_gradient_norm": 0.001828023724146268,
+  "sanity_weight_min": 0.8630209615946071,
+  "sanity_weight_max": 0.9992524716945723,
+  "sanity_weight_mean": 0.9595738662221391,
+  "diagonal_relations_used": false,
+  "teacher_requires_gradient": false
+}

@@ -1,0 +1,11 @@
+epoch,writers,unique_writers,batches,size_8_batches,size_9_batches,writers_exactly_once,writer_set_match,batch_structure_valid,epoch_valid
+1,145,145,18,17,1,True,True,True,True
+2,145,145,18,17,1,True,True,True,True
+3,145,145,18,17,1,True,True,True,True
+4,145,145,18,17,1,True,True,True,True
+5,145,145,18,17,1,True,True,True,True
+6,145,145,18,17,1,True,True,True,True
+7,145,145,18,17,1,True,True,True,True
+8,145,145,18,17,1,True,True,True,True
+9,145,145,18,17,1,True,True,True,True
+10,145,145,18,17,1,True,True,True,True

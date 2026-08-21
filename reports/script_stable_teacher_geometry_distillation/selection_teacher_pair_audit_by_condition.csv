@@ -1,0 +1,5 @@
+condition,pairs,genuine_pairs,impostor_pairs
+cross_same_same,1296,36,1260
+cross_same_variable,1296,36,1260
+cross_variable_same,1296,36,1260
+cross_variable_variable,1296,36,1260

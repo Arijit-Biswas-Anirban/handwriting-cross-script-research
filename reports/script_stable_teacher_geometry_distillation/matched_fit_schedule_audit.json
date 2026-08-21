@@ -1,0 +1,19 @@
+{
+  "schedule_rows": 1450,
+  "epochs": 10,
+  "fit_dataset_writers": 145,
+  "schedule_unique_writers": 145,
+  "writer_sets_match": true,
+  "expected_batches_per_epoch": 18,
+  "expected_size_8_batches": 17,
+  "expected_size_9_batches": 1,
+  "all_epochs_valid": true,
+  "minimum_batch_size": 8,
+  "maximum_batch_size": 9,
+  "total_reconstructed_epoch_batches": 180,
+  "reuses_notebook23_exact_schedule": true,
+  "new_batch_randomization_added": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

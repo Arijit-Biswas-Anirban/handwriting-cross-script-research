@@ -1,0 +1,36 @@
+{
+  "fit_raw_shape": [
+    580,
+    1536
+  ],
+  "selection_raw_shape": [
+    144,
+    1536
+  ],
+  "fit_pca_shape": [
+    580,
+    225
+  ],
+  "selection_pca_shape": [
+    144,
+    225
+  ],
+  "fit_lda_shape": [
+    580,
+    144
+  ],
+  "selection_lda_shape": [
+    144,
+    144
+  ],
+  "pca_variance_retained": 0.9903018474578857,
+  "lda_classes": 145,
+  "theoretical_max_lda_dimension": 144,
+  "actual_lda_dimension": 144,
+  "fit_mean_norm": 1.0,
+  "selection_mean_norm": 1.0,
+  "selection_used_for_fitting": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

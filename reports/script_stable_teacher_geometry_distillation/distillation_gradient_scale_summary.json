@@ -1,0 +1,22 @@
+{
+  "audit_epoch": 1,
+  "audit_batches": 6,
+  "target_auxiliary_to_base_gradient_ratio": 0.2,
+  "base_gradient_norm_median": 0.8880663927517092,
+  "unweighted_gradient_norm_median": 3.053449487339738,
+  "stgd_gradient_norm_median": 3.054228661893377,
+  "unweighted_to_base_ratio_mean": 3.4108642978082635,
+  "unweighted_to_base_ratio_median": 3.282665922078218,
+  "stgd_to_base_ratio_mean": 3.417206518615061,
+  "stgd_to_base_ratio_median": 3.290188890914137,
+  "base_unweighted_gradient_cosine_median": 0.5079339132702765,
+  "base_stgd_gradient_cosine_median": 0.5080265895597628,
+  "unweighted_stgd_gradient_cosine_median": 0.9999843286170134,
+  "gamma_selected": false,
+  "optimizer_step_performed": false,
+  "verification_outcomes_used": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

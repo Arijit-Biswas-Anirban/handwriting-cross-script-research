@@ -1,0 +1,41 @@
+{
+  "image_dir": "/home/arijit/Documents/Handwriting/QUWI/extracted/images",
+  "image_dir_exists": true,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "experiment_split_missing": 0,
+  "experiment_split_values": [
+    "development_train"
+  ],
+  "teacher_embedding_map_size": 580,
+  "missing_teacher_filenames": 0,
+  "audit_writer_batch_size": 8,
+  "student_image_batch_shape": [
+    8,
+    4,
+    3,
+    384,
+    384
+  ],
+  "teacher_embedding_batch_shape": [
+    8,
+    4,
+    144
+  ],
+  "page_id_batch_shape": [
+    8,
+    4
+  ],
+  "student_image_dtype": "torch.float32",
+  "teacher_embedding_dtype": "torch.float32",
+  "student_image_min": 0.11764705926179886,
+  "student_image_max": 1.0,
+  "teacher_norm_min": 0.9999998807907104,
+  "teacher_norm_max": 1.0,
+  "unique_writers_in_audit_batch": 8,
+  "page_order_correct": true,
+  "training_schedule_created": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

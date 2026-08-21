@@ -1,0 +1,10 @@
+{
+  "root": "/home/arijit/Documents/handwriting-cross-script-research",
+  "split_path": "/home/arijit/Documents/handwriting-cross-script-research/splits/quwi_writer_disjoint_split_seed42.csv",
+  "split_exists": true,
+  "internal_role_path": "/home/arijit/Documents/handwriting-cross-script-research/reports/cross_script_writer_geometry_consistency/development_internal_writer_roles_seed42.csv",
+  "internal_role_exists": true,
+  "dino_candidate_count": 11,
+  "report_dir": "/home/arijit/Documents/handwriting-cross-script-research/reports/script_stable_teacher_geometry_distillation",
+  "checkpoint_dir": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/script_stable_teacher_geometry_distillation"
+}

@@ -1,0 +1,34 @@
+{
+  "research_question": "Is the clean DINOv2-G teacher sufficiently stronger than the current compact verifier to justify teacher-to-student geometry distillation?",
+  "teacher": "dinov2_vitg14_reg",
+  "teacher_adaptation": "fit-only PCA225 followed by writer-LDA and L2 normalization",
+  "compact_control_cross_macro_auc": 0.7775848765432098,
+  "compact_wgc_cross_macro_auc": 0.7827656525573192,
+  "primary_endpoint": "selection cross-script macro ROC-AUC",
+  "secondary_endpoints": [
+    "selection cross-script pooled ROC-AUC",
+    "selection cross-script pooled EER",
+    "four cross-script condition ROC-AUC values"
+  ],
+  "absolute_teacher_interpretation": {
+    "weak": "cross-script macro AUC < 0.80",
+    "moderate": "0.80 <= cross-script macro AUC < 0.82",
+    "useful": "0.82 <= cross-script macro AUC < 0.87",
+    "strong": "cross-script macro AUC >= 0.87"
+  },
+  "teacher_student_gap_interpretation": {
+    "small_gap": "teacher minus compact WGC cross-script macro AUC < 0.05",
+    "useful_gap": "0.05 <= teacher minus compact WGC cross-script macro AUC < 0.08",
+    "strong_gap": "teacher minus compact WGC cross-script macro AUC >= 0.08"
+  },
+  "distillation_decision": {
+    "high_priority": "Teacher reaches at least 0.87 cross-script macro AUC and exceeds compact WGC by at least 0.08.",
+    "worth_pursuing": "Teacher reaches at least 0.82 cross-script macro AUC and exceeds compact WGC by at least 0.05.",
+    "weak_justification": "Teacher fails to reach either the useful absolute performance or useful teacher-student gap."
+  },
+  "selection_used_for_adaptation": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "thresholds_frozen_before_teacher_evaluation": true
+}

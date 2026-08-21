@@ -1,0 +1,29 @@
+{
+  "search_terms": [
+    "pca225",
+    "PCA(",
+    "LinearDiscriminantAnalysis",
+    "writer_lda",
+    "dinov2_vitg14_reg"
+  ],
+  "matching_cells": 42,
+  "matching_notebooks": [
+    "19_modern_baseline_benchmarking.ipynb",
+    "20_dinov2_efficiency_frontier.ipynb",
+    "21_foundation_script_reliance_audit.ipynb"
+  ],
+  "skipped_notebooks": [
+    {
+      "notebook": "22_cross_script_local_token_feasibility.ipynb",
+      "reason": "empty_file"
+    },
+    {
+      "notebook": "23_cross_script_writer_geometry_consistency.ipynb",
+      "reason": "empty_file"
+    },
+    {
+      "notebook": "24_script_stable_teacher_geometry_distillation.ipynb",
+      "reason": "empty_file"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "matching_notebook_cells": 10,
+  "checkpoint_candidates": 2,
+  "student_architecture_assumed": false,
+  "checkpoint_assumed": false,
+  "freeze_policy_assumed": false
+}

@@ -1,0 +1,19 @@
+{
+  "variants": [
+    "unweighted_tgd",
+    "stgd"
+  ],
+  "same_initialization": true,
+  "initialization_difference": 0.0,
+  "same_writer_batch": true,
+  "both_parameter_changed": true,
+  "frozen_gradients_absent": true,
+  "backbone_eval_preserved": true,
+  "layer4_eval_preserved": true,
+  "full_epoch_executed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "trainer_ready": true
+}

@@ -1,0 +1,274 @@
+{
+  "npz_files": [
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "path": "/home/arijit/Documents/handwriting-cross-script-research/reports/modern_baseline_benchmarking/dinov2_vitg14_reg_embeddings.npz",
+      "keys": [
+        "development_embeddings",
+        "development_filenames",
+        "development_writers",
+        "validation_embeddings",
+        "validation_filenames",
+        "lda_development_embeddings",
+        "lda_validation_embeddings"
+      ],
+      "key_count": 7
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "path": "/home/arijit/Documents/handwriting-cross-script-research/reports/modern_baseline_benchmarking/dinov2_vitl14_reg_embeddings.npz",
+      "keys": [
+        "development_embeddings",
+        "development_filenames",
+        "development_writers",
+        "validation_embeddings",
+        "validation_filenames",
+        "lda_development_embeddings",
+        "lda_validation_embeddings"
+      ],
+      "key_count": 7
+    },
+    {
+      "file": "dinov2_vitb14_reg_embeddings.npz",
+      "path": "/home/arijit/Documents/handwriting-cross-script-research/reports/dinov2_efficiency_frontier/dinov2_vitb14_reg_embeddings.npz",
+      "keys": [
+        "development_embeddings",
+        "development_filenames",
+        "development_writers",
+        "validation_embeddings",
+        "validation_filenames"
+      ],
+      "key_count": 5
+    },
+    {
+      "file": "dinov2_vits14_reg_embeddings.npz",
+      "path": "/home/arijit/Documents/handwriting-cross-script-research/reports/dinov2_efficiency_frontier/dinov2_vits14_reg_embeddings.npz",
+      "keys": [
+        "development_embeddings",
+        "development_filenames",
+        "development_writers",
+        "validation_embeddings",
+        "validation_filenames"
+      ],
+      "key_count": 5
+    }
+  ],
+  "array_structure": [
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "development_embeddings",
+      "shape": "(904, 1536)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 1388544,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "development_filenames",
+      "shape": "(904,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 904,
+      "preview": "0001_1.jpg | 0001_2.jpg | 0001_3.jpg"
+    },
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "development_writers",
+      "shape": "(904,)",
+      "dtype": "int64",
+      "ndim": 1,
+      "size": 904,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "validation_embeddings",
+      "shape": "(224, 1536)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 344064,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "validation_filenames",
+      "shape": "(224,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 224,
+      "preview": "0004_1.jpg | 0004_2.jpg | 0004_3.jpg"
+    },
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "lda_development_embeddings",
+      "shape": "(904, 225)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 203400,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitg14_reg_embeddings.npz",
+      "key": "lda_validation_embeddings",
+      "shape": "(224, 225)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 50400,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "development_embeddings",
+      "shape": "(904, 1024)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 925696,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "development_filenames",
+      "shape": "(904,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 904,
+      "preview": "0001_1.jpg | 0001_2.jpg | 0001_3.jpg"
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "development_writers",
+      "shape": "(904,)",
+      "dtype": "int64",
+      "ndim": 1,
+      "size": 904,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "validation_embeddings",
+      "shape": "(224, 1024)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 229376,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "validation_filenames",
+      "shape": "(224,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 224,
+      "preview": "0004_1.jpg | 0004_2.jpg | 0004_3.jpg"
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "lda_development_embeddings",
+      "shape": "(904, 225)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 203400,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitl14_reg_embeddings.npz",
+      "key": "lda_validation_embeddings",
+      "shape": "(224, 225)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 50400,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitb14_reg_embeddings.npz",
+      "key": "development_embeddings",
+      "shape": "(904, 768)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 694272,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitb14_reg_embeddings.npz",
+      "key": "development_filenames",
+      "shape": "(904,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 904,
+      "preview": "0001_1.jpg | 0001_2.jpg | 0001_3.jpg"
+    },
+    {
+      "file": "dinov2_vitb14_reg_embeddings.npz",
+      "key": "development_writers",
+      "shape": "(904,)",
+      "dtype": "int64",
+      "ndim": 1,
+      "size": 904,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitb14_reg_embeddings.npz",
+      "key": "validation_embeddings",
+      "shape": "(224, 768)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 172032,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vitb14_reg_embeddings.npz",
+      "key": "validation_filenames",
+      "shape": "(224,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 224,
+      "preview": "0004_1.jpg | 0004_2.jpg | 0004_3.jpg"
+    },
+    {
+      "file": "dinov2_vits14_reg_embeddings.npz",
+      "key": "development_embeddings",
+      "shape": "(904, 384)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 347136,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vits14_reg_embeddings.npz",
+      "key": "development_filenames",
+      "shape": "(904,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 904,
+      "preview": "0001_1.jpg | 0001_2.jpg | 0001_3.jpg"
+    },
+    {
+      "file": "dinov2_vits14_reg_embeddings.npz",
+      "key": "development_writers",
+      "shape": "(904,)",
+      "dtype": "int64",
+      "ndim": 1,
+      "size": 904,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vits14_reg_embeddings.npz",
+      "key": "validation_embeddings",
+      "shape": "(224, 384)",
+      "dtype": "float32",
+      "ndim": 2,
+      "size": 86016,
+      "preview": ""
+    },
+    {
+      "file": "dinov2_vits14_reg_embeddings.npz",
+      "key": "validation_filenames",
+      "shape": "(224,)",
+      "dtype": "<U10",
+      "ndim": 1,
+      "size": 224,
+      "preview": "0004_1.jpg | 0004_2.jpg | 0004_3.jpg"
+    }
+  ]
+}

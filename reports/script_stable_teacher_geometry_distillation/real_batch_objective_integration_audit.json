@@ -1,0 +1,85 @@
+{
+  "epoch": 1,
+  "batch": 1,
+  "writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "batch_size": 8,
+  "student_input_shape": [
+    8,
+    4,
+    3,
+    384,
+    384
+  ],
+  "teacher_input_shape": [
+    8,
+    4,
+    144
+  ],
+  "student_embedding_shape": [
+    8,
+    4,
+    512
+  ],
+  "student_embedding_norm_min": 0.9999999403953552,
+  "student_embedding_norm_max": 1.0,
+  "arabic_metric_loss": 0.18631282448768616,
+  "arabic_positive_loss": 0.22546187043190002,
+  "arabic_negative_loss": 0.14716379344463348,
+  "cross_metric_loss": 0.1944025456905365,
+  "base_writer_loss": 0.38071537017822266,
+  "unweighted_tgd_loss": 0.5823712944984436,
+  "stgd_loss": 0.5826286673545837,
+  "cross_conditions": {
+    "cross_variable_variable": {
+      "loss": 0.17071375250816345,
+      "positive_loss": 0.17685683071613312,
+      "negative_loss": 0.1645706743001938,
+      "positive_score_mean": 0.8231431245803833,
+      "negative_score_mean": 0.6563938856124878,
+      "positive_count": 8,
+      "negative_count": 56
+    },
+    "cross_variable_same": {
+      "loss": 0.20472221076488495,
+      "positive_loss": 0.29556339979171753,
+      "negative_loss": 0.11388102918863297,
+      "positive_score_mean": 0.7044365406036377,
+      "negative_score_mean": 0.6086894273757935,
+      "positive_count": 8,
+      "negative_count": 56
+    },
+    "cross_same_variable": {
+      "loss": 0.20564961433410645,
+      "positive_loss": 0.3105893135070801,
+      "negative_loss": 0.10070990025997162,
+      "positive_score_mean": 0.6894106864929199,
+      "negative_score_mean": 0.5854628682136536,
+      "positive_count": 8,
+      "negative_count": 56
+    },
+    "cross_same_same": {
+      "loss": 0.19652464985847473,
+      "positive_loss": 0.24589796364307404,
+      "negative_loss": 0.14715133607387543,
+      "positive_score_mean": 0.7541019916534424,
+      "negative_score_mean": 0.6424474716186523,
+      "positive_count": 8,
+      "negative_count": 56
+    }
+  },
+  "optimizer_step_performed": false,
+  "backward_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

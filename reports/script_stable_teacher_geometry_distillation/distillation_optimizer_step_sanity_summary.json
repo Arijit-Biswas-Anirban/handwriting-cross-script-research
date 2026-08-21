@@ -1,0 +1,24 @@
+{
+  "writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "same_initialization": true,
+  "initial_checksum_difference": 0.0,
+  "unweighted_gamma": 0.0609260901801979,
+  "stgd_gamma": 0.06078678356501063,
+  "unweighted_parameter_update_norm": 0.026576682067274957,
+  "stgd_parameter_update_norm": 0.02657669764146239,
+  "unweighted_frozen_gradients_present": false,
+  "stgd_frozen_gradients_present": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,23 @@
+{
+  "teacher": "dinov2_vitg14_reg",
+  "adaptation": "fit-only PCA225 + writer-LDA",
+  "fit_writers": 145,
+  "selection_writers": 36,
+  "selection_cross_pairs": 5184,
+  "cross_script_macro_auc": 0.875898368606702,
+  "cross_script_pooled_auc": 0.8751184964726632,
+  "cross_script_macro_eer": 0.20833333333333331,
+  "cross_script_pooled_eer": 0.2152777777777778,
+  "cross_script_pooled_eer_threshold": 0.09457106617364015,
+  "compact_control_cross_macro_auc": 0.7775848765432098,
+  "compact_wgc_cross_macro_auc": 0.7827656525573192,
+  "teacher_gap_vs_control": 0.09831349206349216,
+  "teacher_gap_vs_wgc": 0.09313271604938278,
+  "absolute_category": "strong",
+  "gap_category": "strong_gap",
+  "distillation_verdict": "high_priority",
+  "decision_rule_frozen_before_evaluation": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

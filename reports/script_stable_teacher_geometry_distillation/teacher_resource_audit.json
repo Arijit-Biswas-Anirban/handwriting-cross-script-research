@@ -1,0 +1,30 @@
+{
+  "teacher": "dinov2_vitg14_reg",
+  "embedding_dimension": 1536,
+  "development_embedding_shape": [
+    904,
+    1536
+  ],
+  "historical_parameters_m": 1136.486912,
+  "historical_pca225_lda_overall_auc": 0.918100327252113,
+  "historical_pca225_lda_cross_auc": 0.8988984230055659,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "fit_raw_embedding_shape": [
+    580,
+    1536
+  ],
+  "selection_raw_embedding_shape": [
+    144,
+    1536
+  ],
+  "missing_embedding_rows": 0,
+  "writer_label_mismatches": 0,
+  "saved_historical_lda_embeddings_used": false,
+  "validation_embeddings_used": false,
+  "monitor_loaded": false,
+  "monitor_evaluated": false,
+  "official_test_used": false
+}

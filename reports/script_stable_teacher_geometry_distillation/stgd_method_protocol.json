@@ -1,0 +1,53 @@
+{
+  "method_name": "Script-Stable Teacher Geometry Distillation",
+  "teacher": "DINOv2-G with fit-only PCA225 + writer-LDA",
+  "student": "compact ResNet18 512-D normalized writer embedding",
+  "teacher_training_role": "training-time teacher only",
+  "student_inference": "ResNet18 embedding followed by cosine similarity",
+  "teacher_page_embedding_dimension": 144,
+  "student_page_embedding_dimension": 512,
+  "feature_projection_required": false,
+  "writer_batch_structure": "Each writer contributes pages p1, p2, p3, p4",
+  "teacher_arabic_prototype": "L2-normalized mean of teacher embeddings for p1 and p2",
+  "teacher_english_prototype": "L2-normalized mean of teacher embeddings for p3 and p4",
+  "student_arabic_prototype": "L2-normalized mean of student embeddings for p1 and p2",
+  "student_english_prototype": "L2-normalized mean of student embeddings for p3 and p4",
+  "teacher_relation_arabic": "R_A_T = T_A @ T_A.T",
+  "teacher_relation_english": "R_E_T = T_E @ T_E.T",
+  "teacher_consensus_geometry": "C_T = (R_A_T + R_E_T) / 2",
+  "teacher_script_stability_weight": "W = 1 - abs(R_A_T - R_E_T) / 2",
+  "teacher_weight_range": [
+    0.0,
+    1.0
+  ],
+  "student_relation_arabic": "R_A_S = S_A @ S_A.T",
+  "student_relation_english": "R_E_S = S_E @ S_E.T",
+  "distillation_loss": "Weighted off-diagonal MSE from both student relation matrices to the shared teacher consensus",
+  "distillation_loss_formula": "sum_offdiag W * ((R_A_S-C_T)^2 + (R_E_S-C_T)^2) / (2 * sum_offdiag W)",
+  "diagonal_relations_used": false,
+  "reliability_temperature": null,
+  "reliability_threshold": null,
+  "base_writer_supervision": "Same matched Arabic metric and cross-script metric supervision used in Notebook 23",
+  "training_objective": "L_total = L_base + gamma * L_STGD",
+  "gamma_selection": "Outcome-free fit-set gradient-scale calibration",
+  "gamma_target_gradient_ratio": 0.2,
+  "gamma_audit_batches": 6,
+  "gamma_clip": [
+    0.05,
+    4.0
+  ],
+  "selection_metric_for_checkpointing": "cross-script macro ROC-AUC",
+  "primary_comparator": "existing WGC compact model on the identical 145-fit / 36-selection protocol",
+  "interpretation": {
+    "strong_support": "STGD gain over WGC >= 0.03",
+    "meaningful_support": "STGD gain over WGC >= 0.01",
+    "directional_support": "0 < STGD gain over WGC < 0.01",
+    "no_primary_support": "STGD gain over WGC <= 0",
+    "condition_guardrail": "No cross-script condition should lose more than 0.005 AUC"
+  },
+  "first_stage_seed": 42,
+  "monitor_used_during_method_development": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "novelty_claim_frozen": false
+}

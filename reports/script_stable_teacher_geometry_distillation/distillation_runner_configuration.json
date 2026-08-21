@@ -1,0 +1,23 @@
+{
+  "epochs": 10,
+  "student_seed": 42,
+  "encoder_lr": 1e-05,
+  "weight_decay": 0.0001,
+  "gradient_clip_max_norm": 5.0,
+  "cosine_margin": 0.5,
+  "unweighted_gamma": 0.0609260901801979,
+  "stgd_gamma": 0.06078678356501063,
+  "fit_writers": 145,
+  "selection_writers": 36,
+  "batches_per_epoch": 18,
+  "checkpoint_selection_rule": "cross_macro_auc > pooled_auc > lower_pooled_eer > earlier_epoch",
+  "runner_executes_training_when_called": true,
+  "training_executed_in_this_cell": false,
+  "gamma_frozen": true,
+  "batch_schedule_frozen": true,
+  "loss_formula_frozen": true,
+  "selection_evaluator_frozen": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

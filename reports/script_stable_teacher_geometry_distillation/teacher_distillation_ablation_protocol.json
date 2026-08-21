@@ -1,0 +1,69 @@
+{
+  "research_questions": {
+    "teacher_geometry_value": "Does teacher-consensus geometry improve the compact writer verifier?",
+    "stability_weighting_value": "Does script-stability weighting improve over otherwise identical unweighted teacher geometry distillation?",
+    "wgc_comparison": "Does STGD outperform the previously established WGC regularizer?"
+  },
+  "systems": [
+    "matched_control",
+    "wgc",
+    "unweighted_tgd",
+    "stgd"
+  ],
+  "existing_systems": {
+    "matched_control": {
+      "cross_script_macro_auc": 0.7775848765432098,
+      "retraining_required_for_seed42": false
+    },
+    "wgc": {
+      "cross_script_macro_auc": 0.7827656525573192,
+      "retraining_required_for_seed42": false
+    }
+  },
+  "new_systems": {
+    "unweighted_tgd": {
+      "name": "Unweighted Teacher Geometry Distillation",
+      "teacher_consensus": "C_T = (R_A_T + R_E_T) / 2",
+      "relation_weight": "W_ij = 1 for every off-diagonal relation",
+      "purpose": "Measure the value of teacher consensus geometry without script-stability weighting"
+    },
+    "stgd": {
+      "name": "Script-Stable Teacher Geometry Distillation",
+      "teacher_consensus": "C_T = (R_A_T + R_E_T) / 2",
+      "relation_weight": "W_ij = 1 - abs(R_A_T - R_E_T) / 2",
+      "purpose": "Measure whether cross-script teacher agreement improves geometry distillation"
+    }
+  },
+  "shared_student_initialization": "Same MoCo epoch-20 compact ResNet18 initialization",
+  "shared_writer_supervision": "Same Arabic metric plus cross-script metric objective used by the Notebook 23 matched control",
+  "shared_fit_writers": 145,
+  "shared_selection_writers": 36,
+  "shared_first_stage_seed": 42,
+  "shared_training_epochs": 10,
+  "checkpoint_selection": "Best selection cross-script macro AUC, followed by pooled AUC, lower EER, then earlier epoch",
+  "gamma_calibration": {
+    "performed_separately_for_each_distillation_variant": true,
+    "uses_verification_outcomes": false,
+    "target_gradient_fraction": 0.2,
+    "audit_batches": 6,
+    "minimum_gamma": 0.05,
+    "maximum_gamma": 4.0,
+    "reason": "Match distillation gradient scale without using selection AUC or EER"
+  },
+  "primary_comparisons": {
+    "unweighted_tgd_vs_control": "Tests whether teacher geometry itself transfers",
+    "stgd_vs_unweighted_tgd": "Tests incremental value of script-stability weighting",
+    "stgd_vs_wgc": "Tests whether teacher-guided geometry improves over self-consistency regularization"
+  },
+  "weighting_component_interpretation": {
+    "supported": "STGD exceeds unweighted TGD and the advantage is later directionally consistent across seeds",
+    "not_supported": "STGD does not outperform unweighted TGD"
+  },
+  "weight_formula_changed_after_audit": false,
+  "reliability_threshold_added": false,
+  "reliability_temperature_added": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "frozen_before_student_training": true
+}
