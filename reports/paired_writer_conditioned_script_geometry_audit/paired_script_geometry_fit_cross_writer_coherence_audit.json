@@ -1,0 +1,111 @@
+{
+  "notebook": 30,
+  "hypothesis": "writer-conditioned English-minus-Arabic displacements contain a shared directional component across different fit writers",
+  "data_scope": "145 fit writers only",
+  "fit_writers": 145,
+  "cross_writer_variable_fixed_pairs": 20880,
+  "raw": {
+    "matched_variable_fixed": {
+      "count": 145,
+      "mean": 0.35349711775779724,
+      "std": 0.18307514488697052,
+      "median": 0.3686622381210327,
+      "minimum": -0.29007795453071594,
+      "q25": 0.24349012970924377,
+      "q75": 0.4819333553314209,
+      "maximum": 0.739092230796814,
+      "positive_fraction": 0.9586206896551724
+    },
+    "cross_writer_variable_fixed": {
+      "count": 20880,
+      "mean": 0.15752336382865906,
+      "std": 0.17214013636112213,
+      "median": 0.16084912419319153,
+      "minimum": -0.4784688353538513,
+      "q25": 0.042871929705142975,
+      "q75": 0.27703166007995605,
+      "maximum": 0.7291529774665833,
+      "positive_fraction": 0.8179597701149425
+    },
+    "matched_minus_cross_writer_mean": 0.19597375392913818,
+    "cross_writer_centroid_pairwise": {
+      "count": 20880,
+      "mean": 0.276913046836853,
+      "std": 0.1823931187391281,
+      "median": 0.281192421913147,
+      "minimum": -0.48677730560302734,
+      "q25": 0.15556547045707703,
+      "q75": 0.4034672677516937,
+      "maximum": 0.7937859296798706,
+      "positive_fraction": 0.9314176245210728
+    },
+    "centroid_direction_resultant_length": 0.530942440032959,
+    "centroid_leave_one_out_alignment": {
+      "count": 145,
+      "mean": 0.5217901856477918,
+      "std": 0.1449497586201392,
+      "median": 0.5304305553436279,
+      "minimum": -0.019695747643709183,
+      "q25": 0.44193434715270996,
+      "q75": 0.6309328675270081,
+      "maximum": 0.813941240310669,
+      "positive_fraction": 0.993103448275862
+    }
+  },
+  "projected": {
+    "matched_variable_fixed": {
+      "count": 145,
+      "mean": 0.34990066289901733,
+      "std": 0.24173980951309204,
+      "median": 0.38456040620803833,
+      "minimum": -0.3732445240020752,
+      "q25": 0.16301684081554413,
+      "q75": 0.5313865542411804,
+      "maximum": 0.7893709540367126,
+      "positive_fraction": 0.9241379310344827
+    },
+    "cross_writer_variable_fixed": {
+      "count": 20880,
+      "mean": 0.0043101380579173565,
+      "std": 0.2502543032169342,
+      "median": 0.003484811168164015,
+      "minimum": -0.7970328330993652,
+      "q25": -0.173751562833786,
+      "q75": 0.1842827945947647,
+      "maximum": 0.8214743137359619,
+      "positive_fraction": 0.5050287356321839
+    },
+    "matched_minus_cross_writer_mean": 0.3455905318260193,
+    "cross_writer_centroid_pairwise": {
+      "count": 20880,
+      "mean": 0.015520114451646805,
+      "std": 0.26242488622665405,
+      "median": 0.014826720580458641,
+      "minimum": -0.773827075958252,
+      "q25": -0.17231640219688416,
+      "q75": 0.20091921091079712,
+      "maximum": 0.8000281453132629,
+      "positive_fraction": 0.5211685823754789
+    },
+    "centroid_direction_resultant_length": 0.14936409890651703,
+    "centroid_leave_one_out_alignment": {
+      "count": 145,
+      "mean": 0.10539742033800174,
+      "std": 0.18642972745630937,
+      "median": 0.11007445305585861,
+      "minimum": -0.31004011631011963,
+      "q25": -0.03596444055438042,
+      "q75": 0.23449118435382843,
+      "maximum": 0.5261741876602173,
+      "positive_fraction": 0.6620689655172414
+    }
+  },
+  "selection_analyzed": false,
+  "svd_computed": false,
+  "subspace_rank_selected": false,
+  "nuisance_transform_applied": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,42 @@
+{
+  "notebook": 30,
+  "question": "how strongly does the fit-derived mean script-shift direction overlap with between-writer centroid geometry?",
+  "data_scope": "145 fit writers only",
+  "writer_centroid_definition": "mean of all four pages per writer",
+  "script_direction_definition": "mean same-writer English-centroid minus Arabic-centroid displacement",
+  "raw": {
+    "writer_energy_fraction_along_script_direction": 0.05452933271817767,
+    "writer_direction_std": 0.052908319990020866,
+    "script_projection_mean": 0.19641902169453035,
+    "script_projection_median": 0.19214497452712204,
+    "script_projection_positive_fraction": 0.993103448275862,
+    "script_shift_to_writer_std_ratio": 3.712441100597738,
+    "random_direction_energy_mean": 0.0025856148456102576,
+    "random_direction_energy_q975": 0.005470601723911859,
+    "energy_standardized_difference": 46.43704425399083,
+    "energy_empirical_upper_tail_fraction": 0.0001999600079984003
+  },
+  "projected": {
+    "writer_energy_fraction_along_script_direction": 0.06986121118622315,
+    "writer_direction_std": 0.17163644199774006,
+    "script_projection_mean": 0.084178563633705,
+    "script_projection_median": 0.08256999078225102,
+    "script_projection_positive_fraction": 0.7517241379310344,
+    "script_shift_to_writer_std_ratio": 0.4904469158992085,
+    "random_direction_energy_mean": 0.006990559542123352,
+    "random_direction_energy_q975": 0.017667783179567416,
+    "energy_standardized_difference": 14.85390135184541,
+    "energy_empirical_upper_tail_fraction": 0.0001999600079984003
+  },
+  "random_direction_null_trials": 5000,
+  "random_direction_null_seed": 42,
+  "subspace_ranks_are_descriptive_only": true,
+  "writer_preserving_removal_supported": false,
+  "nuisance_transform_applied": false,
+  "verification_evaluated_after_removal": false,
+  "subspace_rank_selected": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,43 @@
+{
+  "notebook": 30,
+  "null_question": "is same-writer English-minus-Arabic centroid geometry more directionally or spectrally structured than mismatched-writer Arabic-English pairings?",
+  "data_scope": "145 fit writers only",
+  "null_construction": "English writer centroids are randomly deranged relative to Arabic writer centroids",
+  "null_trials": 250,
+  "random_seed": 42,
+  "all_null_trials_have_zero_fixed_points": true,
+  "arabic_and_english_marginals_preserved": true,
+  "same_writer_pairing_destroyed": true,
+  "raw_observed_metrics": {
+    "direction_resultant_length": 0.5309424311599318,
+    "uncentered_top1_energy_fraction": 0.32315861673041446,
+    "uncentered_top5_cumulative_energy": 0.5777208655779295,
+    "uncentered_rank_for_90_percent_energy": 31,
+    "uncentered_participation_ratio": 7.789140805798266,
+    "centered_top1_energy_fraction": 0.13706190824312042,
+    "centered_top5_cumulative_energy": 0.45087203976152895,
+    "centered_rank_for_90_percent_energy": 39,
+    "centered_participation_ratio": 17.99080615835806
+  },
+  "projected_observed_metrics": {
+    "direction_resultant_length": 0.14936409025289435,
+    "uncentered_top1_energy_fraction": 0.1666456318271527,
+    "uncentered_top5_cumulative_energy": 0.6147534290884715,
+    "uncentered_rank_for_90_percent_energy": 24,
+    "uncentered_participation_ratio": 11.240972876122402,
+    "centered_top1_energy_fraction": 0.17014636569605215,
+    "centered_top5_cumulative_energy": 0.6215773338127311,
+    "centered_rank_for_90_percent_energy": 25,
+    "centered_participation_ratio": 11.039317942173666
+  },
+  "empirical_tail_fraction_is_formal_significance_claim": false,
+  "low_dimensionality_claimed": false,
+  "writer_conditioned_specificity_claimed": false,
+  "selection_analyzed": false,
+  "subspace_rank_selected": false,
+  "nuisance_transform_applied": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

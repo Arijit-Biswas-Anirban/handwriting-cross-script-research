@@ -1,0 +1,75 @@
+{
+  "notebook": 30,
+  "experiment": "paired writer-conditioned script geometry audit",
+  "source_representation": "cached L2-normalized DINOv2-S 384-D features",
+  "source_archive": "reports/dinov2s_student_baseline/dinov2s_final_refit_aligned_features.npz",
+  "source_archive_keys": [
+    "refit_embeddings",
+    "refit_filenames",
+    "refit_page_ids",
+    "refit_writers"
+  ],
+  "source_pages": 724,
+  "source_writers": 181,
+  "source_feature_dimension": 384,
+  "source_features_unit_normalized": true,
+  "source_norm_min": 0.9999998807907104,
+  "source_norm_mean": 1.0,
+  "source_norm_max": 1.0000001192092896,
+  "aligned_pages": 724,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "fit_selection_writer_overlap": 0,
+  "fit_page_id_counts": {
+    "1": 145,
+    "2": 145,
+    "3": 145,
+    "4": 145
+  },
+  "selection_page_id_counts": {
+    "1": 36,
+    "2": 36,
+    "3": 36,
+    "4": 36
+  },
+  "all_fit_writers_have_four_pages": true,
+  "all_selection_writers_have_four_pages": true,
+  "all_fit_writers_have_exact_page_set_1_2_3_4": true,
+  "all_selection_writers_have_exact_page_set_1_2_3_4": true,
+  "page_semantics": {
+    "1": {
+      "script": "Arabic",
+      "text_condition": "variable"
+    },
+    "2": {
+      "script": "Arabic",
+      "text_condition": "fixed"
+    },
+    "3": {
+      "script": "English",
+      "text_condition": "variable"
+    },
+    "4": {
+      "script": "English",
+      "text_condition": "fixed"
+    }
+  },
+  "development_checkpoint": "checkpoints/dinov2s_student_baseline/dinov2s_projection_seed42_best.pt",
+  "development_checkpoint_epoch": 10,
+  "development_checkpoint_training_seed": 42,
+  "development_checkpoint_projection_dimension": 144,
+  "development_checkpoint_fit_writers": 145,
+  "development_checkpoint_selection_writers": 36,
+  "development_checkpoint_source_features_l2_normalized": true,
+  "development_checkpoint_is_final_refit_checkpoint": false,
+  "geometry_computed": false,
+  "subspace_rank_selected": false,
+  "nuisance_removal_transform_applied": false,
+  "parameters_trained": false,
+  "selection_used_to_construct_geometry": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

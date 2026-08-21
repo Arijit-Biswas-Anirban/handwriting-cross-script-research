@@ -1,0 +1,73 @@
+{
+  "notebook": 30,
+  "raw_representation": "cached L2-normalized DINOv2-S",
+  "raw_dimension": 384,
+  "projected_representation": "Notebook 27 seed-42 development projection",
+  "projected_dimension": 144,
+  "projection_parameter_count": 55440,
+  "projection_checkpoint_epoch": 10,
+  "projection_checkpoint_seed": 42,
+  "fit_writer_count": 145,
+  "selection_writer_count": 36,
+  "fit_raw_flat_shape": [
+    580,
+    384
+  ],
+  "selection_raw_flat_shape": [
+    144,
+    384
+  ],
+  "fit_projected_flat_shape": [
+    580,
+    144
+  ],
+  "selection_projected_flat_shape": [
+    144,
+    144
+  ],
+  "fit_raw_writer_page_shape": [
+    145,
+    4,
+    384
+  ],
+  "selection_raw_writer_page_shape": [
+    36,
+    4,
+    384
+  ],
+  "fit_projected_writer_page_shape": [
+    145,
+    4,
+    144
+  ],
+  "selection_projected_writer_page_shape": [
+    36,
+    4,
+    144
+  ],
+  "fit_page_order_exactly_1_2_3_4": true,
+  "selection_page_order_exactly_1_2_3_4": true,
+  "fit_raw_unit_normalized": true,
+  "selection_raw_unit_normalized": true,
+  "fit_projected_unit_normalized": true,
+  "selection_projected_unit_normalized": true,
+  "fit_raw_norm_min": 0.9999998807907104,
+  "fit_raw_norm_max": 1.0000001192092896,
+  "selection_raw_norm_min": 0.9999998807907104,
+  "selection_raw_norm_max": 1.0000001192092896,
+  "fit_projected_norm_min": 0.9999998807907104,
+  "fit_projected_norm_max": 1.0000001192092896,
+  "selection_projected_norm_min": 0.9999998807907104,
+  "selection_projected_norm_max": 1.0000001192092896,
+  "representation_artifact": "reports/paired_writer_conditioned_script_geometry_audit/paired_script_geometry_aligned_representations.npz",
+  "writer_conditioned_displacements_computed": false,
+  "cross_writer_geometry_analyzed": false,
+  "svd_computed": false,
+  "subspace_rank_selected": false,
+  "nuisance_transform_applied": false,
+  "parameters_trained": false,
+  "selection_used_to_construct_geometry": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

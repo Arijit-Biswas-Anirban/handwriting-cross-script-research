@@ -1,0 +1,65 @@
+{
+  "notebook": 30,
+  "hypothesis": "matched variable-text and fixed-text English-minus-Arabic displacements show within-writer directional consistency",
+  "data_scope": "145 fit writers only",
+  "fit_writers": 145,
+  "raw_variable_displacement_shape": [
+    145,
+    384
+  ],
+  "raw_fixed_displacement_shape": [
+    145,
+    384
+  ],
+  "projected_variable_displacement_shape": [
+    145,
+    144
+  ],
+  "projected_fixed_displacement_shape": [
+    145,
+    144
+  ],
+  "raw_centroid_identity_max_abs_error": 1.4901161193847656e-08,
+  "projected_centroid_identity_max_abs_error": 2.9802322387695312e-08,
+  "raw_matched_variable_fixed_cosine": {
+    "count": 145,
+    "mean": 0.35349714756011963,
+    "std": 0.18307514488697052,
+    "median": 0.3686622977256775,
+    "minimum": -0.29007795453071594,
+    "q25": 0.2434900850057602,
+    "q75": 0.4819333553314209,
+    "maximum": 0.7390922904014587,
+    "positive_count": 139,
+    "positive_fraction": 0.9586206896551724,
+    "above_0_25_fraction": 0.7379310344827587,
+    "above_0_50_fraction": 0.19310344827586207
+  },
+  "projected_matched_variable_fixed_cosine": {
+    "count": 145,
+    "mean": 0.34990066289901733,
+    "std": 0.24173980951309204,
+    "median": 0.38456037640571594,
+    "minimum": -0.3732445240020752,
+    "q25": 0.16301682591438293,
+    "q75": 0.53138667345047,
+    "maximum": 0.7893708944320679,
+    "positive_count": 134,
+    "positive_fraction": 0.9241379310344827,
+    "above_0_25_fraction": 0.6620689655172414,
+    "above_0_50_fraction": 0.31724137931034485
+  },
+  "raw_variable_displacement_norm_mean": 0.47029387950897217,
+  "raw_fixed_displacement_norm_mean": 0.4147286117076874,
+  "projected_variable_displacement_norm_mean": 0.6564711928367615,
+  "projected_fixed_displacement_norm_mean": 0.6522547006607056,
+  "selection_analyzed": false,
+  "cross_writer_coherence_analyzed": false,
+  "svd_computed": false,
+  "subspace_rank_selected": false,
+  "nuisance_transform_applied": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}
