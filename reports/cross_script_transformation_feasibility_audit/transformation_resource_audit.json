@@ -1,0 +1,42 @@
+{
+  "notebook": 31,
+  "experiment": "cross-script transformation feasibility audit",
+  "source_artifact": "reports/paired_writer_conditioned_script_geometry_audit/paired_script_geometry_aligned_representations.npz",
+  "fit_writer_count": 145,
+  "selection_writer_count": 36,
+  "fit_selection_writer_overlap": 0,
+  "fit_raw_shape": [
+    145,
+    4,
+    384
+  ],
+  "selection_raw_shape": [
+    36,
+    4,
+    384
+  ],
+  "fit_projected_shape": [
+    145,
+    4,
+    144
+  ],
+  "selection_projected_shape": [
+    36,
+    4,
+    144
+  ],
+  "raw_feature_dimension": 384,
+  "projected_feature_dimension": 144,
+  "fit_page_order_valid": true,
+  "selection_page_order_valid": true,
+  "fit_raw_unit_normalized": true,
+  "selection_raw_unit_normalized": true,
+  "fit_projected_unit_normalized": true,
+  "selection_projected_unit_normalized": true,
+  "parameters_trained": false,
+  "transformation_fitted": false,
+  "selection_used_for_training": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

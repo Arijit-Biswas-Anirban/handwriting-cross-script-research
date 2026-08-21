@@ -1,0 +1,87 @@
+{
+  "notebook": 31,
+  "experiment": "linear cross-script transformation feasibility",
+  "transformation": "Ridge regression Arabic centroid -> English centroid",
+  "alpha": 1.0,
+  "fit_writers": 145,
+  "selection_writers": 36,
+  "raw_transformation_fit": {
+    "same_writer_euclidean": {
+      "count": 145,
+      "mean": 0.23133011162281036,
+      "std": 0.05802283436059952,
+      "median": 0.2231743484735489,
+      "minimum": 0.13344696164131165,
+      "maximum": 0.5354443192481995
+    },
+    "random_writer_error": {
+      "count": 500,
+      "mean": 0.27012346041202545,
+      "std": 0.0020762675706401264,
+      "median": 0.27012138068675995,
+      "minimum": 0.26364865899086,
+      "maximum": 0.27546441555023193
+    }
+  },
+  "raw_transformation_selection": {
+    "same_writer_euclidean": {
+      "count": 36,
+      "mean": 0.26174551248550415,
+      "std": 0.047621726989746094,
+      "median": 0.25698715448379517,
+      "minimum": 0.19007490575313568,
+      "maximum": 0.4087297320365906
+    },
+    "random_writer_error": {
+      "count": 500,
+      "mean": 0.2902945338487625,
+      "std": 0.004409004320977932,
+      "median": 0.29025281965732574,
+      "minimum": 0.27871668338775635,
+      "maximum": 0.3055930435657501
+    }
+  },
+  "projected_transformation_fit": {
+    "same_writer_euclidean": {
+      "count": 145,
+      "mean": 0.4120967984199524,
+      "std": 0.08643019199371338,
+      "median": 0.404031366109848,
+      "minimum": 0.24023433029651642,
+      "maximum": 0.690753698348999
+    },
+    "random_writer_error": {
+      "count": 500,
+      "mean": 0.7799944225549698,
+      "std": 0.01637115295737576,
+      "median": 0.7795306742191315,
+      "minimum": 0.7295074462890625,
+      "maximum": 0.8280139565467834
+    }
+  },
+  "projected_transformation_selection": {
+    "same_writer_euclidean": {
+      "count": 36,
+      "mean": 0.530147135257721,
+      "std": 0.11793053150177002,
+      "median": 0.5060968399047852,
+      "minimum": 0.3628878891468048,
+      "maximum": 0.9020556807518005
+    },
+    "random_writer_error": {
+      "count": 500,
+      "mean": 0.7846634851694108,
+      "std": 0.030022922835142338,
+      "median": 0.7859261333942413,
+      "minimum": 0.6894692182540894,
+      "maximum": 0.8812149167060852
+    }
+  },
+  "transformation_fitted": true,
+  "selection_used_for_training": false,
+  "hyperparameter_tuned_on_selection": false,
+  "parameters_trained": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

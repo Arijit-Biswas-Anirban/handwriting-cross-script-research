@@ -1,0 +1,45 @@
+{
+  "notebook": 31,
+  "experiment": "page-level cross-script transformation verification feasibility",
+  "fit_writers": 145,
+  "selection_writers": 36,
+  "transformation_training": "fit writer centroid Arabic -> English",
+  "selection_used_for_training": false,
+  "raw_selection": {
+    "baseline": {
+      "pairs": 5184,
+      "genuine_pairs": 144,
+      "impostor_pairs": 5040,
+      "auc": 0.6634610615079365,
+      "eer": 0.3729166666666667
+    },
+    "transformed": {
+      "pairs": 5184,
+      "genuine_pairs": 144,
+      "impostor_pairs": 5040,
+      "auc": 0.5909019510582011,
+      "eer": 0.43878968253968254
+    }
+  },
+  "projected_selection": {
+    "baseline": {
+      "pairs": 5184,
+      "genuine_pairs": 144,
+      "impostor_pairs": 5040,
+      "auc": 0.8372946979717814,
+      "eer": 0.24295634920634923
+    },
+    "transformed": {
+      "pairs": 5184,
+      "genuine_pairs": 144,
+      "impostor_pairs": 5040,
+      "auc": 0.8143959435626102,
+      "eer": 0.25555555555555554
+    }
+  },
+  "transformation_fitted": true,
+  "verification_evaluated": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

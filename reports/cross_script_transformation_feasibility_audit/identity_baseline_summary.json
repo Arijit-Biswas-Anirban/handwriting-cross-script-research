@@ -1,0 +1,77 @@
+{
+  "notebook": 31,
+  "experiment": "cross-script transformation feasibility",
+  "analysis_stage": "identity baseline only",
+  "fit_writers": 145,
+  "selection_writers": 36,
+  "raw_fit_same_writer_euclidean": {
+    "count": 145,
+    "mean": 0.3654205799102783,
+    "std": 0.06795777380466461,
+    "median": 0.3612196147441864,
+    "minimum": 0.231377512216568,
+    "maximum": 0.6508241295814514
+  },
+  "raw_fit_same_writer_cosine_distance": {
+    "count": 145,
+    "mean": 0.07295209914445877,
+    "std": 0.02928853966295719,
+    "median": 0.06826436519622803,
+    "minimum": 0.02764129638671875,
+    "maximum": 0.22830677032470703
+  },
+  "projected_fit_same_writer_euclidean": {
+    "count": 145,
+    "mean": 0.5408067107200623,
+    "std": 0.12036058306694031,
+    "median": 0.52228844165802,
+    "minimum": 0.25518545508384705,
+    "maximum": 0.8432358503341675
+  },
+  "projected_fit_same_writer_cosine_distance": {
+    "count": 145,
+    "mean": 0.16661840677261353,
+    "std": 0.0736904963850975,
+    "median": 0.14637351036071777,
+    "minimum": 0.03360450267791748,
+    "maximum": 0.3792298436164856
+  },
+  "selection_raw_same_writer_euclidean": {
+    "count": 36,
+    "mean": 0.36670777201652527,
+    "std": 0.0640629455447197,
+    "median": 0.36866283416748047,
+    "minimum": 0.2517618238925934,
+    "maximum": 0.5402502417564392
+  },
+  "selection_projected_same_writer_euclidean": {
+    "count": 36,
+    "mean": 0.6020777225494385,
+    "std": 0.14961516857147217,
+    "median": 0.5626964569091797,
+    "minimum": 0.41847944259643555,
+    "maximum": 1.020906925201416
+  },
+  "raw_random_writer_mean_distance": {
+    "count": 500,
+    "mean": 0.4285095537900925,
+    "std": 0.003510893843515573,
+    "median": 0.4286764860153198,
+    "minimum": 0.41869959235191345,
+    "maximum": 0.43868452310562134
+  },
+  "projected_random_writer_mean_distance": {
+    "count": 500,
+    "mean": 0.9695894801616669,
+    "std": 0.018383245450548175,
+    "median": 0.9690250754356384,
+    "minimum": 0.9153863191604614,
+    "maximum": 1.0248053073883057
+  },
+  "transformation_fitted": false,
+  "parameters_trained": false,
+  "selection_used_for_training": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}
