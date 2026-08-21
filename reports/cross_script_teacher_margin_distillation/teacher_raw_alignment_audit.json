@@ -1,0 +1,44 @@
+{
+  "development_embedding_shape": [
+    904,
+    1536
+  ],
+  "development_filename_count": 904,
+  "development_writer_count": 904,
+  "development_unique_writers": 226,
+  "teacher_embedding_dimension": 1536,
+  "role_rows": 724,
+  "missing_teacher_rows": 0,
+  "writer_mismatch_rows": 0,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "fit_raw_shape": [
+    580,
+    1536
+  ],
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "selection_raw_shape": [
+    144,
+    1536
+  ],
+  "fit_selection_writer_overlap": 0,
+  "fit_page_structure_valid": true,
+  "selection_page_structure_valid": true,
+  "fit_page_ids_valid": true,
+  "selection_page_ids_valid": true,
+  "fit_languages": {
+    "Arabic": 290,
+    "English": 290
+  },
+  "selection_languages": {
+    "Arabic": 72,
+    "English": 72
+  },
+  "pca_fitted": false,
+  "lda_fitted": false,
+  "selection_used_for_fitting": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

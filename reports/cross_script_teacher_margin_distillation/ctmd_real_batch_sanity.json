@@ -1,0 +1,50 @@
+{
+  "ssl_checkpoint_epoch": 20,
+  "ssl_backbone_tensors": 120,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "fit_writers": 145,
+  "batch_writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "batch_size": 8,
+  "student_image_shape": [
+    8,
+    4,
+    3,
+    384,
+    384
+  ],
+  "teacher_embedding_shape": [
+    8,
+    4,
+    144
+  ],
+  "student_embedding_shape": [
+    8,
+    4,
+    512
+  ],
+  "student_norm_min": 0.9999999403953552,
+  "student_norm_max": 1.0,
+  "teacher_norm_min": 0.9999998807907104,
+  "teacher_norm_max": 1.0000001192092896,
+  "ctmd_loss": 0.11581899225711823,
+  "active_conditions": 4,
+  "confirmed_margins": 64,
+  "possible_margins": 64,
+  "hard_impostor_self_violations": 0,
+  "training_performed": false,
+  "backward_performed": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

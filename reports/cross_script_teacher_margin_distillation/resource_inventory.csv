@@ -1,0 +1,7 @@
+resource,path,exists,size_mb
+image_dir,/home/arijit/Documents/Handwriting/QUWI/extracted/images,True,
+split_csv,/home/arijit/Documents/handwriting-cross-script-research/splits/quwi_writer_disjoint_split_seed42.csv,True,0.10410690307617188
+internal_role_csv,/home/arijit/Documents/handwriting-cross-script-research/reports/cross_script_writer_geometry_consistency/development_internal_writer_roles_seed42.csv,True,0.021681785583496094
+fit_schedule_csv,/home/arijit/Documents/handwriting-cross-script-research/reports/cross_script_writer_geometry_consistency/fit_writer_batch_schedule_seed42.csv,True,0.016984939575195312
+dinov2_g_embeddings,/home/arijit/Documents/handwriting-cross-script-research/reports/modern_baseline_benchmarking/dinov2_vitg14_reg_embeddings.npz,True,7.044621467590332
+ssl_checkpoint,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/self_supervised_pretraining/resnet18_moco_ssl_best.pt,True,152.99716567993164

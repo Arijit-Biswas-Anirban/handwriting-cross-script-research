@@ -1,0 +1,42 @@
+{
+  "recipe": "raw DINOv2-G -> PCA225 -> writer-LDA -> L2 normalization",
+  "raw_l2_normalization_before_pca": false,
+  "pca_solver": "full",
+  "pca_dimension": 225,
+  "pca_fit_rows": 580,
+  "pca_fit_writers": 145,
+  "pca_explained_variance_ratio_sum": 0.9903018474578857,
+  "fit_pca_shape": [
+    580,
+    225
+  ],
+  "selection_pca_shape": [
+    144,
+    225
+  ],
+  "lda_solver": "svd",
+  "lda_fit_rows": 580,
+  "lda_classes": 145,
+  "lda_theoretical_max_dimension": 144,
+  "fit_adapted_shape": [
+    580,
+    144
+  ],
+  "selection_adapted_shape": [
+    144,
+    144
+  ],
+  "adapted_dimension": 144,
+  "fit_norm_min": 0.9999998807907104,
+  "fit_norm_max": 1.0000001192092896,
+  "fit_norm_mean": 1.0,
+  "selection_norm_min": 0.9999998807907104,
+  "selection_norm_max": 1.0000001192092896,
+  "selection_norm_mean": 1.0,
+  "selection_used_for_pca_fit": false,
+  "selection_used_for_lda_fit": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "verification_evaluated": false
+}

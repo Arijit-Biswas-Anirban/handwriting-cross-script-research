@@ -1,0 +1,52 @@
+{
+  "project_root": "/home/arijit/Documents/handwriting-cross-script-research",
+  "split_rows": 1900,
+  "split_writers": 475,
+  "split_columns": [
+    "filename",
+    "writer",
+    "page_id",
+    "language",
+    "same_text",
+    "source_split",
+    "experiment_split"
+  ],
+  "role_rows": 724,
+  "role_columns": [
+    "filename",
+    "writer",
+    "page_id",
+    "language",
+    "same_text",
+    "internal_role"
+  ],
+  "schedule_rows": 1450,
+  "schedule_columns": [
+    "epoch",
+    "batch",
+    "slot",
+    "writer",
+    "batch_size"
+  ],
+  "schedule_epochs": 10,
+  "schedule_unique_writers": 145,
+  "teacher_all_keys": [
+    "development_embeddings",
+    "development_filenames",
+    "development_writers",
+    "validation_embeddings",
+    "validation_filenames",
+    "lda_development_embeddings",
+    "lda_validation_embeddings"
+  ],
+  "teacher_development_keys": [
+    "development_embeddings",
+    "development_filenames",
+    "development_writers",
+    "lda_development_embeddings"
+  ],
+  "ssl_checkpoint_exists": true,
+  "monitor_loaded": false,
+  "validation_loaded": false,
+  "official_test_loaded": false
+}

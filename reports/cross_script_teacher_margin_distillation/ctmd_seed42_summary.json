@@ -1,0 +1,33 @@
+{
+  "method": "CTMD",
+  "training_seed": 42,
+  "epochs": 10,
+  "gamma": 0.22920577093772979,
+  "best_epoch": 9,
+  "best_cross_macro_auc": 0.7790068342151676,
+  "best_pooled_auc": 0.7791136188271606,
+  "best_pooled_eer": 0.30376984126984125,
+  "best_cross_macro_eer": 0.2920634920634921,
+  "best_cross_same_same_auc": 0.8199514991181658,
+  "best_cross_same_variable_auc": 0.7734347442680776,
+  "best_cross_variable_same_auc": 0.7362654320987655,
+  "best_cross_variable_variable_auc": 0.7863756613756614,
+  "checkpoint_path": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_teacher_margin_distillation/ctmd_seed42_best.pt",
+  "history_path": "/home/arijit/Documents/handwriting-cross-script-research/reports/cross_script_teacher_margin_distillation/ctmd_seed42_history.csv",
+  "checkpoint_selection_events": 8,
+  "missing_keys_at_initialization": [],
+  "unexpected_keys_at_initialization": [],
+  "selection_rule": "cross_macro_auc > pooled_auc > lower_pooled_eer > earlier_epoch",
+  "gamma_frozen_before_training": true,
+  "method_formula_frozen_before_training": true,
+  "schedule_reuses_notebook23": true,
+  "selection_only_for_checkpointing": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "checkpoint_reproduction_difference": {
+    "cross_macro_auc": 0.0,
+    "pooled_auc": 0.0,
+    "pooled_eer": 0.0
+  }
+}

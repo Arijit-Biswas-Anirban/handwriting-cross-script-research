@@ -1,0 +1,49 @@
+{
+  "method": "Cross-Script Teacher Margin Distillation",
+  "abbreviation": "CTMD",
+  "teacher": "DINOv2-G fit-only PCA225 + writer-LDA",
+  "teacher_used_only_during_training": true,
+  "student_inference": "ResNet18 normalized 512-D embedding + cosine",
+  "cross_conditions": [
+    "cross_variable_variable",
+    "cross_variable_same",
+    "cross_same_variable",
+    "cross_same_same"
+  ],
+  "hard_impostors_per_anchor": 1,
+  "hard_impostor_source": "teacher similarity matrix",
+  "student_hard_negative_mining": false,
+  "directions": [
+    "left_to_right",
+    "right_to_left"
+  ],
+  "teacher_margin": "genuine similarity minus teacher-selected hardest impostor similarity",
+  "teacher_confirmation_rule": "teacher margin > 0",
+  "teacher_margin_threshold": 0.0,
+  "distillation_target": "student margin matches teacher margin",
+  "distillation_error": "squared margin error",
+  "condition_reduction": "mean confirmed bidirectional margin error within each condition",
+  "cross_condition_reduction": "equal mean across active cross-script conditions",
+  "temperature": null,
+  "margin_sharpening": null,
+  "top_k_hard_negatives": 1,
+  "confidence_weighting": false,
+  "base_writer_objective_changed": false,
+  "target_gradient_ratio": 0.2,
+  "gradient_audit_batches": 6,
+  "gamma_clip": [
+    0.05,
+    4.0
+  ],
+  "meaningful_gain_vs_wgc": 0.01,
+  "maximum_allowed_condition_loss": 0.005,
+  "formula_frozen_before_ctmd_training": true,
+  "post_hoc_threshold_tuning_allowed": false,
+  "post_hoc_temperature_tuning_allowed": false,
+  "post_hoc_hard_negative_count_tuning_allowed": false,
+  "post_hoc_gamma_tuning_allowed": false,
+  "selection_outcomes_used": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

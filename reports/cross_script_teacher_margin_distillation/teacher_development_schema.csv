@@ -1,0 +1,5 @@
+key,shape,dtype
+development_embeddings,"(904, 1536)",float32
+development_filenames,"(904,)",<U10
+development_writers,"(904,)",int64
+lda_development_embeddings,"(904, 225)",float32
