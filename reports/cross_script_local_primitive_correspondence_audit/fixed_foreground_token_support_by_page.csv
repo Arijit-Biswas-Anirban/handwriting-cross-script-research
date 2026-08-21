@@ -1,0 +1,9 @@
+split,page_id,language,pages,candidate_count_mean,candidate_count_median,candidate_count_min,candidate_count_max,eligible_fraction
+fit,1,Arabic,145,144.8206896551724,144.0,71,243,1.0
+fit,2,Arabic,145,234.26896551724138,230.0,139,404,1.0
+fit,3,English,145,138.53793103448277,136.0,57,221,1.0
+fit,4,English,145,281.1448275862069,277.0,189,412,1.0
+selection,1,Arabic,36,146.88888888888889,148.5,2,230,0.9722222222222222
+selection,2,Arabic,36,233.55555555555554,235.0,81,344,1.0
+selection,3,English,36,142.11111111111111,136.0,102,265,1.0
+selection,4,English,36,272.30555555555554,268.0,127,388,1.0

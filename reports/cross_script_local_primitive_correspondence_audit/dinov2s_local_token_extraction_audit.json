@@ -1,0 +1,43 @@
+{
+  "notebook": 32,
+  "experiment": "frozen DINOv2-S top-48 local-token extraction",
+  "foreground_rule": "48 darkest patch-grid locations per page",
+  "foreground_rule_frozen_before_extraction": true,
+  "fit_pages": 580,
+  "selection_pages": 144,
+  "fit_token_shape": [
+    580,
+    48,
+    384
+  ],
+  "selection_token_shape": [
+    144,
+    48,
+    384
+  ],
+  "feature_dimension": 384,
+  "tokens_per_page": 48,
+  "fit_token_norm": {
+    "minimum": 0.9999998807907104,
+    "mean": 1.0,
+    "maximum": 1.0000001192092896
+  },
+  "selection_token_norm": {
+    "minimum": 0.9999998807907104,
+    "mean": 1.0,
+    "maximum": 1.0000001192092896
+  },
+  "first_fit_page_reference_max_abs_difference": 6.202608346939087e-07,
+  "fit_extraction_seconds": 84.38802224000392,
+  "selection_extraction_seconds": 22.050814927999454,
+  "total_extraction_seconds": 106.43883716800337,
+  "peak_gpu_gb": 0.34121227264404297,
+  "artifact_path": "reports/cross_script_local_primitive_correspondence_audit/dinov2s_top48_local_tokens_fit_selection.npz",
+  "patch_tokens_extracted": true,
+  "local_correspondence_computed": false,
+  "selection_verification_outcomes_inspected": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

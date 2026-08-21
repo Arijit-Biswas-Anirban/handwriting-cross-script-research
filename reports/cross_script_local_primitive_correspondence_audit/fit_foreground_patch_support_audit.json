@@ -1,0 +1,48 @@
+{
+  "notebook": 32,
+  "experiment": "fit-only handwriting-supported patch audit",
+  "data_scope": "145 fit writers / 580 pages only",
+  "candidate_rule": "per-page exact Otsu split on mean darkness of each 14x14 patch after historical 384-to-518 preprocessing",
+  "mask_input_clamped_to_visual_range_0_1": true,
+  "patch_grid": [
+    37,
+    37
+  ],
+  "patch_tokens_per_page": 1369,
+  "fit_pages": 580,
+  "selected_token_count": {
+    "mean": 199.69310344827585,
+    "std": 70.136843449109,
+    "minimum": 57,
+    "q25": 140.0,
+    "median": 182.0,
+    "q75": 257.0,
+    "maximum": 412
+  },
+  "selected_token_fraction": {
+    "mean": 0.14586786227047177,
+    "std": 0.05123217198620088,
+    "minimum": 0.04163623082542001,
+    "q25": 0.10226442658875091,
+    "median": 0.1329437545653762,
+    "q75": 0.1877282688093499,
+    "maximum": 0.30094959824689554
+  },
+  "otsu_darkness_threshold": {
+    "mean": 0.022675572390314834,
+    "std": 0.0075094428596965395,
+    "minimum": 0.008399750106036663,
+    "median": 0.021401361096650362,
+    "maximum": 0.04979121498763561
+  },
+  "all_pages_non_degenerate": true,
+  "all_selected_patches_darker_than_rejected_on_average": true,
+  "selection_pages_inspected": false,
+  "foreground_rule_frozen": false,
+  "patch_tokens_extracted": false,
+  "local_correspondence_computed": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,42 @@
+{
+  "notebook": 32,
+  "experiment": "robust fixed-cardinality handwriting patch rule",
+  "final_structural_rule": "select the 48 darkest patch-grid locations per page",
+  "fixed_token_count": 48,
+  "reason_for_removing_otsu_gate": "Otsu was redundant for top-48 selection on all fit pages but structurally unstable for one unseen selection page",
+  "fit_pages": 580,
+  "selection_pages": 144,
+  "fit_equivalence_to_otsu_top48_count": 580,
+  "fit_equivalence_to_otsu_top48_fraction": 1.0,
+  "fit_equivalence_to_otsu_top48_is_exact": true,
+  "fit_selected_index_shape": [
+    580,
+    48
+  ],
+  "selection_selected_index_shape": [
+    144,
+    48
+  ],
+  "all_fit_pages_have_exactly_48_tokens": true,
+  "all_selection_pages_have_exactly_48_tokens": true,
+  "problem_page_structural_context": {
+    "filename": "0200_1.jpg",
+    "selected_darkness_min": 0.040778227150440216,
+    "selected_darkness_mean": 0.0605291910469532,
+    "selected_darkness_median": 0.04608060419559479,
+    "selected_darkness_max": 0.38013532757759094,
+    "other_selection_p1_darkness_min_median": 0.04430599510669708,
+    "other_selection_p1_darkness_mean_median": 0.05659713223576546,
+    "other_selection_p1_darkness_mean_minimum": 0.03227756544947624,
+    "other_selection_p1_darkness_mean_maximum": 0.1068623885512352
+  },
+  "foreground_rule_frozen": true,
+  "rule_changed_using_verification_outcomes": false,
+  "selection_verification_outcomes_inspected": false,
+  "patch_tokens_extracted": false,
+  "local_correspondence_computed": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

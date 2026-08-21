@@ -1,0 +1,2 @@
+split,filename,writer,page_id,language,same_text,candidate_count,otsu_threshold,eligible_for_fixed_k
+selection,0200_1.jpg,200,1,Arabic,0,2,0.17963355407118797,False

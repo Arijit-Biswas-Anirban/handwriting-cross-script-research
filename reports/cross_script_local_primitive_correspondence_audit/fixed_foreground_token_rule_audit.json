@@ -1,0 +1,41 @@
+{
+  "notebook": 32,
+  "experiment": "fixed-cardinality handwriting-supported token rule",
+  "candidate_rule": "per-page Otsu foreground on patch darkness",
+  "fixed_selection_rule": "top-K darkest patches among Otsu foreground candidates",
+  "fixed_token_count": 48,
+  "fit_min_candidate_count_before_freeze": 57,
+  "fit_pages": 580,
+  "selection_pages": 144,
+  "fit_candidate_count": {
+    "minimum": 57,
+    "median": 182.0,
+    "maximum": 412
+  },
+  "selection_candidate_count": {
+    "minimum": 2,
+    "median": 174.0,
+    "maximum": 388
+  },
+  "fit_ineligible_pages": 0,
+  "selection_ineligible_pages": 1,
+  "fit_all_pages_support_fixed_k": true,
+  "selection_all_pages_support_fixed_k": false,
+  "fit_selected_index_shape": [
+    580,
+    48
+  ],
+  "selection_selected_index_shape": [
+    144,
+    48
+  ],
+  "foreground_rule_status": "not_frozen_structural_feasibility_failure",
+  "foreground_rule_frozen": false,
+  "selection_verification_outcomes_inspected": false,
+  "patch_tokens_extracted": false,
+  "local_correspondence_computed": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

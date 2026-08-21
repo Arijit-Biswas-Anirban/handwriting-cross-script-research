@@ -1,0 +1,80 @@
+{
+  "notebook": 32,
+  "experiment": "cross-script local primitive correspondence audit",
+  "image_root": "/home/arijit/Documents/Handwriting/QUWI/extracted/images",
+  "split_path": "splits/quwi_writer_disjoint_split_seed42.csv",
+  "role_path": "reports/cross_script_writer_geometry_consistency/development_internal_writer_roles_seed42.csv",
+  "aligned_development_pages": 724,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "fit_selection_writer_overlap": 0,
+  "all_fit_writers_have_four_pages": true,
+  "all_selection_writers_have_four_pages": true,
+  "all_fit_writers_have_page_set_1_2_3_4": true,
+  "all_selection_writers_have_page_set_1_2_3_4": true,
+  "fit_page_id_counts": {
+    "1": 145,
+    "2": 145,
+    "3": 145,
+    "4": 145
+  },
+  "selection_page_id_counts": {
+    "1": 36,
+    "2": 36,
+    "3": 36,
+    "4": 36
+  },
+  "fit_language_counts": {
+    "Arabic": 290,
+    "English": 290
+  },
+  "selection_language_counts": {
+    "Arabic": 72,
+    "English": 72
+  },
+  "missing_fit_images": 0,
+  "missing_selection_images": 0,
+  "dinov2_repository": "facebookresearch/dinov2:main",
+  "dinov2_model_name": "dinov2_vits14_reg",
+  "expected_parameters": 22058112,
+  "feature_dimension": 384,
+  "patch_size": 14,
+  "historical_pre_dino_tensor_size": 384,
+  "dinov2_input_size": 518,
+  "expected_patch_grid": [
+    37,
+    37
+  ],
+  "expected_patch_token_count": 1369,
+  "normalization_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalization_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "historical_resize_mode": "bicubic",
+  "historical_align_corners": false,
+  "historical_global_embedding_l2_normalized_after_forward": true,
+  "torch_hub_directory": "/home/arijit/.cache/torch/hub",
+  "cached_dinov2_repository_candidates": [],
+  "cached_dinov2_checkpoint_candidates": [],
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "cuda_free_gb": 3.08172607421875,
+  "cuda_total_gb": 3.681884765625,
+  "model_loaded": false,
+  "patch_tokens_extracted": false,
+  "foreground_rule_defined": false,
+  "local_correspondence_computed": false,
+  "selection_correspondence_evaluated": false,
+  "parameters_trained": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}
