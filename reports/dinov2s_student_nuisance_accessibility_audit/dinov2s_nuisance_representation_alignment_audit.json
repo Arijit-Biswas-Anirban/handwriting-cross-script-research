@@ -1,0 +1,70 @@
+{
+  "source_artifact": "reports/dinov2s_student_baseline/dinov2s_final_refit_aligned_features.npz",
+  "source_artifact_pages": 724,
+  "source_artifact_writers": 181,
+  "source_artifact_contains_only_fit_and_selection": true,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "fit_selection_writer_overlap": 0,
+  "raw_feature_dimension": 384,
+  "projected_feature_dimension": 144,
+  "fit_raw_shape": [
+    580,
+    384
+  ],
+  "selection_raw_shape": [
+    144,
+    384
+  ],
+  "fit_projected_shape": [
+    580,
+    144
+  ],
+  "selection_projected_shape": [
+    144,
+    144
+  ],
+  "fit_raw_norm_min": 0.9999998807907104,
+  "fit_raw_norm_mean": 1.0,
+  "fit_raw_norm_max": 1.0000001192092896,
+  "selection_raw_norm_min": 0.9999998807907104,
+  "selection_raw_norm_mean": 1.0,
+  "selection_raw_norm_max": 1.0000001192092896,
+  "fit_projected_norm_min": 0.9999998807907104,
+  "fit_projected_norm_mean": 1.0,
+  "fit_projected_norm_max": 1.0000001192092896,
+  "selection_projected_norm_min": 0.9999998807907104,
+  "selection_projected_norm_mean": 1.0,
+  "selection_projected_norm_max": 1.0000001192092896,
+  "fit_script_counts": {
+    "Arabic": 290,
+    "English": 290
+  },
+  "selection_script_counts": {
+    "Arabic": 72,
+    "English": 72
+  },
+  "fit_text_condition_counts": {
+    "variable": 290,
+    "same_fixed": 290
+  },
+  "selection_text_condition_counts": {
+    "variable": 72,
+    "same_fixed": 72
+  },
+  "script_labels_verified_against_language_metadata": true,
+  "text_condition_labels_derived_from_page_protocol": true,
+  "development_projection_checkpoint_epoch": 10,
+  "development_projection_training_seed": 42,
+  "raw_features_unit_normalized": true,
+  "projected_features_unit_normalized": true,
+  "aligned_artifact": "reports/dinov2s_student_nuisance_accessibility_audit/dinov2s_nuisance_fit_selection_representations.npz",
+  "monitor_features_loaded": false,
+  "monitor_evaluated": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "probe_training_started": false,
+  "probe_evaluation_started": false
+}

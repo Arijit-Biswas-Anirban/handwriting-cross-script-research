@@ -1,0 +1,9 @@
+stage,parameter_group,parameter,update_norm,maximum_absolute_update,changed
+after_script_head_step,projection,weight,0.0,0.0,False
+after_script_head_step,projection,bias,0.0,0.0,False
+after_script_head_step,script_head,weight,0.01696998854305571,0.00100003182888031,True
+after_script_head_step,script_head,bias,0.0014142006232906023,0.000999990850687027,True
+after_projection_step,projection,weight,0.23510496182611507,0.0010000094771385193,True
+after_projection_step,projection,bias,0.011999914573184533,0.000999999581836164,True
+during_projection_step,script_head,weight,0.0,0.0,False
+during_projection_step,script_head,bias,0.0,0.0,False

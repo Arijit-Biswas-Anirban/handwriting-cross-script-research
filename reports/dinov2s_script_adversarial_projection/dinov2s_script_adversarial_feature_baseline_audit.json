@@ -1,0 +1,56 @@
+{
+  "source_pages": 724,
+  "source_writers": 181,
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "fit_selection_writer_overlap": 0,
+  "fit_raw_shape": [
+    580,
+    384
+  ],
+  "selection_raw_shape": [
+    144,
+    384
+  ],
+  "baseline_fit_embedding_shape": [
+    580,
+    144
+  ],
+  "baseline_selection_embedding_shape": [
+    144,
+    144
+  ],
+  "raw_features_unit_normalized": true,
+  "baseline_embeddings_unit_normalized": true,
+  "fit_script_counts": {
+    "Arabic": 290,
+    "English": 290
+  },
+  "selection_script_counts": {
+    "Arabic": 72,
+    "English": 72
+  },
+  "baseline_expected_cross_macro_auc": 0.8374834656084656,
+  "baseline_reproduced_cross_macro_auc": 0.8374834656084656,
+  "baseline_cross_macro_auc_difference": 0.0,
+  "baseline_expected_pooled_auc": 0.8372946979717814,
+  "baseline_reproduced_pooled_auc": 0.8372946979717814,
+  "baseline_pooled_auc_difference": 0.0,
+  "baseline_expected_pooled_eer": 0.24285714285714285,
+  "baseline_reproduced_pooled_eer": 0.24285714285714285,
+  "baseline_pooled_eer_difference": 0.0,
+  "selection_pair_count": 5184,
+  "conditions": 4,
+  "condition_pair_counts_valid": true,
+  "fit_writer_feature_map_ready": true,
+  "aligned_feature_artifact": "reports/dinov2s_script_adversarial_projection/dinov2s_script_adversarial_fit_selection_features.npz",
+  "baseline_evaluator_reproduced_exactly": true,
+  "adversarial_model_created": false,
+  "adversarial_training_started": false,
+  "adversarial_selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

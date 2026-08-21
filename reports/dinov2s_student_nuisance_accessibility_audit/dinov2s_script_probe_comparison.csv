@@ -1,0 +1,3 @@
+representation,dimension,fit_auc,fit_accuracy,selection_auc,selection_accuracy,selection_balanced_accuracy,iterations,converged
+cached_normalized_dinov2s_384d,384,1.0,1.0,1.0,0.9861111111111112,0.9861111111111112,26,True
+writer_projection_144d,144,0.9053269916765755,0.8258620689655173,0.757908950617284,0.6944444444444444,0.6944444444444444,123,True

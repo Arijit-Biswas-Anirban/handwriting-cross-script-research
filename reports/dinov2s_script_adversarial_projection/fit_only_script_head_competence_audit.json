@@ -1,0 +1,47 @@
+{
+  "purpose": "verify attached script-head competence without using selection",
+  "projection_initialization": "same seed-42 Xavier initialization as Notebook 27",
+  "projection_frozen_during_warmup": true,
+  "script_head_architecture": "Linear(144, 2)",
+  "warmup_epochs": 10,
+  "script_head_learning_rate": 0.001,
+  "script_head_weight_decay": 0.0001,
+  "fit_writers": 145,
+  "fit_pages": 580,
+  "fit_script_counts": {
+    "Arabic": 290,
+    "English": 290
+  },
+  "initial_full_fit_script_loss": 0.7014816403388977,
+  "final_full_fit_script_loss": 0.5812807679176331,
+  "final_fit_script_auc": 0.9342449464922711,
+  "final_fit_script_accuracy": 0.853448275862069,
+  "final_fit_script_balanced_accuracy": 0.853448275862069,
+  "final_fit_script_confusion_matrix": [
+    [
+      240,
+      50
+    ],
+    [
+      35,
+      255
+    ]
+  ],
+  "competence_auc_threshold": 0.9,
+  "competence_accuracy_threshold": 0.8,
+  "projection_parameter_update_norm": 0.0,
+  "projection_maximum_absolute_update": 0.0,
+  "script_head_parameter_update_norm": 2.0706623588953423,
+  "script_head_maximum_absolute_update": 0.17676275968551636,
+  "first_batch_writer_loss_after_head_warmup": 0.45000821352005005,
+  "writer_loss_change_after_head_warmup": 0.0,
+  "writer_projection_preserved_exactly": true,
+  "script_head_competence_verified": true,
+  "warm_head_will_initialize_main_adversary_if_competence_passes": true,
+  "selection_used": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false,
+  "main_adversarial_training_started": false
+}

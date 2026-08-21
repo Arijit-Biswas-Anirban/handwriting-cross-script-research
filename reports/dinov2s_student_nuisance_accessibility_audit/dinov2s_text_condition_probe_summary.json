@@ -1,0 +1,58 @@
+{
+  "probe_target": "text_condition",
+  "negative_class": "variable",
+  "positive_class": "same_fixed",
+  "probe_fit_writers": 145,
+  "probe_fit_pages": 580,
+  "probe_evaluation_writers": 36,
+  "probe_evaluation_pages": 144,
+  "writer_overlap": 0,
+  "pipeline": "StandardScaler fitted on fit only -> L2 logistic regression",
+  "logistic_regression_c": 1.0,
+  "solver": "lbfgs",
+  "maximum_iterations": 5000,
+  "raw_dinov2s_dimension": 384,
+  "raw_fit_auc": 1.0,
+  "raw_fit_accuracy": 1.0,
+  "raw_selection_auc": 0.9972993827160495,
+  "raw_selection_accuracy": 0.9861111111111112,
+  "raw_selection_balanced_accuracy": 0.9861111111111112,
+  "raw_selection_confusion_matrix": [
+    [
+      72,
+      0
+    ],
+    [
+      2,
+      70
+    ]
+  ],
+  "raw_probe_converged": true,
+  "projected_dimension": 144,
+  "projected_fit_auc": 0.9016171224732461,
+  "projected_fit_accuracy": 0.8258620689655173,
+  "projected_selection_auc": 0.7924382716049383,
+  "projected_selection_accuracy": 0.7013888888888888,
+  "projected_selection_balanced_accuracy": 0.7013888888888888,
+  "projected_selection_confusion_matrix": [
+    [
+      53,
+      19
+    ],
+    [
+      24,
+      48
+    ]
+  ],
+  "projected_probe_converged": true,
+  "projected_minus_raw_selection_auc": -0.20486111111111116,
+  "projected_minus_raw_selection_accuracy": -0.2847222222222223,
+  "same_probe_protocol_as_script_audit": true,
+  "probe_protocol_fixed_before_evaluation": true,
+  "probe_hyperparameter_tuning_allowed": false,
+  "writer_verification_model_modified": false,
+  "monitor_features_used": false,
+  "monitor_evaluated": false,
+  "validation_used": false,
+  "official_test_used": false
+}

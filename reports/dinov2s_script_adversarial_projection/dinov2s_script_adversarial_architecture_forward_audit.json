@@ -1,0 +1,65 @@
+{
+  "method": "DINOv2-S script-adversarial projection",
+  "seed": 42,
+  "input_dimension": 384,
+  "projection_dimension": 144,
+  "script_classes": 2,
+  "script_head_architecture": "Linear(144, 2)",
+  "script_head_matches_linear_accessibility_target": true,
+  "projection_parameters": 55440,
+  "script_head_parameters": 290,
+  "total_trainable_parameters": 55730,
+  "first_batch_writers": [
+    133,
+    39,
+    273,
+    138,
+    172,
+    249,
+    272,
+    94
+  ],
+  "first_batch_size": 8,
+  "first_batch_input_shape": [
+    8,
+    4,
+    384
+  ],
+  "embedding_shape": [
+    8,
+    4,
+    144
+  ],
+  "script_logits_shape": [
+    8,
+    4,
+    2
+  ],
+  "script_label_shape": [
+    8,
+    4
+  ],
+  "script_label_counts": {
+    "Arabic": 16,
+    "English": 16
+  },
+  "embedding_norm_min": 0.9999998807907104,
+  "embedding_norm_mean": 1.0,
+  "embedding_norm_max": 1.0,
+  "initial_writer_base_loss": 0.45000821352005005,
+  "expected_notebook27_initial_writer_base_loss": 0.45000821352005005,
+  "initial_writer_base_loss_difference": 0.0,
+  "writer_objective_initialization_matches_notebook27": true,
+  "initial_script_cross_entropy": 0.6984610557556152,
+  "initial_script_accuracy": 0.5,
+  "grl_structurally_present": true,
+  "grl_strength_used_for_forward_sanity": 1.0,
+  "grl_gradient_sign_verified": false,
+  "script_head_competence_verified": false,
+  "adversarial_strength_frozen": false,
+  "main_training_started": false,
+  "selection_evaluated": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

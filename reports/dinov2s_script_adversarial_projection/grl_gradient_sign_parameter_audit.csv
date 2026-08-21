@@ -1,0 +1,5 @@
+parameter_group,parameter,direct_gradient_norm,reversed_gradient_norm,cosine_similarity,maximum_absolute_sum
+projection,weight,0.21699655055999756,0.21699655055999756,-1.0000016689300537,0.0
+projection,bias,0.11055571585893631,0.11055571585893631,-1.0,0.0
+script_head,weight,0.054180413484573364,0.054180413484573364,1.0,0.0
+script_head,bias,0.0020580990239977837,0.0020580990239977837,1.0,0.0

@@ -1,0 +1,52 @@
+{
+  "notebook": 29,
+  "method": "DINOv2-S script-adversarial projection",
+  "seed42_writer_macro_auc": 0.8254464285714287,
+  "baseline_writer_macro_auc": 0.8374834656084656,
+  "writer_macro_auc_change": -0.012037037037036957,
+  "seed42_writer_pooled_auc": 0.8258060515873016,
+  "seed42_writer_pooled_eer": 0.23809523809523808,
+  "all_four_writer_conditions_declined": true,
+  "maximum_condition_auc_drop": 0.021759259259259256,
+  "baseline_script_probe_auc": 0.757908950617284,
+  "adversarial_posthoc_script_probe_auc": 0.9056712962962964,
+  "script_probe_auc_change": 0.14776234567901236,
+  "attached_head_selection_auc_diagnostic_only": 0.3385416666666667,
+  "attached_head_selection_accuracy_diagnostic_only": 0.5,
+  "attached_head_and_posthoc_probe_disagree": true,
+  "baseline_text_condition_probe_auc": 0.7924382716049383,
+  "adversarial_text_condition_probe_fit_auc": 0.9358501783590963,
+  "adversarial_text_condition_probe_fit_accuracy": 0.8603448275862069,
+  "adversarial_text_condition_probe_selection_auc": 0.8138503086419753,
+  "adversarial_text_condition_probe_selection_accuracy": 0.7638888888888888,
+  "adversarial_text_condition_probe_selection_balanced_accuracy": 0.7638888888888888,
+  "adversarial_text_condition_probe_selection_confusion_matrix": [
+    [
+      58,
+      14
+    ],
+    [
+      20,
+      52
+    ]
+  ],
+  "text_condition_probe_auc_change_vs_baseline": 0.02141203703703698,
+  "script_suppression_target_passed": false,
+  "writer_macro_guardrail_passed": false,
+  "condition_guardrail_passed": false,
+  "pareto_support_passed": false,
+  "seed42_decision": "insufficient_script_suppression",
+  "method_dominates_notebook27_baseline": false,
+  "notebook27_baseline_remains_preferred": true,
+  "multiseed_justified_by_frozen_protocol": false,
+  "run_additional_seeds": false,
+  "tune_grl_strength_after_result": false,
+  "extend_epoch_budget_after_result": false,
+  "change_adversary_architecture_after_result": false,
+  "reuse_monitor_for_method_development": false,
+  "scientific_interpretation": "The attached adversarial head was strongly confused, but an independent writer-disjoint linear probe recovered more script information than from the standard projection. Writer verification also declined across all four conditions. Therefore the attached-head confusion is not evidence of script invariance, and this explicit adversarial method is not supported as a replacement for the Notebook 27 baseline.",
+  "selection_stage_closed": true,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

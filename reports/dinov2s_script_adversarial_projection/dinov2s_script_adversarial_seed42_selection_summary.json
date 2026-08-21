@@ -1,0 +1,50 @@
+{
+  "method": "DINOv2-S script-adversarial projection",
+  "training_seed": 42,
+  "checkpoint_epoch": 10,
+  "writer_selection_cross_macro_auc": 0.8254464285714287,
+  "writer_selection_cross_macro_eer": 0.24682539682539684,
+  "writer_selection_pooled_auc": 0.8258060515873016,
+  "writer_selection_pooled_eer": 0.23809523809523808,
+  "baseline_writer_cross_macro_auc": 0.8374834656084656,
+  "writer_cross_macro_auc_change_vs_baseline": -0.012037037037036957,
+  "writer_cross_macro_auc_drop_vs_baseline": 0.012037037037036957,
+  "posthoc_script_probe_fit_auc": 0.9879429250891796,
+  "posthoc_script_probe_fit_accuracy": 0.9431034482758621,
+  "posthoc_script_probe_fit_balanced_accuracy": 0.943103448275862,
+  "posthoc_script_probe_selection_auc": 0.9056712962962964,
+  "posthoc_script_probe_selection_accuracy": 0.8194444444444444,
+  "posthoc_script_probe_selection_balanced_accuracy": 0.8194444444444444,
+  "posthoc_script_probe_selection_confusion_matrix": [
+    [
+      60,
+      12
+    ],
+    [
+      14,
+      58
+    ]
+  ],
+  "posthoc_script_probe_iterations": 98,
+  "baseline_projected_script_probe_auc": 0.757908950617284,
+  "script_probe_auc_reduction_vs_baseline": -0.14776234567901236,
+  "attached_head_selection_auc_diagnostic_only": 0.3385416666666667,
+  "attached_head_selection_accuracy_diagnostic_only": 0.5,
+  "minimum_required_script_auc_reduction": 0.05,
+  "maximum_allowed_writer_macro_auc_drop": 0.005,
+  "maximum_observed_condition_auc_drop": 0.021759259259259256,
+  "maximum_allowed_condition_auc_drop": 0.02,
+  "script_suppression_target_passed": false,
+  "writer_macro_guardrail_passed": false,
+  "condition_guardrail_passed": false,
+  "pareto_support_passed": false,
+  "decision": "insufficient_script_suppression",
+  "attached_head_used_as_invariance_evidence": false,
+  "independent_posthoc_probe_used": true,
+  "selection_used_for_checkpoint_selection": false,
+  "selection_used_to_choose_grl_strength": false,
+  "epoch_extension_allowed_after_result": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}
