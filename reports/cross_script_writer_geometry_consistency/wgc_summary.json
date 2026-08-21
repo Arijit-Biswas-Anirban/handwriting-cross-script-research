@@ -1,0 +1,12 @@
+{
+  "candidate": "wgc",
+  "beta": 0.5,
+  "best_epoch": 9,
+  "best_selection_cross_macro_auc": 0.7827656525573192,
+  "best_selection_pooled_auc": 0.7828731261022929,
+  "best_selection_pooled_eer": 0.2998015873015873,
+  "checkpoint_path": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/wgc_best.pt",
+  "monitor_evaluated": false,
+  "validation_evaluated": false,
+  "official_test_evaluated": false
+}

@@ -1,0 +1,34 @@
+{
+  "control": {
+    "matrix_dimension": 512,
+    "paired_writers": 145,
+    "maximum_possible_rank": 145,
+    "numerical_rank": 145,
+    "unsupported_dimensions": 367,
+    "supported_fraction": 0.283203125,
+    "rank_tolerance": 1.0651503775124742e-11,
+    "components_for_90_percent_energy": 1,
+    "components_for_95_percent_energy": 1,
+    "components_for_99_percent_energy": 2,
+    "largest_singular_value": 93.69161803239692,
+    "smallest_supported_singular_value": 0.0036144890848659504
+  },
+  "wgc": {
+    "matrix_dimension": 512,
+    "paired_writers": 145,
+    "maximum_possible_rank": 145,
+    "numerical_rank": 145,
+    "unsupported_dimensions": 367,
+    "supported_fraction": 0.283203125,
+    "rank_tolerance": 1.0885785031496552e-11,
+    "components_for_90_percent_energy": 1,
+    "components_for_95_percent_energy": 1,
+    "components_for_99_percent_energy": 2,
+    "largest_singular_value": 95.75237775680311,
+    "smallest_supported_singular_value": 0.00393542152842259
+  },
+  "selection_used": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

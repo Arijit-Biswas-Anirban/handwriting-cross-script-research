@@ -1,0 +1,41 @@
+{
+  "layer": "backbone.layer4",
+  "selection_pages": 144,
+  "channel_dimension": 512,
+  "descriptor_definition": "L2-normalized channel mean concatenated with L2-normalized channel standard deviation, then L2-normalized",
+  "control_mean_shape": [
+    144,
+    512
+  ],
+  "control_std_shape": [
+    144,
+    512
+  ],
+  "control_style_shape": [
+    144,
+    1024
+  ],
+  "wgc_mean_shape": [
+    144,
+    512
+  ],
+  "wgc_std_shape": [
+    144,
+    512
+  ],
+  "wgc_style_shape": [
+    144,
+    1024
+  ],
+  "control_style_mean_norm": 1.0,
+  "wgc_style_mean_norm": 1.0,
+  "control_mean_raw_cosine_mean": 1.0,
+  "control_mean_raw_cosine_min": 0.9999998807907104,
+  "wgc_mean_raw_cosine_mean": 1.0,
+  "wgc_mean_raw_cosine_min": 0.9999998211860657,
+  "auc_computed": false,
+  "eer_computed": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

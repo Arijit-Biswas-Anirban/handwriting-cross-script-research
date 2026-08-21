@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "source_role": "exploration",
+  "source_writers": 181,
+  "fit_writers": 145,
+  "selection_writers": 36,
+  "monitor_writers_untouched": 45,
+  "fit_selection_overlap": 0,
+  "fit_monitor_overlap": 0,
+  "selection_monitor_overlap": 0,
+  "selection_fraction": 0.2,
+  "validation_used": false,
+  "official_test_used": false,
+  "purpose": "Train candidate objectives on fit writers, select the frozen configuration on writer-disjoint selection writers, then evaluate once on monitor writers."
+}

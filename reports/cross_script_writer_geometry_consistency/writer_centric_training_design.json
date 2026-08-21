@@ -1,0 +1,33 @@
+{
+  "training_unit": "writer-centric minibatch",
+  "fit_writers": 145,
+  "pages_per_writer": 4,
+  "writer_batch_size_target": 8,
+  "page_roles": {
+    "p1": "Arabic variable",
+    "p2": "Arabic fixed/same",
+    "p3": "English variable",
+    "p4": "English fixed/same"
+  },
+  "arabic_metric": "p1 versus p2",
+  "cross_script_metric_conditions": [
+    "p1-p3",
+    "p1-p4",
+    "p2-p3",
+    "p2-p4"
+  ],
+  "metric_negative_strategy": "all off-diagonal writers within each minibatch",
+  "metric_class_weighting": "positive and negative means weighted equally within each condition",
+  "arabic_writer_representation": "L2-normalized mean of p1 and p2 embeddings",
+  "english_writer_representation": "L2-normalized mean of p3 and p4 embeddings",
+  "wgc_relation": "cosine relation matrix among writers within each script",
+  "wgc_elements": "off-diagonal only",
+  "wgc_loss": "mean squared difference between Arabic and English relation matrices",
+  "matched_control": "same training setup with beta equal to zero",
+  "beta_calibration": "fit-only loss and gradient-scale audit before verification evaluation",
+  "beta_sweep_on_selection": false,
+  "selection_role": "checkpoint selection and go/no-go comparison only",
+  "monitor_role": "single frozen writer-disjoint confirmation",
+  "validation_used": false,
+  "official_test_used": false
+}

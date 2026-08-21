@@ -1,0 +1,8 @@
+{
+  "condition_seed_pairs": 12,
+  "positive_auc_condition_seed_pairs": 12,
+  "negative_auc_condition_seed_pairs": 0,
+  "mean_condition_auc_gain": 0.005845825984714882,
+  "worst_condition_seed_auc_gain": 0.002094356261022834,
+  "best_condition_seed_auc_gain": 0.00802469135802486
+}

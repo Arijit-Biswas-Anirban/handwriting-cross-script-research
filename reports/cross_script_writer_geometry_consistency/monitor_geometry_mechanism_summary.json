@@ -1,0 +1,20 @@
+{
+  "control": {
+    "writer_count": 45,
+    "relation_pairs": 1980,
+    "geometry_mse": 0.05182164907455444,
+    "geometry_rmse": 0.227643683552742,
+    "geometry_mae": 0.17972344160079956
+  },
+  "wgc": {
+    "writer_count": 45,
+    "relation_pairs": 1980,
+    "geometry_mse": 0.04259984940290451,
+    "geometry_rmse": 0.20639730989933014,
+    "geometry_mae": 0.16324590146541595
+  },
+  "geometry_mse_change": -0.009221799671649933,
+  "geometry_mse_reduction_fraction": 0.17795264790556495,
+  "geometry_mse_reduction_percent": 17.795264790556494,
+  "analysis_role": "post-confirmation mechanism diagnostic; not used for tuning or model selection"
+}

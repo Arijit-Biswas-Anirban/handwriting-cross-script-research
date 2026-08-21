@@ -1,0 +1,11 @@
+{
+  "candidate": "wgc",
+  "beta": 0.5,
+  "training_writers": 181,
+  "epochs": 9,
+  "final_mean_total_loss": 0.3159133934456369,
+  "final_mean_base_loss": 0.30313106788241345,
+  "final_mean_wgc_loss": 0.025564653029584366,
+  "checkpoint_path": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/wgc_final_refit_epoch09.pt",
+  "monitor_evaluated": false
+}

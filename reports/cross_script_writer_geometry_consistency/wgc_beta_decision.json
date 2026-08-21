@@ -1,0 +1,24 @@
+{
+  "gradient_audit_batches": 6,
+  "target_wgc_to_base_gradient_fraction": 0.2,
+  "candidate_betas": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "median_base_over_wgc_gradient": 2.7147138796649317,
+  "continuous_target_beta": 0.5429427759329863,
+  "selected_beta": 0.5,
+  "observed_median_scaled_wgc_fraction": 0.18453482739914406,
+  "median_base_wgc_gradient_cosine": -0.33771514147520065,
+  "selection_used_fit_writers_only": true,
+  "selection_used_verification_auc": false,
+  "selection_used_eer": false,
+  "selection_used_selection_writers": false,
+  "selection_used_monitor_writers": false,
+  "selection_used_validation": false,
+  "selection_used_official_test": false,
+  "further_beta_tuning_allowed": false
+}

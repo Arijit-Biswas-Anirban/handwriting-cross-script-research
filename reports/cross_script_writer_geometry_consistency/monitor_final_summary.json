@@ -1,0 +1,18 @@
+{
+  "control_cross_macro_auc": 0.7470763187429854,
+  "wgc_cross_macro_auc": 0.7517648709315377,
+  "cross_macro_auc_change": 0.004688552188552242,
+  "control_cross_pooled_auc": 0.7470202020202019,
+  "wgc_cross_pooled_auc": 0.7519086700336699,
+  "cross_pooled_auc_change": 0.004888468013467984,
+  "control_cross_pooled_eer": 0.31603535353535356,
+  "wgc_cross_pooled_eer": 0.3055555555555556,
+  "cross_pooled_eer_change": -0.010479797979797978,
+  "control_within_macro_auc": 0.8835634118967453,
+  "wgc_within_macro_auc": 0.88993265993266,
+  "within_macro_auc_change": 0.006369248035914765,
+  "positive_cross_conditions": 4,
+  "worst_cross_condition_auc_change": 0.0030976430976430436,
+  "frozen_protocol_conclusion": "directional_support_only",
+  "strong_support_rule_passed": false
+}

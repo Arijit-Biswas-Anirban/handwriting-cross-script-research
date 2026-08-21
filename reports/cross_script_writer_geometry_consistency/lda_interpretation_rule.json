@@ -1,0 +1,19 @@
+{
+  "primary_metric": "selection cross-script macro ROC-AUC",
+  "useful_backend_gain": "LDA minus raw cross-script macro AUC >= 0.01",
+  "substantial_backend_gain": "LDA minus raw cross-script macro AUC >= 0.03",
+  "strong_absolute_performance_marker": "LDA cross-script macro AUC >= 0.80",
+  "wgc_complementarity_rule": "After LDA, WGC should remain above the matched-control LDA cross-script macro AUC; condition-level changes will be inspected to ensure the difference is not driven by one condition.",
+  "interpretation_cases": {
+    "backend_bottleneck_supported": "LDA gives a substantial gain for both encoders.",
+    "partial_backend_bottleneck": "LDA gives a useful but less than 0.03 gain.",
+    "encoder_bottleneck_more_likely": "LDA gain is below 0.01.",
+    "wgc_complementary": "WGC remains better than control after applying the same LDA backend.",
+    "wgc_not_complementary": "WGC advantage disappears or reverses after LDA."
+  },
+  "lda_dimension_retuning_after_result": false,
+  "lda_solver_retuning_after_result": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

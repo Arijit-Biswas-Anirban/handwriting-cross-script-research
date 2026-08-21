@@ -1,0 +1,18 @@
+{
+  "fit_pages": 580,
+  "fit_writers": 145,
+  "unique_filenames": 580,
+  "minimum_pages_per_writer": 4,
+  "maximum_pages_per_writer": 4,
+  "control_embedding_shape": [
+    580,
+    512
+  ],
+  "wgc_embedding_shape": [
+    580,
+    512
+  ],
+  "control_mean_norm": 1.0,
+  "wgc_mean_norm": 1.0,
+  "fit_selection_writer_overlap": 0
+}

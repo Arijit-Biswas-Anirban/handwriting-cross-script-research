@@ -1,0 +1,33 @@
+{
+  "hypothesis": "Writer identity may be represented more consistently across scripts as deviation from the script-specific population center than as the raw embedding itself.",
+  "primary_endpoint": "selection cross-script macro ROC-AUC",
+  "secondary_endpoint": "selection cross-script pooled EER",
+  "systems_to_compare": [
+    "matched-control raw",
+    "matched-control script-relative",
+    "WGC raw",
+    "WGC script-relative"
+  ],
+  "useful_auc_gain": "script-relative minus raw cross-script macro AUC >= 0.01",
+  "strong_auc_gain": "script-relative minus raw cross-script macro AUC >= 0.03",
+  "useful_eer_reduction": "script-relative pooled EER decreases by at least 0.01 absolute",
+  "absolute_auc_marker": "script-relative cross-script macro AUC >= 0.80",
+  "interpretation_cases": {
+    "strong_support": "At least one encoder gains >= 0.03 macro AUC, with no material EER degradation.",
+    "promising_support": "At least one encoder gains >= 0.01 macro AUC but less than 0.03.",
+    "no_support": "Both encoders gain less than 0.01 macro AUC.",
+    "harmful": "Script-relative transformation decreases macro AUC for both encoders."
+  },
+  "novelty_interpretation": {
+    "helps_both_encoders": "Script-relative representation may be a general cross-script verification principle.",
+    "helps_wgc_more": "Script-relative representation may interact productively with geometry consistency.",
+    "removes_wgc_advantage": "The script-relative transformation may explain part of the effect previously attributed to WGC."
+  },
+  "centroid_source": "145 fit writers only",
+  "centroid_dimension_tuning": false,
+  "centroid_weight_tuning": false,
+  "post_result_retuning": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

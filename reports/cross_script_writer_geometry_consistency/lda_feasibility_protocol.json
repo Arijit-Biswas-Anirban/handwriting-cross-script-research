@@ -1,0 +1,45 @@
+{
+  "purpose": "Test whether a supervised linear discriminant backend can substantially improve absolute cross-script verification without changing the frozen compact encoder.",
+  "scientific_role": "Performance/backend diagnostic only; LDA is not claimed as the methodological novelty.",
+  "encoder_checkpoints": {
+    "matched_control": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/matched_control_best.pt",
+    "wgc": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/wgc_best.pt"
+  },
+  "encoder_training_writers": 145,
+  "lda_fit_writers": 145,
+  "lda_fit_pages": 580,
+  "lda_fit_scripts": [
+    "Arabic",
+    "English"
+  ],
+  "lda_samples_per_writer": 4,
+  "lda_writer_labels_used": true,
+  "lda_solver": "svd",
+  "lda_components": 144,
+  "post_lda_normalization": "L2",
+  "evaluation_writers": 36,
+  "evaluation_conditions": [
+    "cross_variable_variable",
+    "cross_variable_same",
+    "cross_same_variable",
+    "cross_same_same"
+  ],
+  "primary_endpoint": "selection cross-script macro ROC-AUC",
+  "comparisons": [
+    "matched_control raw cosine",
+    "matched_control LDA cosine",
+    "WGC raw cosine",
+    "WGC LDA cosine"
+  ],
+  "important_interpretation": {
+    "lda_improves_both_and_wgc_remains_better": "Useful performance backend and WGC remains complementary.",
+    "lda_improves_both_but_wgc_advantage_disappears": "Discriminant re-alignment dominates the WGC effect; WGC novelty story becomes weaker.",
+    "lda_gives_little_improvement": "Absolute-performance bottleneck is more likely the encoder representation than the cosine backend."
+  },
+  "lda_dimension_tuning_allowed": false,
+  "lda_solver_tuning_allowed": false,
+  "encoder_finetuning_during_lda_test": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,29 @@
+{
+  "monitor_writers": 45,
+  "monitor_evaluated_once": true,
+  "primary_endpoint": "cross-script macro ROC-AUC difference: WGC minus matched control",
+  "strong_support_cross_macro_gain": 0.01,
+  "directional_support_rule": "0 < cross-script macro AUC gain < 0.01",
+  "no_support_rule": "cross-script macro AUC gain <= 0",
+  "condition_consistency_rule": {
+    "minimum_positive_cross_conditions": 3,
+    "maximum_allowed_single_cross_auc_drop": 0.005
+  },
+  "within_script_safety_rule": {
+    "maximum_allowed_within_macro_auc_drop": 0.005
+  },
+  "strong_support_requires": [
+    "cross-script macro AUC gain >= 0.01",
+    "at least 3 of 4 cross-script conditions improve",
+    "no cross-script condition loses more than 0.005 AUC",
+    "within-script macro AUC does not lose more than 0.005"
+  ],
+  "eer_role": "secondary supporting metric; does not override the primary AUC rule",
+  "beta_frozen": 0.5,
+  "final_training_epochs": 9,
+  "additional_tuning_after_monitor": false,
+  "monitor_used_for_checkpoint_selection": false,
+  "monitor_used_for_beta_selection": false,
+  "validation_used": false,
+  "official_test_used": false
+}

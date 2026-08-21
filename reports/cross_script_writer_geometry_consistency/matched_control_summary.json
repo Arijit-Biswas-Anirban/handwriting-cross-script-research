@@ -1,0 +1,12 @@
+{
+  "candidate": "matched_control",
+  "beta": 0.0,
+  "best_epoch": 9,
+  "best_selection_cross_macro_auc": 0.7775848765432098,
+  "best_selection_pooled_auc": 0.7781277557319224,
+  "best_selection_pooled_eer": 0.3047619047619048,
+  "checkpoint_path": "/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/matched_control_best.pt",
+  "monitor_evaluated": false,
+  "validation_evaluated": false,
+  "official_test_evaluated": false
+}

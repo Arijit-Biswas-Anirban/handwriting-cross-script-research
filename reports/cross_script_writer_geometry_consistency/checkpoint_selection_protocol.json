@@ -1,0 +1,38 @@
+{
+  "training_seed": 42,
+  "epochs": 10,
+  "candidate_models": {
+    "matched_control": {
+      "beta": 0.0,
+      "objective": "arabic_metric + cross_script_metric"
+    },
+    "wgc": {
+      "beta": 0.5,
+      "objective": "arabic_metric + cross_script_metric + beta * writer_geometry_consistency"
+    }
+  },
+  "initialization": "same frozen MoCo SSL epoch-20 checkpoint",
+  "training_writers": 145,
+  "checkpoint_selection_writers": 36,
+  "monitor_writers": 45,
+  "primary_checkpoint_metric": "selection cross-script macro ROC-AUC",
+  "first_tiebreaker": "higher selection pooled ROC-AUC",
+  "second_tiebreaker": "lower selection pooled EER",
+  "final_tiebreaker": "earlier epoch",
+  "evaluation_conditions": [
+    "cross_variable_variable",
+    "cross_variable_same",
+    "cross_same_variable",
+    "cross_same_same"
+  ],
+  "checkpoint_evaluated_after_each_epoch": true,
+  "matched_control_and_wgc_use_same_schedule": true,
+  "matched_control_and_wgc_use_same_seed": true,
+  "matched_control_and_wgc_use_same_optimizer": true,
+  "matched_control_and_wgc_use_same_checkpoint_rule": true,
+  "beta_tuning_after_training_starts": false,
+  "selection_used_for_beta_choice": false,
+  "monitor_used_for_checkpoint_selection": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,21 @@
+{
+  "fit_samples": 580,
+  "fit_classes": 145,
+  "requested_components": 144,
+  "control_output_shape": [
+    580,
+    144
+  ],
+  "wgc_output_shape": [
+    580,
+    144
+  ],
+  "control_output_mean_norm": 1.0,
+  "wgc_output_mean_norm": 1.0,
+  "control_explained_ratio_sum": 1.0,
+  "wgc_explained_ratio_sum": 0.9999999403953552,
+  "selection_used": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

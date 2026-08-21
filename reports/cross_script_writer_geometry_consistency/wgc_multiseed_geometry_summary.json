@@ -1,0 +1,11 @@
+{
+  "seeds": 3,
+  "positive_mse_reduction_seeds": 3,
+  "mean_mse_reduction_fraction": 0.10760003067908552,
+  "std_mse_reduction_fraction": 0.01187958252407564,
+  "minimum_mse_reduction_fraction": 0.09393483417880608,
+  "maximum_mse_reduction_fraction": 0.1154676576258739,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

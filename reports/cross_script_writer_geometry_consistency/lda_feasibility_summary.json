@@ -1,0 +1,16 @@
+{
+  "control_raw_cross_macro_auc": 0.7775848765432098,
+  "control_lda_cross_macro_auc": 0.5875936948853615,
+  "control_lda_gain": -0.18999118165784834,
+  "wgc_raw_cross_macro_auc": 0.7827656525573192,
+  "wgc_lda_cross_macro_auc": 0.5751102292768959,
+  "wgc_lda_gain": -0.2076554232804233,
+  "wgc_advantage_after_lda": -0.012483465608465583,
+  "best_cross_macro_auc": 0.7827656525573192,
+  "best_system": "wgc_raw",
+  "backend_interpretation": "encoder_bottleneck_more_likely",
+  "wgc_interpretation": "wgc_not_complementary",
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

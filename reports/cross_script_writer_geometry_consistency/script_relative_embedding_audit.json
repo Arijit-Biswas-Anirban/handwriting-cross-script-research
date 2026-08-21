@@ -1,0 +1,22 @@
+{
+  "fit_arabic_pages": 290,
+  "fit_english_pages": 290,
+  "selection_arabic_pages": 72,
+  "selection_english_pages": 72,
+  "control_relative_shape": [
+    144,
+    512
+  ],
+  "wgc_relative_shape": [
+    144,
+    512
+  ],
+  "control_relative_mean_norm": 1.0,
+  "wgc_relative_mean_norm": 1.0,
+  "control_script_centroid_cosine": 0.9774453043937683,
+  "wgc_script_centroid_cosine": 0.9783318042755127,
+  "selection_used_for_centroid": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

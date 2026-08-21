@@ -1,0 +1,7 @@
+seed,candidate,beta,epochs,cross_macro_auc,pooled_auc,pooled_eer,checkpoint_path
+42,matched_control,0.0,9,0.7775848765432098,0.7781277557319224,0.3047619047619048,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/robustness_seed42_matched_control_epoch09.pt
+42,wgc,0.5,9,0.7827656525573192,0.7828731261022929,0.2998015873015873,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/robustness_seed42_wgc_epoch09.pt
+123,matched_control,0.0,9,0.7798776455026455,0.7804535934744268,0.2972222222222222,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/robustness_seed123_matched_control_epoch09.pt
+123,wgc,0.5,9,0.7865740740740741,0.7870384149029983,0.3125,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/robustness_seed123_wgc_epoch09.pt
+2026,matched_control,0.0,9,0.7759424603174604,0.7760843805114639,0.29861111111111116,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/robustness_seed2026_matched_control_epoch09.pt
+2026,wgc,0.5,9,0.781602733686067,0.7815972222222222,0.29861111111111116,/home/arijit/Documents/handwriting-cross-script-research/checkpoints/cross_script_writer_geometry_consistency/robustness_seed2026_wgc_epoch09.pt

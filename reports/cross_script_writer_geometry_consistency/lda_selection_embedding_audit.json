@@ -1,0 +1,31 @@
+{
+  "selection_pages": 144,
+  "selection_writers": 36,
+  "unique_filenames": 144,
+  "minimum_pages_per_writer": 4,
+  "maximum_pages_per_writer": 4,
+  "control_raw_shape": [
+    144,
+    512
+  ],
+  "wgc_raw_shape": [
+    144,
+    512
+  ],
+  "control_lda_shape": [
+    144,
+    144
+  ],
+  "wgc_lda_shape": [
+    144,
+    144
+  ],
+  "control_raw_mean_norm": 1.0,
+  "wgc_raw_mean_norm": 1.0,
+  "control_lda_mean_norm": 1.0,
+  "wgc_lda_mean_norm": 1.0,
+  "fit_selection_writer_overlap": 0,
+  "auc_computed": false,
+  "eer_computed": false,
+  "monitor_used": false
+}

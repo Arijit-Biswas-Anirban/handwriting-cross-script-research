@@ -1,0 +1,26 @@
+{
+  "reference_writers": 145,
+  "selection_writers": 36,
+  "selection_pages": 144,
+  "control_fingerprint_shape": [
+    144,
+    145
+  ],
+  "wgc_fingerprint_shape": [
+    144,
+    145
+  ],
+  "control_mean_norm": 1.0,
+  "wgc_mean_norm": 1.0,
+  "control_min_value": 0.014099589549005032,
+  "control_max_value": 0.14435982704162598,
+  "wgc_min_value": 0.02054414339363575,
+  "wgc_max_value": 0.14038658142089844,
+  "fit_selection_writer_overlap": 0,
+  "selection_used_for_reference_bank": false,
+  "auc_computed": false,
+  "eer_computed": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

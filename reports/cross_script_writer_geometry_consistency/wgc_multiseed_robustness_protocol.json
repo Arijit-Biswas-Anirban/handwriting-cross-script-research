@@ -1,0 +1,33 @@
+{
+  "research_question": "Does the frozen WGC objective produce a consistent cross-script verification gain across training seeds?",
+  "training_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "training_writers": 145,
+  "evaluation_writers": 36,
+  "training_epochs": 9,
+  "epoch_choice": "Fixed at epoch 9 from the original seed-42 fit-selection experiment; no per-seed checkpoint selection.",
+  "matched_control_beta": 0.0,
+  "wgc_beta": 0.5,
+  "same_initial_ssl_checkpoint": true,
+  "same_writer_batches_within_each_seed_pair": true,
+  "same_optimizer": true,
+  "same_learning_rate": true,
+  "same_loss_definition": true,
+  "evaluation_once_after_epoch9": true,
+  "primary_endpoint": "WGC minus matched-control cross-script macro ROC-AUC",
+  "secondary_endpoints": [
+    "cross-script pooled ROC-AUC",
+    "cross-script pooled EER",
+    "four cross-script condition ROC-AUC changes"
+  ],
+  "success_interpretation": "Direction and effect size will be reported across seeds; no new post-hoc minimum gain threshold will be invented.",
+  "beta_retuning": false,
+  "epoch_retuning": false,
+  "architecture_retuning": false,
+  "monitor_reused": false,
+  "validation_used": false,
+  "official_test_used": false
+}

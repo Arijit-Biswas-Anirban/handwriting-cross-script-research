@@ -1,0 +1,26 @@
+{
+  "fit_writers": 145,
+  "embedding_dimension": 512,
+  "control_bridge_shape": [
+    512,
+    512
+  ],
+  "wgc_bridge_shape": [
+    512,
+    512
+  ],
+  "control_orthogonality_error": 4.6853890240406497e-07,
+  "wgc_orthogonality_error": 4.7186466471360516e-07,
+  "control_distance_from_identity": 1.3832231532504287,
+  "wgc_distance_from_identity": 1.3809912247406857,
+  "control_fit_same_writer_cosine_before": 0.840442955493927,
+  "control_fit_same_writer_cosine_after": 0.8946213126182556,
+  "wgc_fit_same_writer_cosine_before": 0.8489323258399963,
+  "wgc_fit_same_writer_cosine_after": 0.9045107364654541,
+  "control_bridge_determinant": -1.0000007152557373,
+  "wgc_bridge_determinant": -0.9999999403953552,
+  "selection_used_for_bridge": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

@@ -1,0 +1,18 @@
+{
+  "control_best_epoch": 9,
+  "wgc_best_epoch": 9,
+  "control_cross_macro_auc": 0.7775848765432098,
+  "wgc_cross_macro_auc": 0.7827656525573192,
+  "cross_macro_auc_change": 0.005180776014109378,
+  "control_pooled_auc": 0.7781277557319224,
+  "wgc_pooled_auc": 0.7828731261022929,
+  "pooled_auc_change": 0.004745370370370483,
+  "control_pooled_eer": 0.3047619047619048,
+  "wgc_pooled_eer": 0.2998015873015873,
+  "pooled_eer_change": -0.004960317460317498,
+  "conditions_with_auc_gain": 4,
+  "conditions_with_eer_improvement": 2,
+  "largest_condition_auc_gain": 0.007341269841269926,
+  "smallest_condition_auc_change": 0.0036155202821869237,
+  "monitor_evaluated": false
+}

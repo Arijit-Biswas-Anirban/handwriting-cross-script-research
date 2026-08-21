@@ -1,0 +1,23 @@
+{
+  "control_raw_cross_macro_auc": 0.7775848765432098,
+  "control_relative_cross_macro_auc": 0.7730875220458555,
+  "control_relative_auc_gain": -0.004497354497354333,
+  "control_raw_pooled_eer": 0.3047619047619048,
+  "control_relative_pooled_eer": 0.29166666666666663,
+  "control_relative_eer_change": -0.01309523809523816,
+  "wgc_raw_cross_macro_auc": 0.7827656525573192,
+  "wgc_relative_cross_macro_auc": 0.7803185626102294,
+  "wgc_relative_auc_gain": -0.0024470899470898644,
+  "wgc_raw_pooled_eer": 0.2998015873015873,
+  "wgc_relative_pooled_eer": 0.28809523809523807,
+  "wgc_relative_eer_change": -0.01170634920634922,
+  "wgc_advantage_raw": 0.005180776014109378,
+  "wgc_advantage_relative": 0.007231040564373847,
+  "best_system": "wgc_raw",
+  "best_cross_macro_auc": 0.7827656525573192,
+  "reaches_absolute_080_marker": false,
+  "auc_interpretation": "harmful",
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

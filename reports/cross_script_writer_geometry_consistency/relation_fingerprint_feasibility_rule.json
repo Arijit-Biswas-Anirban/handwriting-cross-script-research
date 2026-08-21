@@ -1,0 +1,44 @@
+{
+  "hypothesis": "A handwriting sample may be verified more robustly across scripts by its ordered relation pattern to fit writers than by directly comparing its absolute embedding coordinates.",
+  "method_name_provisional": "Cross-Script Writer Relation Fingerprint (CS-WRF)",
+  "reference_writers": 145,
+  "fingerprint_dimension": 145,
+  "reference_definition": "Each fit writer contributes one Arabic prototype and one English prototype in the same fixed writer order.",
+  "verification_definition": "Arabic samples are represented by cosine relations to Arabic fit-writer prototypes; English samples use the corresponding English prototypes; fingerprints are L2-normalized and compared with cosine similarity.",
+  "systems_to_compare": [
+    "matched-control raw embedding",
+    "matched-control relation fingerprint",
+    "WGC raw embedding",
+    "WGC relation fingerprint"
+  ],
+  "primary_endpoint": "selection cross-script macro ROC-AUC",
+  "secondary_endpoints": [
+    "selection cross-script pooled ROC-AUC",
+    "selection cross-script pooled EER",
+    "four cross-script condition ROC-AUC changes"
+  ],
+  "useful_auc_gain": "relation fingerprint minus raw cross-script macro AUC >= 0.01",
+  "strong_auc_gain": "relation fingerprint minus raw cross-script macro AUC >= 0.03",
+  "useful_eer_reduction": "pooled EER decreases by at least 0.01 absolute",
+  "maximum_acceptable_eer_increase_for_strong_support": 0.005,
+  "absolute_auc_marker": "cross-script macro ROC-AUC >= 0.80",
+  "interpretation_cases": {
+    "strong_support": "At least one encoder gains >= 0.03 macro AUC and its pooled EER does not increase by more than 0.005 absolute.",
+    "promising_support": "At least one encoder gains >= 0.01 but less than 0.03 macro AUC.",
+    "no_meaningful_support": "Both encoders gain less than 0.01 macro AUC.",
+    "harmful": "Relation fingerprints decrease macro AUC for both encoders."
+  },
+  "wgc_coupling_interpretation": {
+    "wgc_benefits_more": "The WGC-trained geometry is especially useful when verification directly reads relational structure.",
+    "both_benefit_similarly": "Relation fingerprints may be a useful general backend rather than specifically a WGC mechanism.",
+    "wgc_advantage_disappears": "The relational backend may explain or replace part of the previous WGC advantage."
+  },
+  "post_result_fingerprint_centering": false,
+  "post_result_fingerprint_whitening": false,
+  "post_result_reference_selection": false,
+  "post_result_reference_weighting": false,
+  "post_result_dimension_tuning": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}

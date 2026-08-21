@@ -1,0 +1,43 @@
+{
+  "hypothesis": "Writer identity across scripts may be better represented by both the average activation pattern and the spatial variability of high-level handwriting features than by spatial means alone.",
+  "provisional_name": "Writer Style Statistics (WSS)",
+  "current_representation": "L2-normalized 512-D Layer-4 spatial mean",
+  "candidate_representation": "L2-normalized 512-D spatial mean plus independently L2-normalized 512-D spatial standard deviation, concatenated and L2-normalized to 1024-D",
+  "mean_std_weighting": "Equal contribution after independent L2 normalization",
+  "systems_to_compare": [
+    "matched-control raw mean embedding",
+    "matched-control mean-plus-std style descriptor",
+    "WGC raw mean embedding",
+    "WGC mean-plus-std style descriptor"
+  ],
+  "primary_endpoint": "selection cross-script macro ROC-AUC",
+  "secondary_endpoints": [
+    "selection cross-script pooled ROC-AUC",
+    "selection cross-script pooled EER",
+    "four cross-script condition ROC-AUC changes"
+  ],
+  "useful_auc_gain": "style descriptor minus raw embedding macro AUC >= 0.01",
+  "strong_auc_gain": "style descriptor minus raw embedding macro AUC >= 0.03",
+  "useful_eer_reduction": "pooled EER decreases by at least 0.01 absolute",
+  "strong_support_requires": {
+    "auc_gain": ">= 0.03",
+    "eer_increase": "<= 0.005 absolute",
+    "positive_cross_conditions": "at least 3 of 4"
+  },
+  "interpretation_cases": {
+    "strong_support": "At least one encoder gains >= 0.03 macro AUC, does not materially worsen pooled EER, and improves at least 3 of 4 cross-script conditions.",
+    "promising_support": "At least one encoder gains >= 0.01 but less than 0.03 macro AUC.",
+    "eer_only_signal": "Macro AUC gain is below 0.01 but pooled EER improves by at least 0.01 absolute.",
+    "no_meaningful_support": "Neither encoder shows useful AUC gain or useful EER reduction.",
+    "harmful": "Mean-plus-std decreases macro AUC for both encoders without a useful pooled EER reduction."
+  },
+  "absolute_auc_marker": "cross-script macro ROC-AUC >= 0.80",
+  "post_result_mean_std_weight_tuning": false,
+  "post_result_dimension_tuning": false,
+  "post_result_channel_selection": false,
+  "post_result_pooling_variant_search": false,
+  "encoder_retraining_in_this_feasibility_test": false,
+  "monitor_used": false,
+  "validation_used": false,
+  "official_test_used": false
+}
